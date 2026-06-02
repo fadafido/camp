@@ -1,278 +1,356 @@
 [
   {
+    "code": "CCEN 356",
+    "title": "Computer Networks",
+    "credits": 4,
+    "prereq_raw": "ECCE210, or CCEN210, or COSC201"
+  },
+  {
+    "code": "CCEN 446",
+    "title": "Network Security",
+    "credits": 3,
+    "prereq_raw": "ECCE356, or CCEN356"
+  },
+  {
+    "code": "CCEN 448",
+    "title": "Cloud Infrastructure and Services",
+    "credits": 3,
+    "prereq_raw": "( ECCE356, or CCEN356),( ECCE354, or COSC354)"
+  },
+  {
+    "code": "CCEN 481",
+    "title": "Wireless Sensor Networks and Internet of Things",
+    "credits": 3,
+    "prereq_raw": "( ECCE360, or ELEN360),( ECCE316, or CCEN316),( CCEN302, or ECCE302)"
+  },
+  {
+    "code": "CHEM 115",
+    "title": "General Chemistry I",
+    "credits": 4,
+    "prereq_raw": ""
+  },
+  {
     "code": "COSC 011",
-    "title": null,
-    "credits": null,
+    "title": "Foundations of Computing",
+    "credits": 4,
     "prereq_raw": ""
   },
   {
     "code": "COSC 101",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Foundations of Computer Science",
+    "credits": 3,
+    "prereq_raw": "ENGR112, or ENGR113, or ENGR114, or COSC114"
   },
   {
     "code": "COSC 114",
-    "title": null,
-    "credits": null,
+    "title": "Introduction to Computing- Python",
+    "credits": 4,
     "prereq_raw": ""
   },
   {
     "code": "COSC 201",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Computer Systems Organization",
+    "credits": 3,
+    "prereq_raw": "COSC101"
   },
   {
     "code": "COSC 202",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Data Science and Artificial Intelligence",
+    "credits": 3,
+    "prereq_raw": "COSC114, or ENGR114, or ENGR113, or ENGR112"
   },
   {
     "code": "COSC 230",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Object-Oriented Programming",
+    "credits": 4,
+    "prereq_raw": "ENGR112, or ENGR113, or ENGR114, or COSC114"
   },
   {
     "code": "COSC 296",
-    "title": null,
-    "credits": null,
+    "title": "Directed Study",
+    "credits": 3,
     "prereq_raw": ""
   },
   {
     "code": "COSC 301",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Automata, Computability, and Complexity",
+    "credits": 3,
+    "prereq_raw": "COSC101, MATH234"
   },
   {
     "code": "COSC 310",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Data Structures",
+    "credits": 3,
+    "prereq_raw": "( ECCE230, or COSC230), MATH234"
   },
   {
     "code": "COSC 312",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Design and Analysis of Algorithms",
+    "credits": 3,
+    "prereq_raw": "COSC301,( COSC310, or ECCE342)"
   },
   {
     "code": "COSC 320",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Principles of Programming Languages",
+    "credits": 3,
+    "prereq_raw": "COSC301"
   },
   {
     "code": "COSC 330",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Introduction to Artificial Intelligence",
+    "credits": 3,
+    "prereq_raw": "ECCE230, or COSC230"
   },
   {
     "code": "COSC 333",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "System Analysis & Software Design",
+    "credits": 3,
+    "prereq_raw": "COSC336, or ECCE336"
   },
   {
     "code": "COSC 336",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Introduction to Software Engineering",
+    "credits": 3,
+    "prereq_raw": "ECCE230, or COSC230"
   },
   {
     "code": "COSC 340",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Introduction to Computer Security",
+    "credits": 3,
+    "prereq_raw": "ECCE354, or COSC354"
   },
   {
     "code": "COSC 354",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Operating Systems",
+    "credits": 3,
+    "prereq_raw": "ECCE230, or COSC230"
   },
   {
     "code": "COSC 377",
-    "title": null,
-    "credits": null,
+    "title": "Undergraduate Research",
+    "credits": 3,
     "prereq_raw": ""
   },
   {
     "code": "COSC 391",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Independent Study I",
+    "credits": 3,
+    "prereq_raw": "Department Approval and Junior standing. Students must have a CGPA of 3.3 or more"
   },
   {
     "code": "COSC 395",
-    "title": null,
-    "credits": null,
+    "title": "Special Topics in Computer Science",
+    "credits": 3,
     "prereq_raw": ""
   },
   {
     "code": "COSC 399",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Computer Science Internship",
+    "credits": 1,
+    "prereq_raw": "GENS300"
   },
   {
     "code": "COSC 401",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Computational Social Science",
+    "credits": 3,
+    "prereq_raw": "COSC312,( COSC410, or ECCE440)"
   },
   {
     "code": "COSC 410",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Parallel and Distributed Computing",
+    "credits": 3,
+    "prereq_raw": "COSC312,( ECCE354, or COSC354)"
   },
   {
     "code": "COSC 412",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Numerical Computing",
+    "credits": 3,
+    "prereq_raw": "COSC312"
   },
   {
     "code": "COSC 430",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Data Analytics",
+    "credits": 3,
+    "prereq_raw": "COSC330,( MATH242, or MATH243)"
   },
   {
     "code": "COSC 432",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Algorithmic Robotics",
+    "credits": 3,
+    "prereq_raw": "COSC330"
   },
   {
     "code": "COSC 433",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Neural Networks",
+    "credits": 3,
+    "prereq_raw": "COSC330"
   },
   {
     "code": "COSC 434",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Introduction to Machine Learning",
+    "credits": 3,
+    "prereq_raw": "COSC330, MATH204,( MATH243, or MATH242)"
   },
   {
     "code": "COSC 435",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Introduction to AI/ML for Cybersecurity",
+    "credits": 3,
+    "prereq_raw": "( ECCE454, or COSC330),( COSC340, or ECCE444)"
   },
   {
     "code": "COSC 436",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Software Testing and Quality Assurance",
+    "credits": 3,
+    "prereq_raw": "ECCE336, or COSC336"
   },
   {
     "code": "COSC 438",
-    "title": null,
-    "credits": null,
+    "title": "Software Architecture",
+    "credits": 3,
     "prereq_raw": ""
   },
   {
     "code": "COSC 440",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Digital Forensics",
+    "credits": 3,
+    "prereq_raw": "COSC340, or COSC340"
   },
   {
     "code": "COSC 442",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Applied Cryptography",
+    "credits": 3,
+    "prereq_raw": "COSC340, or ECCE444"
   },
   {
     "code": "COSC 444",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Database Systems",
+    "credits": 3,
+    "prereq_raw": "COSC336, or ECCE336"
   },
   {
     "code": "COSC 449",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "iOS App Development",
+    "credits": 3,
+    "prereq_raw": "COSC230, or ECCE230"
   },
   {
     "code": "COSC 452",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Human-Computer Interaction",
+    "credits": 3,
+    "prereq_raw": "ECCE336, or COSC336"
   },
   {
     "code": "COSC 454",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Computer Graphics",
+    "credits": 3,
+    "prereq_raw": "COSC312"
   },
   {
     "code": "COSC 456",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Image Processing and Analysis",
+    "credits": 3,
+    "prereq_raw": "COSC230, or ECCE230"
   },
   {
     "code": "COSC 460",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Bioinformatics and Genomic Data Science",
+    "credits": 3,
+    "prereq_raw": "COSC312"
   },
   {
     "code": "COSC 462",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Mobile and Web Applications Development",
+    "credits": 3,
+    "prereq_raw": "COSC310"
   },
   {
     "code": "COSC 464",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Natural Language Processing",
+    "credits": 3,
+    "prereq_raw": "COSC330, or ECCE454"
   },
   {
     "code": "COSC 477",
-    "title": null,
-    "credits": null,
+    "title": "Undergraduate Research",
+    "credits": 3,
     "prereq_raw": ""
   },
   {
     "code": "COSC 491",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Independent Study II",
+    "credits": 3,
+    "prereq_raw": "Department Approval and Senior Standing. Students must have a CGPA of 3.3 or more."
   },
   {
     "code": "COSC 495",
-    "title": null,
-    "credits": null,
+    "title": "Special Topics in Computer Science",
+    "credits": 3,
     "prereq_raw": ""
   },
   {
     "code": "COSC 496",
-    "title": null,
-    "credits": null,
+    "title": "Artificial Intelligence Project",
+    "credits": 2,
     "prereq_raw": ""
   },
   {
     "code": "COSC 497",
-    "title": null,
-    "credits": null,
-    "prereq_raw": ""
+    "title": "Senior Design Project I",
+    "credits": 3,
+    "prereq_raw": "COSC312"
   },
   {
     "code": "COSC 498",
-    "title": null,
-    "credits": null,
+    "title": "Senior Design Project II",
+    "credits": 3,
+    "prereq_raw": "COSC497"
+  },
+  {
+    "code": "MATH 111",
+    "title": "Calculus I",
+    "credits": 4,
     "prereq_raw": ""
+  },
+  {
+    "code": "MATH 112",
+    "title": "Calculus II",
+    "credits": 4,
+    "prereq_raw": "( MATH105, or MATH111, or MATH111)"
+  },
+  {
+    "code": "MATH 204",
+    "title": "Linear Algebra",
+    "credits": 3,
+    "prereq_raw": "MATH106, or MATH112, or MATH161, or MATH212"
+  },
+  {
+    "code": "MATH 214",
+    "title": "Mathematical and Statistical Software",
+    "credits": 3,
+    "prereq_raw": "(MATH204, or MATH211), (MATH242, or MATH243 or MATH244), (ENGR114, or COSC114)"
+  },
+  {
+    "code": "MATH 232",
+    "title": "Engineering Mathematics",
+    "credits": 3,
+    "prereq_raw": "MATH112, or MATH106, or MATH161"
+  },
+  {
+    "code": "MATH 234",
+    "title": "Discrete Mathematics",
+    "credits": 3,
+    "prereq_raw": "MATH112, or MATH106, or MATH161"
+  },
+  {
+    "code": "MATH 243",
+    "title": "Probability and Statistical Inference",
+    "credits": 3,
+    "prereq_raw": "MATH112, or MATH106, or MATH161"
+  },
+  {
+    "code": "PHYS 121",
+    "title": "University Physics I",
+    "credits": 4,
+    "prereq_raw": "MATH111"
   }
 ]
