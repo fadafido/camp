@@ -1,0 +1,56 @@
+{
+  "model": "pure_gnn",
+  "hyperparameters": {
+    "method": "GraphSAGE dot-product (inductive student = mean of history course embeddings)",
+    "embedding_dim": 64,
+    "final_val_auc": 0.97664,
+    "epochs_trained": 72
+  },
+  "n_test_samples": 6454,
+  "ranking_metrics": {
+    "Recall@1": 0.022366,
+    "Precision@1": 0.086768,
+    "NDCG@1": 0.086768,
+    "MAP@1": 0.086768,
+    "HitRatio@1": 0.086768,
+    "Recall@3": 0.078455,
+    "Precision@3": 0.095703,
+    "NDCG@3": 0.097678,
+    "MAP@3": 0.066905,
+    "HitRatio@3": 0.237527,
+    "Recall@5": 0.140443,
+    "Precision@5": 0.099132,
+    "NDCG@5": 0.117922,
+    "MAP@5": 0.069949,
+    "HitRatio@5": 0.370933,
+    "Recall@10": 0.286014,
+    "Precision@10": 0.105516,
+    "NDCG@10": 0.18833,
+    "MAP@10": 0.102847,
+    "HitRatio@10": 0.60908
+  },
+  "ndcg10_by_university": {
+    "aus": 0.207946,
+    "khalifa": 0.164024,
+    "unc": 0.194791
+  },
+  "classification_metrics": {
+    "accuracy_micro": 0.788304,
+    "accuracy_macro": 0.788304,
+    "precision_micro": 0.082609,
+    "precision_macro": 0.13425,
+    "recall_micro": 0.999958,
+    "recall_macro": 0.999834,
+    "f1_micro": 0.152611,
+    "f1_macro": 0.205163,
+    "roc_auc_micro": 0.893805,
+    "roc_auc_macro": 0.892206,
+    "roc_auc_macro_n_courses": 194
+  },
+  "prereq_violation_rate_topk": 0.373079,
+  "prereq_violation_topk_k": 10,
+  "total_prereq_violations": 24077,
+  "total_recommended": 64536,
+  "graduation_compliance": 0.355215,
+  "pathway_feasibility": 0.626934
+}

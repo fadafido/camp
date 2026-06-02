@@ -1,0 +1,55 @@
+{
+  "model": "matrix_factorisation",
+  "hyperparameters": {
+    "method": "TruncatedSVD",
+    "n_components": 32,
+    "random_state": 42
+  },
+  "n_test_samples": 6454,
+  "ranking_metrics": {
+    "Recall@1": 0.112011,
+    "Precision@1": 0.395104,
+    "NDCG@1": 0.395104,
+    "MAP@1": 0.395104,
+    "HitRatio@1": 0.395104,
+    "Recall@3": 0.299125,
+    "Precision@3": 0.364012,
+    "NDCG@3": 0.391417,
+    "MAP@3": 0.32241,
+    "HitRatio@3": 0.660211,
+    "Recall@5": 0.444324,
+    "Precision@5": 0.328293,
+    "NDCG@5": 0.41547,
+    "MAP@5": 0.315792,
+    "HitRatio@5": 0.788038,
+    "Recall@10": 0.646222,
+    "Precision@10": 0.23824,
+    "NDCG@10": 0.511882,
+    "MAP@10": 0.380775,
+    "HitRatio@10": 0.914472
+  },
+  "ndcg10_by_university": {
+    "aus": 0.58062,
+    "khalifa": 0.513753,
+    "unc": 0.449821
+  },
+  "classification_metrics": {
+    "accuracy_micro": 0.968168,
+    "accuracy_macro": 0.968168,
+    "precision_micro": 0.268042,
+    "precision_macro": 0.242101,
+    "recall_micro": 0.386987,
+    "recall_macro": 0.32231,
+    "f1_micro": 0.316715,
+    "f1_macro": 0.242339,
+    "roc_auc_micro": 0.946757,
+    "roc_auc_macro": 0.926322,
+    "roc_auc_macro_n_courses": 194
+  },
+  "prereq_violation_rate_topk": 0.144849,
+  "prereq_violation_topk_k": 10,
+  "total_prereq_violations": 9348,
+  "total_recommended": 64536,
+  "graduation_compliance": 0.423269,
+  "pathway_feasibility": 0.855149
+}

@@ -1,0 +1,133 @@
+{
+  "experiment": "CAMP with a stronger (deeper+wider) GraphSAGE encoder \u2014 ablation-style",
+  "framing": "CAMP variant (encoder swap); NOT a new baseline or headline claim",
+  "n_test_samples": 6454,
+  "budget_timesteps_per_institution": 100000,
+  "comparator_note": "Matched-budget comparator = CAMP-full trained at 100k/seed42/64-d IN THIS RUN. The 200k finalised CAMP (NDCG@10 0.591) is NOT the comparator. Phase D 5-seed 100k CAMP-full mean 0.568 +/- 0.008 corroborates the comparator scale.",
+  "stronger_encoder": {
+    "architecture": "3-layer heterogeneous GraphSAGE, 128-d (deeper+wider)",
+    "final_val_auc": 0.657395,
+    "committed_encoder_val_auc": 0.97664,
+    "best_epoch": 1,
+    "epochs_trained": 11,
+    "embedding_dim": 128,
+    "n_layers": 3
+  },
+  "arms": {
+    "camp_full_64d_100k": {
+      "metrics": {
+        "NDCG@10": 0.617385,
+        "Recall@10": 0.710048,
+        "f1_micro": 0.36455,
+        "roc_auc_micro": 0.864831,
+        "prereq_violation_rate_topk": 0.0,
+        "pathway_feasibility": 1.0,
+        "graduation_compliance": 0.401267,
+        "ndcg10_by_university": {
+          "aus": 0.699418,
+          "khalifa": 0.657489,
+          "unc": 0.50647
+        }
+      },
+      "training": {
+        "khalifa": {
+          "institution": "khalifa",
+          "total_timesteps": 100000,
+          "final_eval_reward": 57.903571436856865,
+          "first_quartile_eval_reward": 51.6202,
+          "last_quartile_eval_reward": 57.9036,
+          "converged": true,
+          "mean_planning_reward": 41.4036,
+          "mean_imitation_reward": 16.5,
+          "w_plan": 1.0,
+          "w_imit": 12.0,
+          "seed": 42
+        },
+        "aus": {
+          "institution": "aus",
+          "total_timesteps": 100000,
+          "final_eval_reward": 64.2000669642857,
+          "first_quartile_eval_reward": 52.6549,
+          "last_quartile_eval_reward": 64.2001,
+          "converged": true,
+          "mean_planning_reward": 45.3001,
+          "mean_imitation_reward": 18.9,
+          "w_plan": 1.0,
+          "w_imit": 12.0,
+          "seed": 42
+        },
+        "unc": {
+          "institution": "unc",
+          "total_timesteps": 100000,
+          "final_eval_reward": 50.425535708250735,
+          "first_quartile_eval_reward": 39.6205,
+          "last_quartile_eval_reward": 50.4255,
+          "converged": true,
+          "mean_planning_reward": 41.2755,
+          "mean_imitation_reward": 9.15,
+          "w_plan": 1.0,
+          "w_imit": 12.0,
+          "seed": 42
+        }
+      }
+    },
+    "camp_strong_128d_100k": {
+      "metrics": {
+        "NDCG@10": 0.616145,
+        "Recall@10": 0.701632,
+        "f1_micro": 0.357437,
+        "roc_auc_micro": 0.857856,
+        "prereq_violation_rate_topk": 0.0,
+        "pathway_feasibility": 1.0,
+        "graduation_compliance": 0.455927,
+        "ndcg10_by_university": {
+          "aus": 0.707371,
+          "khalifa": 0.624313,
+          "unc": 0.528247
+        }
+      },
+      "training": {
+        "khalifa": {
+          "institution": "khalifa",
+          "total_timesteps": 100000,
+          "final_eval_reward": 52.17107143737908,
+          "first_quartile_eval_reward": 50.6513,
+          "last_quartile_eval_reward": 52.1711,
+          "converged": true,
+          "mean_planning_reward": 40.6211,
+          "mean_imitation_reward": 11.55,
+          "w_plan": 1.0,
+          "w_imit": 12.0,
+          "seed": 42
+        },
+        "aus": {
+          "institution": "aus",
+          "total_timesteps": 100000,
+          "final_eval_reward": 61.97794642857142,
+          "first_quartile_eval_reward": 51.6242,
+          "last_quartile_eval_reward": 61.9779,
+          "converged": true,
+          "mean_planning_reward": 43.9779,
+          "mean_imitation_reward": 18.0,
+          "w_plan": 1.0,
+          "w_imit": 12.0,
+          "seed": 42
+        },
+        "unc": {
+          "institution": "unc",
+          "total_timesteps": 100000,
+          "final_eval_reward": 52.10953570835691,
+          "first_quartile_eval_reward": 42.9757,
+          "last_quartile_eval_reward": 52.1095,
+          "converged": true,
+          "mean_planning_reward": 41.6095,
+          "mean_imitation_reward": 10.5,
+          "w_plan": 1.0,
+          "w_imit": 12.0,
+          "seed": 42
+        }
+      }
+    }
+  },
+  "ndcg10_delta_strong_minus_full": -0.00124
+}

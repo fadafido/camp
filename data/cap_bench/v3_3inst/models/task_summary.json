@@ -1,0 +1,35 @@
+{
+  "vocab_size": 194,
+  "splits": {
+    "train": {
+      "n_samples": 29940,
+      "mean_target_set_size": 3.7006,
+      "std_target_set_size": 1.3146,
+      "per_university": {
+        "aus": 9648,
+        "khalifa": 10402,
+        "unc": 9890
+      }
+    },
+    "val": {
+      "n_samples": 6320,
+      "mean_target_set_size": 3.7491,
+      "std_target_set_size": 1.3282,
+      "per_university": {
+        "aus": 2007,
+        "khalifa": 2199,
+        "unc": 2114
+      }
+    },
+    "test": {
+      "n_samples": 6454,
+      "mean_target_set_size": 3.6983,
+      "std_target_set_size": 1.2997,
+      "per_university": {
+        "aus": 1985,
+        "khalifa": 2204,
+        "unc": 2265
+      }
+    }
+  }
+}
