@@ -6,7 +6,8 @@ is known to collapse to a per-institution template). Reuses the *exact* evaluati
 read-out ``camp._camp_scores`` (greedy masked sequential rollout) and reports
 CAMP's top-k recommended next-term set per probed student.
 
-CHECK 2 — Data-realism audit over all 4,500 committed synthetic transcripts.
+CHECK 2 — Data-realism audit over all committed synthetic transcripts (the count
+is whatever the current dataset build produced; not asserted here).
 Characterises failure and repeat behaviour to judge whether repeat realism is
 sound: fail rate by GPA band, repeat gap distribution of failed courses,
 failed-and-never-repeated split by required/elective (with a graduate

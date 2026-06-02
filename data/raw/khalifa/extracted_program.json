@@ -1,0 +1,8 @@
+{
+  "programme": "Bachelor of Science in Computer Science",
+  "university": "khalifa",
+  "source_url": "https://catalog.ku.ac.ae/ (Khalifa University 2024-2025 Undergraduate Catalog; committed raw tree: data/raw/khalifa/raw_catalog_local.json)",
+  "access_date": "2026-06-02",
+  "referenced_course_codes": [],
+  "source_limitation": "Sitecore navigation sitemap: only course codes present; no titles, credits or prerequisites in the committed raw files."
+}

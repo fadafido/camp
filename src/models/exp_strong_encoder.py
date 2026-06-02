@@ -8,8 +8,9 @@ variant (CAMP vs CAMP-with-stronger-encoder) — NOT a new baseline, NOT a headl
 
 Stronger encoder (the only architectural change)
 -------------------------------------------------
-Committed encoder: 2-layer heterogeneous GraphSAGE, 64-d (val link-prediction
-AUC 0.977). This variant: **3-layer, 128-d** GraphSAGE — deeper AND wider —
+Committed encoder: 2-layer heterogeneous GraphSAGE, 64-d (its val link-prediction
+AUC is read at runtime from the freshly-trained ``embeddings.pt`` artefact — no
+number is hard-coded here). This variant: **3-layer, 128-d** GraphSAGE — deeper AND wider —
 trained on the SAME heterogeneous graph, SAME link-prediction objective, SAME
 val-edge split, SAME optimiser/lr/aggregator, seed 42. Saved to a NEW file
 ``models/embeddings_strong.pt`` (the committed ``embeddings.pt`` is untouched).
@@ -58,7 +59,17 @@ OUT_PATH = RESULTS_DIR / "camp_strong_encoder.json"
 
 BUDGET = 100_000  # matched to the ablation budget (CPU); comparator trained here too
 SEED = 42
-COMMITTED_ENCODER_AUC = 0.9767331020939901
+
+
+def _committed_encoder_auc() -> float | None:
+    """Val link-prediction AUC of the committed 64-d encoder, read at runtime from
+    the freshly-trained ``embeddings.pt`` artefact. Returns None if absent — never
+    a hard-coded historical value."""
+    if not ORIG_EMB_PATH.exists():
+        return None
+    blob = torch.load(ORIG_EMB_PATH, map_location="cpu", weights_only=False)
+    auc = blob.get("final_val_auc")
+    return float(auc) if auc is not None else None
 
 # Stronger encoder: deeper (3 layers) and wider (128-d); else identical to gnn.py.
 STRONG_HP = {
@@ -178,10 +189,11 @@ def train_strong_encoder() -> dict[str, Any]:
         w = csv.writer(fh)
         w.writerow(["epoch", "train_loss", "val_auc"])
         w.writerows(curve)
+    committed_auc = _committed_encoder_auc()  # read from this run's embeddings.pt
     return {
         "architecture": "3-layer heterogeneous GraphSAGE, 128-d (deeper+wider)",
         "final_val_auc": round(best_auc, 6),
-        "committed_encoder_val_auc": round(COMMITTED_ENCODER_AUC, 6),
+        "committed_encoder_val_auc": round(committed_auc, 6) if committed_auc is not None else None,
         "best_epoch": best_epoch, "epochs_trained": len(curve),
         "embedding_dim": STRONG_HP["embedding_dim"], "n_layers": STRONG_HP["n_layers"],
     }

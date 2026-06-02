@@ -1,0 +1,278 @@
+[
+  {
+    "code": "COSC 011",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 101",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 114",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 201",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 202",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 230",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 296",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 301",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 310",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 312",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 320",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 330",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 333",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 336",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 340",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 354",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 377",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 391",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 395",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 399",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 401",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 410",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 412",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 430",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 432",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 433",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 434",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 435",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 436",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 438",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 440",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 442",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 444",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 449",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 452",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 454",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 456",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 460",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 462",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 464",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 477",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 491",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 495",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 496",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 497",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  },
+  {
+    "code": "COSC 498",
+    "title": null,
+    "credits": null,
+    "prereq_raw": ""
+  }
+]

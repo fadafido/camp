@@ -1,0 +1,2816 @@
+[
+  {
+    "code": "COMP 110",
+    "title": "Introduction to Programming",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, A C or better in one of the following courses: MATH 130 , 152 , 210 , 231 , 129P , or PHIL 155 , or STOR 120 , 151 , 155 ."
+  },
+  {
+    "code": "COMP 116",
+    "title": "Introduction to Scientific Programming",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, A grade of C or better in one of the following courses: MATH 130 , 152 , 210 , 231 , 129P , or PHIL 155 , or STOR 120 , 151 , 155 ."
+  },
+  {
+    "code": "COMP 126",
+    "title": "Practical Web Design and Development for Everyone",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 190",
+    "title": "Topics in Computing",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 210",
+    "title": "Data Structures and Analysis",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 110 and MATH 231 ; a grade of C or better is required; Pre- or corequisites, COMP 283 or MATH 381 or STOR 315 ."
+  },
+  {
+    "code": "COMP 211",
+    "title": "Systems Fundamentals",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, COMP 210 ; COMP 283 or MATH 381 or STOR 315 ; a grade of C or better is required in both prerequisite courses."
+  },
+  {
+    "code": "COMP 222",
+    "title": "ACM Programming Competition Practice",
+    "credits": "1",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 227",
+    "title": "Effective Peer Teaching in Computer Science",
+    "credits": "3",
+    "prereq_raw": "Pre- or corequisite, COMP 210 or 401 ."
+  },
+  {
+    "code": "COMP 283",
+    "title": "Discrete Structures",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 231 or MATH 241; a grade of C or better is required."
+  },
+  {
+    "code": "COMP 290",
+    "title": "Special Topics in Computer Science",
+    "credits": "1",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 293",
+    "title": "Internship in Computer Science",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 231 or 241; COMP 210 , COMP 211 , and COMP 301 ; a grade of C or better is required in COMP 210 , 211 , and 301 ."
+  },
+  {
+    "code": "COMP 301",
+    "title": "Foundations of Programming",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, COMP 210 ; COMP 283 or MATH 381 or STOR 315 ; a grade of C or better is required in both prerequisite courses."
+  },
+  {
+    "code": "COMP 311",
+    "title": "Computer Organization",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, COMP 211 ; a grade of C or better is required."
+  },
+  {
+    "code": "COMP 380",
+    "title": "Technology, Ethics, & Culture",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 388",
+    "title": "The Internet: Studies and Stories",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, COMP 380 ; a grade of C or better is required."
+  },
+  {
+    "code": "COMP 390",
+    "title": "Computer Science Elective Topics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 393",
+    "title": "Software Engineering Practicum",
+    "credits": "1-3",
+    "prereq_raw": "Prerequisites, COMP 211 and 301 , or COMP 401 , 410 , and 411 ; a grade of C or better is required in all prerequisite courses."
+  },
+  {
+    "code": "COMP 401",
+    "title": "Foundation of Programming",
+    "credits": "4",
+    "prereq_raw": "Prerequisite, MATH 231 or MATH 241; a grade of C or better is required."
+  },
+  {
+    "code": "COMP 410",
+    "title": "Data Structures",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 231 or 241, and COMP 401 ; a grade of C or better is required in all prerequisite courses."
+  },
+  {
+    "code": "COMP 411",
+    "title": "Computer Organization",
+    "credits": "4",
+    "prereq_raw": "Prerequisite, MATH 231 or 241,and COMP 401 ; a grade of C or better is required in all prerequisite courses."
+  },
+  {
+    "code": "COMP 421",
+    "title": "Files and Databases",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 210 , 211 , and 301 ; or COMP 401 , 410 , and 411 ; a grade of C or better is required in all prerequisite courses."
+  },
+  {
+    "code": "COMP 423",
+    "title": "Foundations of Software Engineering",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, C or better in both COMP 211 and COMP 301 ."
+  },
+  {
+    "code": "COMP 426",
+    "title": "Modern Web Programming",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 211 and 301 ; or COMP 401 and 410 ; a grade of C or better is required in all prerequisite courses."
+  },
+  {
+    "code": "COMP 431",
+    "title": "Internet Services and Protocols",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 210 , 211 , and 301 ; or COMP 401 , 410 , and 411 ; a grade of C or better is required in all prerequisite courses."
+  },
+  {
+    "code": "COMP 433",
+    "title": "Mobile Computing Systems",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 210 , 211 , and 301 ; or COMP 401 , 410 , and 411 ; a grade of C or better is required in all prerequisite courses."
+  },
+  {
+    "code": "COMP 435",
+    "title": "Computer Security Concepts",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 210 , 211 , and 301 ; or COMP 401 , 410 , and 411 ; a grade of C or better is required in all prerequisite courses."
+  },
+  {
+    "code": "COMP 447",
+    "title": "Quantum Computing",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 232 , and PHYS 116 or 118 ."
+  },
+  {
+    "code": "COMP 455",
+    "title": "Models of Languages and Computation",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 210 or 410 and COMP 283 or MATH 381 or STOR 315 ; a grade of C or better in all prerequisite courses is required."
+  },
+  {
+    "code": "COMP 475",
+    "title": "2D Computer Graphics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 210 , 211 , and 301 ; or COMP 401 , 410 , and 411 ; a grade of C or better is required in all prerequisite courses."
+  },
+  {
+    "code": "COMP 486",
+    "title": "Applications of Natural Language Processing",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 487",
+    "title": "Information Retrieval",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 488",
+    "title": "Data Science in the Business World",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 495",
+    "title": "Mentored Research in Computer Science",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 496",
+    "title": "Independent Study in Computer Science",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 50",
+    "title": "First-Year Seminar: Everyday Computing",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 520",
+    "title": "Compilers",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 301 , 311 , and 455 or COMP 410 , 411 , and 455 ; a grade of C or better is required in all prerequisite courses."
+  },
+  {
+    "code": "COMP 523",
+    "title": "Software Engineering Laboratory",
+    "credits": "4",
+    "prereq_raw": "Prerequisites, COMP 301 and 311 ; or COMP 401 , 410 , and 411 ; as well as at least two chosen from COMP 421 , 426 , 431 , 433 , 520 , 530 , 535 , 575 , 580, 590 ."
+  },
+  {
+    "code": "COMP 524",
+    "title": "Programming Language Concepts",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, COMP 301 or COMP 401 ; a grade of C or better is required in all prerequisite courses."
+  },
+  {
+    "code": "COMP 530",
+    "title": "Operating Systems",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 301 and 311 ; or COMP 401 , 410 , and 411 ; a grade of C or better is required in all prerequisite courses."
+  },
+  {
+    "code": "COMP 533",
+    "title": "Distributed Systems and Concurrent Programming",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, COMP 301 ; a grade of C or better is required."
+  },
+  {
+    "code": "COMP 535",
+    "title": "Introduction to Computer Security",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 301 and 311 ; or COMP 401 , 410 , and 411 ; as well as COMP 550 , and COMP 283 or MATH 381 or STOR 315 ; a grade of C or better is required in all prerequisites."
+  },
+  {
+    "code": "COMP 537",
+    "title": "Cryptography",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 211 and COMP 301 ; permission of the instructor for students lacking the prerequisites."
+  },
+  {
+    "code": "COMP 541",
+    "title": "Digital Logic and Computer Design",
+    "credits": "4",
+    "prereq_raw": "Prerequisites, COMP 301 and 311 ; or COMP 401 , 410 , and 411 ; a grade of C or better is required in all prerequisite courses."
+  },
+  {
+    "code": "COMP 545",
+    "title": "Programming Intelligent Physical Systems",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 301 and COMP 311 ; or COMP 411 ; a C or better is required in all pre-requisites."
+  },
+  {
+    "code": "COMP 550",
+    "title": "Algorithms and Analysis",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 211 and 301 ; or COMP 410 ; a grade of C or better is required in all prerequisite courses."
+  },
+  {
+    "code": "COMP 555",
+    "title": "Bioalgorithms",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 210 , and 211 ; or COMP 401 , and 410 ; and MATH 231 , or 241; or BIOL 452 ; or MATH 553; or BIOL 525 ; a grade of C or better is required in all prerequisite courses."
+  },
+  {
+    "code": "COMP 560",
+    "title": "Artificial Intelligence",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 211 and 301 ; or COMP 401 and 410 ; as well as MATH 231 ; a grade of C or better is required in all prerequisite courses."
+  },
+  {
+    "code": "COMP 562",
+    "title": "Introduction to Machine Learning",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 211 and 301 ; or COMP 401 and 410 ; as well as MATH 233 , 347 , and STOR 435 or STOR 535 or BIOS 650 ; a grade of C or better is required in all prerequisite courses; permission of the instructor for students lacking the prerequisites."
+  },
+  {
+    "code": "COMP 572",
+    "title": "Computational Photography",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 301 ; or COMP 401 and 410 ; as well as MATH 347 or 577 ; a grade of C or better is required in all prerequisite courses."
+  },
+  {
+    "code": "COMP 575",
+    "title": "Introduction to Computer Graphics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 301 and 311 ; or COMP 401 , 410 and 411 ; as well as MATH 347 or MATH 577 ; a grade of C or better is required in all prerequisite courses."
+  },
+  {
+    "code": "COMP 576",
+    "title": "Mathematics for Image Computing",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 116 or 210 or 401 , and MATH 233 ; a grade of C or better is required in all prerequisites."
+  },
+  {
+    "code": "COMP 577",
+    "title": "Introduction to Computer Vision",
+    "credits": "3",
+    "prereq_raw": "Pre- or corequisites, COMP 211 , COMP 301 , and MATH 347 ; permission of the instructor for students lacking the prerequisites."
+  },
+  {
+    "code": "COMP 581",
+    "title": "Introduction to Robotics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 301 and 311 ; or COMP 401 , 410 , and 411 ; a grade of C or better is required in all prerequisite courses."
+  },
+  {
+    "code": "COMP 586",
+    "title": "Natural Language Processing",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 301 , COMP 311 , and COMP 562 or COMP 755 or STOR 565 or equivalent machine learning course; a grade of C or better is required in all prerequisite courses."
+  },
+  {
+    "code": "COMP 590",
+    "title": "Topics in Computer Science",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 211 and COMP 301 ."
+  },
+  {
+    "code": "COMP 60",
+    "title": "First-Year Seminar: Robotics with LEGO®",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 616",
+    "title": "Information Visualization",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 617",
+    "title": "Visualization Design Methods",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 630",
+    "title": "Operating System Implementation",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, COMP 530 ; a grade of B+ or better is required; permission of the instructor for students lacking the prerequisite."
+  },
+  {
+    "code": "COMP 631",
+    "title": "Networked and Distributed Systems",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 431 and COMP 530 ; a grade of C or better is required in all prerequisite courses; Permission of the instructor for students lacking the prerequisites."
+  },
+  {
+    "code": "COMP 633",
+    "title": "Parallel and Distributed Computing",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 635",
+    "title": "Wireless and Mobile Communications",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, COMP 431 ."
+  },
+  {
+    "code": "COMP 636",
+    "title": "Distributed Collaborative Systems",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, COMP 431 or 530 ; permission of the instructor for students lacking the prerequisite."
+  },
+  {
+    "code": "COMP 637",
+    "title": "Formal Methods for System Security",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, Graduate status or undergraduate status with a C or better in COMP 311 and COMP 455 ."
+  },
+  {
+    "code": "COMP 65",
+    "title": "First-Year Seminar: Folding, from Paper to Proteins",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 651",
+    "title": "Computational Geometry",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, COMP 550 ."
+  },
+  {
+    "code": "COMP 652",
+    "title": "Logical Foundations of Program Correctness",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, Graduate students or undergraduate with a C or higher in COMP 283 , COMP 210 , COMP 211 , COMP 301 , and COMP 455 ."
+  },
+  {
+    "code": "COMP 662",
+    "title": "Scientific Computation II",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 661 ."
+  },
+  {
+    "code": "COMP 664",
+    "title": "Deep Learning",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 562 , COMP 755 , or STOR 565 and MATH 201, 347 , or 577 and MATH 233 or 522 ; permission of the instructor for student lacking the prerequisites."
+  },
+  {
+    "code": "COMP 667",
+    "title": "Video Analysis with Deep Learning",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, COMP 560 , COMP 562 , STOR 565 , COMP 664 , COMP 755 , or COMP 776 ."
+  },
+  {
+    "code": "COMP 672",
+    "title": "Simulation Modeling and Analysis",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, STOR 555 and 641 ."
+  },
+  {
+    "code": "COMP 683",
+    "title": "Computational Biology",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 577 or MATH 347 ; COMP 562 or STOR 520 or STOR 565 ; grade of C or better is required in all prerequisite courses."
+  },
+  {
+    "code": "COMP 690",
+    "title": "Special Topics in Computer Science",
+    "credits": "1-4",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 691H",
+    "title": "Honors Thesis in Computer Science",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 692H",
+    "title": "Honors Thesis in Computer Science",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 720",
+    "title": "Compilers",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 455 , 520 , and 524 ."
+  },
+  {
+    "code": "COMP 721",
+    "title": "Database Management Systems",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 521 and 550 ."
+  },
+  {
+    "code": "COMP 723",
+    "title": "Software Design and Implementation",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 524 and 550 ."
+  },
+  {
+    "code": "COMP 724",
+    "title": "Programming Languages",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 455 , 520 , and 524 ."
+  },
+  {
+    "code": "COMP 730",
+    "title": "Operating Systems",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, COMP 530 ."
+  },
+  {
+    "code": "COMP 734",
+    "title": "Distributed Systems",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, COMP 431 ; permission of the instructor for students lacking the prerequisite."
+  },
+  {
+    "code": "COMP 735",
+    "title": "Distributed and Concurrent Algorithms",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 530 and 550 ."
+  },
+  {
+    "code": "COMP 737",
+    "title": "Real-Time Systems",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, COMP 530 ."
+  },
+  {
+    "code": "COMP 740",
+    "title": "Computer Architecture and Implementation",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 411 and PHYS 352."
+  },
+  {
+    "code": "COMP 750",
+    "title": "Algorithm Analysis",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 455 and 550 ."
+  },
+  {
+    "code": "COMP 755",
+    "title": "Machine Learning",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 347 /547, or 577 , and STOR 435 ; a grade of C or better is required in all prerequisite courses."
+  },
+  {
+    "code": "COMP 763",
+    "title": "Semantics and Program Correctness",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, COMP 724 ."
+  },
+  {
+    "code": "COMP 766",
+    "title": "Visual Solid Shape",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 233 ."
+  },
+  {
+    "code": "COMP 770",
+    "title": "Computer Graphics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 665 and 761."
+  },
+  {
+    "code": "COMP 775",
+    "title": "Image Processing and Analysis",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 233 , MATH 547/ 347 , and STOR 435 ."
+  },
+  {
+    "code": "COMP 776",
+    "title": "Computer Vision in our 3D World",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 566 , COMP 550 , 665, and 775 ; permission of the instructor for students lacking the prerequisites."
+  },
+  {
+    "code": "COMP 777",
+    "title": "Optimal Estimation in Image Analysis",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 233 , MATH 347 /547, and MATH 535 or STOR 435 ."
+  },
+  {
+    "code": "COMP 781",
+    "title": "Robotics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 550 and MATH 347 /547; Permission of the instructor for students lacking the prerequisites."
+  },
+  {
+    "code": "COMP 782",
+    "title": "Motion Planning in Physical and Virtual Worlds",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, COMP 550 ; permission of the instructor for students lacking the prerequisite."
+  },
+  {
+    "code": "COMP 786",
+    "title": "Natural Language Processing",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, COMP 562 ."
+  },
+  {
+    "code": "COMP 790",
+    "title": "Topics in Computer Science",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 822",
+    "title": "Topics in Discrete Optimization",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 712 ; Permission of the instructor for students lacking the prerequisite."
+  },
+  {
+    "code": "COMP 832",
+    "title": "Multimedia Networking",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, COMP 431 and 530 ."
+  },
+  {
+    "code": "COMP 872",
+    "title": "Exploring Virtual Worlds",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, COMP 870."
+  },
+  {
+    "code": "COMP 875",
+    "title": "Recent Advances in Image Analysis",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, COMP 775 ."
+  },
+  {
+    "code": "COMP 89",
+    "title": "First -Year Seminar: Special Topics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 892",
+    "title": "Practicum",
+    "credits": "0.5",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 910",
+    "title": "Computer Science Module",
+    "credits": "0.5",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 915",
+    "title": "Technical Communication in Computer Science",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 990",
+    "title": "Research Seminar in Computer Science",
+    "credits": "1-21",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 991",
+    "title": "Reading and Research",
+    "credits": "1-21",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 992",
+    "title": "Master's (Non-Thesis)",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 993",
+    "title": "Master's Research and Thesis",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "COMP 994",
+    "title": "Doctoral Research and Dissertation",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 100",
+    "title": "Economic Principles",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 101",
+    "title": "Introduction to Economics",
+    "credits": "4",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 111",
+    "title": "The Economics of Entrepreneurship and Innovation",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 125",
+    "title": "Introduction to Entrepreneurship",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 193",
+    "title": "Internship in Shuford Program in Entrepreneurship",
+    "credits": "1-3",
+    "prereq_raw": "Prerequisites, ECON 125 and ECON 325 ."
+  },
+  {
+    "code": "ECON 290",
+    "title": "Special Topics",
+    "credits": "1-3",
+    "prereq_raw": "Prerequisites, ECON 400 and 410 or permission of the instructor."
+  },
+  {
+    "code": "ECON 291",
+    "title": "Undergraduate Learning Assistant Seminar and Practicum",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 292",
+    "title": "Career Preparation for Economics Majors",
+    "credits": "1",
+    "prereq_raw": "Prerequisites, ECON 400 and ECON 410 ; permission from instructor for students lacking the prerequisites."
+  },
+  {
+    "code": "ECON 293",
+    "title": "Internship",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 310",
+    "title": "Microeconomics: Theory and Applications",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 101 ."
+  },
+  {
+    "code": "ECON 320",
+    "title": "Macroeconomics: Theory and Policy",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 325",
+    "title": "Entrepreneurship: Principles, Concepts, Frameworks, and Fluency",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 125 ; permission of the instructor for students lacking the prerequisite."
+  },
+  {
+    "code": "ECON 326",
+    "title": "Social Entrepreneurship",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 327",
+    "title": "Venture-Creation Workshop",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 325 ; permission of the instructor for students lacking the prerequisite."
+  },
+  {
+    "code": "ECON 328",
+    "title": "Arts Entrepreneurship",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 101 , 125 , and 325 ."
+  },
+  {
+    "code": "ECON 330",
+    "title": "Economic History of the United States",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 345",
+    "title": "Public Policy Toward Business",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 310 or 410 ."
+  },
+  {
+    "code": "ECON 360",
+    "title": "Survey of International and Development Economics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 362",
+    "title": "Exploring Economies",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 101 ; a grade of C or better is required."
+  },
+  {
+    "code": "ECON 370",
+    "title": "Economic Applications of Data Science",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 101 ."
+  },
+  {
+    "code": "ECON 380",
+    "title": "The Economics of Labor Relations",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 310 or 410 ."
+  },
+  {
+    "code": "ECON 384",
+    "title": "Gateway to Philosophy, Politics, and Economics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 390",
+    "title": "Special Topics",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 393",
+    "title": "Practicum in Entrepreneurship",
+    "credits": "3-6",
+    "prereq_raw": "Prerequisites, ECON 125 , 325 , and an internship approved by the Shuford coordinator."
+  },
+  {
+    "code": "ECON 394",
+    "title": "Advanced Entrepreneurship Practicum",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 325 and ECON 327 or equivalent; permission from instructor for students lacking the prerequisites."
+  },
+  {
+    "code": "ECON 395",
+    "title": "Research Course",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 396",
+    "title": "Independent Study in Entrepreneurship",
+    "credits": "1-3",
+    "prereq_raw": "Prerequisites, ECON 125 and ECON 325 ."
+  },
+  {
+    "code": "ECON 400",
+    "title": "Introduction to Data Science and Econometrics",
+    "credits": "4",
+    "prereq_raw": "Prerequisites, ECON 101 with a grade of C or better; MATH 152 , 231 , STOR 112, or 113 with a grade of C- or better."
+  },
+  {
+    "code": "ECON 410",
+    "title": "Intermediate Microeconomics",
+    "credits": "4",
+    "prereq_raw": "Prerequisite, ECON 101 with a grade of C or better; MATH 152 , 231 , STOR 112, or 113 with a grade of C- or better."
+  },
+  {
+    "code": "ECON 411",
+    "title": "Game Theory",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 410 with a grade of C or better, or COMP 550 , POLI 287 , or POLI 288 ; permission of the instructor for students lacking the prerequisite."
+  },
+  {
+    "code": "ECON 415",
+    "title": "Market Failures",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 410 with a grade of C or better."
+  },
+  {
+    "code": "ECON 416",
+    "title": "Behavioral Economics",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 410 with a grade of C or better."
+  },
+  {
+    "code": "ECON 420",
+    "title": "Intermediate Macroeconomics",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 410 with a grade of C or better."
+  },
+  {
+    "code": "ECON 423",
+    "title": "Financial Markets and Economic Fluctuations",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 , 410 , and 420 ; a grade of C or better in ECON 400 and 410 is required."
+  },
+  {
+    "code": "ECON 425",
+    "title": "Financial Economics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 , 410 , and 420 ; a grade of C or better in ECON 400 and 410 is required."
+  },
+  {
+    "code": "ECON 434",
+    "title": "History of Economic Doctrines",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 101 , 400 , and 410 ; a grade of C or better in ECON 400 and 410 is required."
+  },
+  {
+    "code": "ECON 436",
+    "title": "Urban Economics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 and 410 ; both with a grade of C or better."
+  },
+  {
+    "code": "ECON 440",
+    "title": "Analysis of Public Finance",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 and 410 ; a grade of C or better in ECON 400 and 410 is required."
+  },
+  {
+    "code": "ECON 445",
+    "title": "Industrial Organization",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 and 410 ; a grade of C or better in ECON 400 and 410 is required."
+  },
+  {
+    "code": "ECON 450",
+    "title": "Health Economics: Problems and Policy",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 and 410 ; a grade of C or better in ECON 400 and 410 is required; permission of the instructor for students lacking the prerequisites."
+  },
+  {
+    "code": "ECON 452",
+    "title": "Economics of Global Pandemics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 and ECON 410 with a grade C or better."
+  },
+  {
+    "code": "ECON 455",
+    "title": "Environmental Economic Theory",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 and 410 ; a grade of C or better in ECON 400 and 410 is required."
+  },
+  {
+    "code": "ECON 460",
+    "title": "International Economics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 and 410 ; a grade of C or better in ECON 400 and 410 is required."
+  },
+  {
+    "code": "ECON 461",
+    "title": "European Economic Integration",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 and 410 ; a grade of C or better is required in ECON 400 and 410 ; permission of the instructor for students lacking the prerequisites."
+  },
+  {
+    "code": "ECON 465",
+    "title": "Economic Development",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 and 410 ; a grade of C or better in ECON 400 and 410 is required; permission of the instructor for students lacking the prerequisites."
+  },
+  {
+    "code": "ECON 468",
+    "title": "Socialism, Planning, and the Contemporary Russian Economy",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 , and 310 or 410 ; a grade of C or better in ECON 400 , and 310 or 410 is required."
+  },
+  {
+    "code": "ECON 469",
+    "title": "Asian Economic Systems",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 , and 310 or 410 ; a grade of C or better in ECON 400 , and 310 or 410 is required."
+  },
+  {
+    "code": "ECON 470",
+    "title": "Econometrics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 and 410 ; a grade of C or better in ECON 400 and 410 is required."
+  },
+  {
+    "code": "ECON 480",
+    "title": "Labor Economics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 and 410 ; a grade of C or better in ECON 400 and 410 is required."
+  },
+  {
+    "code": "ECON 485",
+    "title": "Economics of Sports",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 and 410 ; a grade of C or better in ECON 400 and 410 is required."
+  },
+  {
+    "code": "ECON 486",
+    "title": "Gender and Economics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 and 410 ; a grade of C or better in ECON 400 and 410 is required."
+  },
+  {
+    "code": "ECON 487",
+    "title": "Economics of Life: Applying Economics to Life's Big Questions",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 410 ."
+  },
+  {
+    "code": "ECON 490",
+    "title": "Special Topics",
+    "credits": "1-3",
+    "prereq_raw": "Prerequisites, ECON 400 and 410 ; a grade of C or better in ECON 400 and 410 is required."
+  },
+  {
+    "code": "ECON 493",
+    "title": "Practicum in Quantitative Financial Economics",
+    "credits": "1",
+    "prereq_raw": "Prerequisites, ECON 400 , 410 , and 425 ; a grade of C or better in ECON 400 and 410 is required; corequisite, ECON 525 ."
+  },
+  {
+    "code": "ECON 495",
+    "title": "Research Course",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 496",
+    "title": "Independent Study",
+    "credits": "1-3",
+    "prereq_raw": "Prerequisite, ECON 410 ; a grade of C or better in ECON 410 is required."
+  },
+  {
+    "code": "ECON 510",
+    "title": "Advanced Microeconomic Theory",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 and 410 ; a grade of C or better in ECON 400 and 410 is required."
+  },
+  {
+    "code": "ECON 511",
+    "title": "Advanced Game Theory in Economics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 , 411 and 410 ; a grade of C or better is required; permission of the instructor for students lacking the prerequisites."
+  },
+  {
+    "code": "ECON 520",
+    "title": "Advanced Macroeconomic Theory",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 , 410 , and 420 ; a grade of C or better in ECON 400 and 410 is required."
+  },
+  {
+    "code": "ECON 522",
+    "title": "Macroeconomic Analysis of the Labor Market",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 , 410 , and 420 with a grade of C or better."
+  },
+  {
+    "code": "ECON 525",
+    "title": "Advanced Financial Economics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 , 410 , 425 and 470 ; a grade of C or better in ECON 400 , 410 and 470 is required; Corequisite, ECON 493 ."
+  },
+  {
+    "code": "ECON 54",
+    "title": "First-Year Seminar: The Entrepreneurial Imagination: Turning Ideas into Reality",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 540",
+    "title": "Advanced Public Finance",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 , 410 , and 340 or 440 ; a grade of C or better in ECON 400 and 410 is required."
+  },
+  {
+    "code": "ECON 545",
+    "title": "Advanced Industrial Organization",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 , 410 , and 445 ; a grade of C or better in ECON 400 and 410 is required."
+  },
+  {
+    "code": "ECON 55",
+    "title": "First-Year Seminar: Economics of Sports",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 550",
+    "title": "Advanced Health Econometrics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 , 410 and 470 ; a grade of C- or better in ECON 470 and a grade of C or better in ECON 400 and 410 is required."
+  },
+  {
+    "code": "ECON 551",
+    "title": "Economics of Education",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 , 410 , and 470 ."
+  },
+  {
+    "code": "ECON 552",
+    "title": "The Economics of Health Care Markets and Policy",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 , 410 , and ECON 445 or 450 ; all with a grade of C or better."
+  },
+  {
+    "code": "ECON 56",
+    "title": "First-Year Seminar: Entrepreneurship: Asia and the West",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 560",
+    "title": "Advanced International Economics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 , 410 , and 460 ; a grade of C or better in ECON 400 and 410 is required."
+  },
+  {
+    "code": "ECON 565",
+    "title": "Research in Development Economics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 and 410 with a grade of C or better; Pre- or corequisite, ECON 470 or 570."
+  },
+  {
+    "code": "ECON 571",
+    "title": "Advanced Econometrics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 , 410 , and ECON 470 or 570; a grade of C- or better in ECON 470 is required; a grade of C or better in ECON 400 and 410 is required."
+  },
+  {
+    "code": "ECON 573",
+    "title": "Machine Learning and Econometrics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 , 410 and 470 ; a grade of C- or better in ECON 470 and a grade of C or better in ECON 400 and 410 is required."
+  },
+  {
+    "code": "ECON 575",
+    "title": "Applied Time Series Analysis and Forecasting",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 , 410 and 470 ; a grade of C- or better in ECON 470 is required; a grade of C or better in ECON 400 and 410 is required; permission of the instructor for students lacking the prerequisites."
+  },
+  {
+    "code": "ECON 57H",
+    "title": "First-Year Seminar: Constructing Your Own Venture",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 58",
+    "title": "First-Year Seminar: Researching the Tools for Success in College",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 580",
+    "title": "Advanced Labor Economics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 400 and 410 with a grade of C or better in both; permission of the instructor for students lacking the prerequisites ; Pre- or corequisite, ECON 470 or 570."
+  },
+  {
+    "code": "ECON 590",
+    "title": "Special Topics",
+    "credits": "1-3",
+    "prereq_raw": "Prerequisites, ECON 400 and 410 ; a grade of C or better in ECON 400 and 410 is required."
+  },
+  {
+    "code": "ECON 595",
+    "title": "Research Course",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 596",
+    "title": "Independent Study",
+    "credits": "1-3",
+    "prereq_raw": "Prerequisite, ECON 410 ; a grade of C or better in ECON 410 is required."
+  },
+  {
+    "code": "ECON 691H",
+    "title": "Honors Course",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 692H",
+    "title": "Honors Course",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 691H ."
+  },
+  {
+    "code": "ECON 698",
+    "title": "Philosophy, Politics, and Economics: Capstone Course",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, PHIL 384 ."
+  },
+  {
+    "code": "ECON 700",
+    "title": "Basic Quantitative Techniques",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 701",
+    "title": "Analytical Methods for Mathematical Economics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 710",
+    "title": "Advanced Microeconomic Theory I",
+    "credits": "3",
+    "prereq_raw": "Pre- or corequisites, ECON 410 and 700 ."
+  },
+  {
+    "code": "ECON 711",
+    "title": "Advanced Microeconomic Theory II",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 710 ."
+  },
+  {
+    "code": "ECON 720",
+    "title": "Advanced Macroeconomic Theory I",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 700 or permission of instructor."
+  },
+  {
+    "code": "ECON 721",
+    "title": "Advanced Macroeconomic Theory II",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 720 ."
+  },
+  {
+    "code": "ECON 770",
+    "title": "Introduction to Econometric Theory",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 771",
+    "title": "Econometrics",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 770 ."
+  },
+  {
+    "code": "ECON 775",
+    "title": "Applied Econometric Analysis",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 799",
+    "title": "Experimental",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 805",
+    "title": "Seminar in Teaching Methods in Economic for TAs",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 806",
+    "title": "Seminar in Teaching Methods in Economics",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 810",
+    "title": "Game Theory I",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 710 and 711 ; permission of the instructor for students lacking the prerequisites."
+  },
+  {
+    "code": "ECON 811",
+    "title": "Game Theory II",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 810 ; permission of the instructor for students lacking the prerequisite."
+  },
+  {
+    "code": "ECON 820",
+    "title": "Monetary Theory",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 821",
+    "title": "Topics in Macroeconomics II",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 822",
+    "title": "Firm Dynamics and Production Networks",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 840",
+    "title": "Advanced Finance: Expenditure",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 841",
+    "title": "Advanced Public Finance: Revenues",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 840 ; permission of the instructor for students lacking the prerequisites."
+  },
+  {
+    "code": "ECON 845",
+    "title": "Advanced Business Organization and Social Control",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 846",
+    "title": "Theoretical Industrial Organization",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 847",
+    "title": "EMPIRICAL INDUSTRIAL ORGANIZATION I",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 848",
+    "title": "EMPIRICAL INDUSTRIAL ORGANIZATION II",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 850",
+    "title": "Health Economics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 710 and 771 ; permission of the instructor for students lacking the prerequisites."
+  },
+  {
+    "code": "ECON 851",
+    "title": "Health Economics for Developing Countries",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 710 and 771 ; permission of the instructor for students lacking the prerequisites."
+  },
+  {
+    "code": "ECON 852",
+    "title": "Health Economics: Markets and Supply-Side Actors",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 847 , 848 , 873 , 880 or 881 ."
+  },
+  {
+    "code": "ECON 855",
+    "title": "Economics and Population",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, graduate standing in economics or permission of the instructor."
+  },
+  {
+    "code": "ECON 860",
+    "title": "Theory of International Trade",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 861",
+    "title": "International Monetary Economics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 865",
+    "title": "Economic Development: Theory and Policy",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 870",
+    "title": "Advanced Econometrics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 770 , 771 , and MATH 547."
+  },
+  {
+    "code": "ECON 871",
+    "title": "Time Series Econometrics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 770 and ECON 771 ."
+  },
+  {
+    "code": "ECON 872",
+    "title": "Nonlinear Econometric Methods",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 870 ."
+  },
+  {
+    "code": "ECON 873",
+    "title": "Microeconometrics",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 870 ."
+  },
+  {
+    "code": "ECON 874",
+    "title": "Advanced Topics in Causal Inference",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 876",
+    "title": "Advanced Topics in Data Science and Finance",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, ECON 770 and ECON 771 ."
+  },
+  {
+    "code": "ECON 877",
+    "title": "Foundations for Continuous Time Asset Pricing",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, STOR 634 and 635 ."
+  },
+  {
+    "code": "ECON 880",
+    "title": "Labor Economics I",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, ECON 710 ; permission of the instructor for students lacking the prerequisite."
+  },
+  {
+    "code": "ECON 881",
+    "title": "Labor Economics II",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 882",
+    "title": "Topics in Labor Economics-Dynamics and Search",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 883",
+    "title": "Search Theory",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 89",
+    "title": "First Year Seminar: Special Topics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 890",
+    "title": "Seminar",
+    "credits": "1-15",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 892",
+    "title": "Research Practicum",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 896",
+    "title": "Independent Study",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 899",
+    "title": "Experimental",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 900",
+    "title": "Dissertation Workshop: Topics in Economics",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 901",
+    "title": "Dissertation Completion Workshop",
+    "credits": "1.5",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 910",
+    "title": "Dissertation Workshop in Microeconomic Theory",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 920",
+    "title": "Dissertation Workshop in Macroeconomics",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 945",
+    "title": "Dissertation Workshop in Industrial Organization",
+    "credits": "1.5",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 958",
+    "title": "Seminar in Population",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 960",
+    "title": "Dissertation Workshop in International and Development Economics",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 966",
+    "title": "Seminar in Economic Development",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 968",
+    "title": "Seminar in Soviet Economics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 970",
+    "title": "Dissertation Workshop in Econometrics and Financial Econometrics",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 971",
+    "title": "Research in Econometrics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 981",
+    "title": "Seminar in Labor",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 985",
+    "title": "Dissertation Workshop in Applied Microeconomics",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 990",
+    "title": "Special Topics",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 992",
+    "title": "Master's (Non-Thesis)",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "ECON 994",
+    "title": "Doctoral Research and Dissertation",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 10",
+    "title": "Review of Basic Algebra",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 110",
+    "title": "Algebra",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 110L",
+    "title": "Algebra Corequisite",
+    "credits": "1",
+    "prereq_raw": "Corequisite, MATH 110 ."
+  },
+  {
+    "code": "MATH 115",
+    "title": "Reasoning with Data: Navigating a Quantitative World",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 116",
+    "title": "Intuitive Calculus",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 117",
+    "title": "Aspects of Finite Mathematics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 118",
+    "title": "Aspects of Modern Mathematics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 119",
+    "title": "Introduction to Mathematical Modeling",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 129P",
+    "title": "Precalculus Mathematics",
+    "credits": "0",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 130",
+    "title": "Precalculus Mathematics",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 110 ; a grade of C- or better is required."
+  },
+  {
+    "code": "MATH 152",
+    "title": "Calculus for Business and Social Sciences",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 110 ."
+  },
+  {
+    "code": "MATH 190",
+    "title": "Special Topics in Mathematics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 210",
+    "title": "Mathematical Tools for Data Science",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 110 or 110P."
+  },
+  {
+    "code": "MATH 231",
+    "title": "Calculus of Functions of One Variable I",
+    "credits": "4",
+    "prereq_raw": "Prerequisites, MATH 110 and 130 ; Requires a grade of C- or better in MATH 130 or placement by the department."
+  },
+  {
+    "code": "MATH 231L",
+    "title": "Calculus I Corequisite",
+    "credits": "1",
+    "prereq_raw": "Prerequisites, MATH 110 and 130 ; requires a grade of C- or better in MATH 130 or placement by the department; Corequisite, MATH 231 ."
+  },
+  {
+    "code": "MATH 232",
+    "title": "Calculus of Functions of One Variable II",
+    "credits": "4",
+    "prereq_raw": "Prerequisite, A grade of C- or better in MATH 231 or placement by the department."
+  },
+  {
+    "code": "MATH 233",
+    "title": "Calculus of Functions of Several Variables",
+    "credits": "4",
+    "prereq_raw": "Prerequisite, MATH 232 ."
+  },
+  {
+    "code": "MATH 235",
+    "title": "Mathematics for Data Science",
+    "credits": "4",
+    "prereq_raw": "Prerequisites, MATH 231 and MATH 232 ."
+  },
+  {
+    "code": "MATH 290",
+    "title": "Special Topics in Mathematics",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 291",
+    "title": "Undergraduate Learning Assistantships",
+    "credits": "1",
+    "prereq_raw": "Prerequisite, MATH 231 with a grade of A- or higher; Pre- or corequisite, Permission of Instructor."
+  },
+  {
+    "code": "MATH 294",
+    "title": "Undergraduate Seminar in Mathematics",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 296",
+    "title": "Directed Exploration in Mathematics",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 307",
+    "title": "Revisiting Real Numbers and Algebra",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 347",
+    "title": "Linear Algebra for Applications",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 232 or MATH 231 and MATH 210 or MATH 231 and MATH 381 or COMP 283 or STOR 315 ."
+  },
+  {
+    "code": "MATH 381",
+    "title": "Discrete Mathematics",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 232 or a B or better in MATH 231 or MATH 210 ."
+  },
+  {
+    "code": "MATH 383",
+    "title": "First Course in Differential Equations",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 233 or MATH 235 ."
+  },
+  {
+    "code": "MATH 383L",
+    "title": "First Course in Differential Equations Laboratory",
+    "credits": "1",
+    "prereq_raw": "Prerequisite, MATH 233 or MATH 235 ; Pre- or corequisite, MATH 383 ."
+  },
+  {
+    "code": "MATH 396",
+    "title": "Undergraduate Reading and Research in Mathematics",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 410",
+    "title": "Teaching and Learning Mathematics",
+    "credits": "4",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 435H",
+    "title": "Introduction to Probability",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH/ STOR 235 or MATH 233 ; and STOR 215 or STOR 315 or MATH 381 or COMP 283 ."
+  },
+  {
+    "code": "MATH 51",
+    "title": "First-Year Seminar: 'Fish Gotta Swim, Birds Gotta Fly': The Mathematics and the Mechanics of Moving",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 521",
+    "title": "Advanced Calculus I",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 233 or MATH 235 , and MATH 381 ; A grade of A- or better in STOR 215 may substitute for MATH 381 ."
+  },
+  {
+    "code": "MATH 522",
+    "title": "Advanced Calculus II",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 383 and 521 ."
+  },
+  {
+    "code": "MATH 523",
+    "title": "Functions of a Complex Variable with Applications",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 383 ."
+  },
+  {
+    "code": "MATH 524",
+    "title": "Elementary Differential Equations",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 383 ."
+  },
+  {
+    "code": "MATH 528",
+    "title": "Mathematical Methods for the Physical Sciences I",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 383 ."
+  },
+  {
+    "code": "MATH 528L",
+    "title": "Laboratory for Mathematical Methods for the Physical Sciences I",
+    "credits": "1",
+    "prereq_raw": "Prerequisite, MATH 383 ; pre- or corequisite, MATH 528 ."
+  },
+  {
+    "code": "MATH 529",
+    "title": "Mathematical Methods for the Physical Sciences II",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 521 , 524 , or 528 ."
+  },
+  {
+    "code": "MATH 529L",
+    "title": "Laboratory for Mathematical Methods for the Physical Sciences II",
+    "credits": "1",
+    "prereq_raw": "Prerequisite, MATH 383 ; pre- or corequisite, MATH 529 ."
+  },
+  {
+    "code": "MATH 533",
+    "title": "Elementary Theory of Numbers",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 381 ; A grade of A- or better in STOR 215 may substitute for MATH 381 ."
+  },
+  {
+    "code": "MATH 534",
+    "title": "Elements of Modern Algebra",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 381 ; A grade of A- or better in STOR 215 may substitute for MATH 381 ."
+  },
+  {
+    "code": "MATH 535",
+    "title": "Introduction to Probability",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH/ STOR 235 or MATH 233 ; and STOR 215 or STOR 315 or MATH 381 or COMP 283 ."
+  },
+  {
+    "code": "MATH 548",
+    "title": "Combinatorial Mathematics",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 381 ."
+  },
+  {
+    "code": "MATH 550",
+    "title": "Topology",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 233 or MATH 235 , and MATH 381 ."
+  },
+  {
+    "code": "MATH 551",
+    "title": "Euclidean and Non-Euclidean Geometries",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 381 ; A grade of A- or better in STOR 215 may substitute for MATH 381 ."
+  },
+  {
+    "code": "MATH 555",
+    "title": "Introduction to Dynamics",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 383 ."
+  },
+  {
+    "code": "MATH 560",
+    "title": "Optimization with Applications in Machine Learning",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 233 or MATH 235 , MATH 347 or MATH 577 , and COMP 110 or COMP 116 ."
+  },
+  {
+    "code": "MATH 563",
+    "title": "Introduction to Fluid Mechanics",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 528 ."
+  },
+  {
+    "code": "MATH 564",
+    "title": "Mathematical Modeling in the Life Sciences",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 383 and MATH 347 or MATH 577 ."
+  },
+  {
+    "code": "MATH 566",
+    "title": "Introduction to Numerical Analysis",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 383 and either MATH 577 or MATH 347 ."
+  },
+  {
+    "code": "MATH 577",
+    "title": "Linear Algebra",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 381 and 383 ; A grade of A- or better in STOR 215 may substitute for MATH 381 ."
+  },
+  {
+    "code": "MATH 578",
+    "title": "Algebraic Structures",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 347 or 577 and MATH 381 ."
+  },
+  {
+    "code": "MATH 590",
+    "title": "Topics in Mathematics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 594",
+    "title": "Nonlinear Dynamics",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 383 ; permission of the instructor for students lacking the prerequisite."
+  },
+  {
+    "code": "MATH 62",
+    "title": "First-Year Seminar: Combinatorics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 635",
+    "title": "Probability II",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 634 ; permission of the instructor for students lacking the prerequisite."
+  },
+  {
+    "code": "MATH 641",
+    "title": "Enumerative Combinatorics",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 578 ."
+  },
+  {
+    "code": "MATH 643",
+    "title": "Combinatorial Structures",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 578 ."
+  },
+  {
+    "code": "MATH 65",
+    "title": "First-Year Seminar: Colliding Balls and Springs: The Microstructure of How Materials Behave",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 653",
+    "title": "Introductory Analysis",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 656",
+    "title": "Complex Analysis",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 653 ."
+  },
+  {
+    "code": "MATH 657",
+    "title": "Qualitative Theory of Differential Equations",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 653 ."
+  },
+  {
+    "code": "MATH 661",
+    "title": "Scientific Computation I",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 662",
+    "title": "Scientific Computation II",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 661 ."
+  },
+  {
+    "code": "MATH 668",
+    "title": "Methods of Applied Mathematics I",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 669",
+    "title": "Methods of Applied Mathematics II",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 668 ."
+  },
+  {
+    "code": "MATH 676",
+    "title": "Modules, Linear Algebra, and Groups",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 677",
+    "title": "Groups, Representations, and Fields",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 676 ."
+  },
+  {
+    "code": "MATH 68",
+    "title": "First-Year Seminar: The Mathematics of Voting",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 680",
+    "title": "Differentiable Manifolds",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 681 ."
+  },
+  {
+    "code": "MATH 681",
+    "title": "Introductory Topology",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 69",
+    "title": "First-Year Seminar: Unfolding Infinity: Mathematical Origami and Fractal Symmetry",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 690",
+    "title": "Topics In Mathematics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 691H",
+    "title": "Honors Research in Mathematics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 692H",
+    "title": "Honors Thesis in Mathematics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 70",
+    "title": "First-Year Seminar: Topology and Symmetry",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 751",
+    "title": "Introduction to Partial Differential Equations",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 653 ."
+  },
+  {
+    "code": "MATH 753",
+    "title": "Measure and Integration",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 653 ; permission of the instructor for students lacking the prerequisite."
+  },
+  {
+    "code": "MATH 754",
+    "title": "Introductory Functional Analysis",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 753 ."
+  },
+  {
+    "code": "MATH 755",
+    "title": "Advanced Complex Analysis",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 656 ."
+  },
+  {
+    "code": "MATH 756",
+    "title": "Several Complex Variables",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 656 ."
+  },
+  {
+    "code": "MATH 757",
+    "title": "Spectral Theory",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 653 ."
+  },
+  {
+    "code": "MATH 758",
+    "title": "Semiclassical Analysis",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 653 ."
+  },
+  {
+    "code": "MATH 761",
+    "title": "Numerical ODE/PDE, I",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 661 and 662 ."
+  },
+  {
+    "code": "MATH 762",
+    "title": "Numerical ODE/PDE, II",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 761 ."
+  },
+  {
+    "code": "MATH 768",
+    "title": "Mathematical Modeling I",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 661 , 662 , 668 , and 669 ."
+  },
+  {
+    "code": "MATH 769",
+    "title": "Mathematical Modeling II",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 661 , 662 , 668 , and 669 ."
+  },
+  {
+    "code": "MATH 771",
+    "title": "Commutative Algebra",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 677 ."
+  },
+  {
+    "code": "MATH 773",
+    "title": "Lie Groups",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 676 and 781."
+  },
+  {
+    "code": "MATH 774",
+    "title": "Lie Algebras",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 676 ."
+  },
+  {
+    "code": "MATH 775",
+    "title": "Algebraic Geometry",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 771 ."
+  },
+  {
+    "code": "MATH 776",
+    "title": "Algebraic Topology",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 676 and 681 ."
+  },
+  {
+    "code": "MATH 782",
+    "title": "Differential Geometry",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 680 ."
+  },
+  {
+    "code": "MATH 783",
+    "title": "Symplectic Geometry",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 680 ."
+  },
+  {
+    "code": "MATH 853",
+    "title": "Harmonic Analysis",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 854",
+    "title": "Advanced Functional Analysis",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 857",
+    "title": "Theory of Dynamical Systems",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 89",
+    "title": "First-Year Seminar: Special Topics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 891",
+    "title": "Special Topics",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 892",
+    "title": "Topics in Computational Mathematics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 661 and 662 ."
+  },
+  {
+    "code": "MATH 893",
+    "title": "Topics in Algebra",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 677 ."
+  },
+  {
+    "code": "MATH 894",
+    "title": "Topics in Combinatorial Mathematics",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 641 ; permission of the instructor for students lacking the prerequisite."
+  },
+  {
+    "code": "MATH 895",
+    "title": "Special Topics in Geometry",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 781."
+  },
+  {
+    "code": "MATH 896",
+    "title": "Topics in Algebraic Topology",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 776 ; permission of the instructor for students lacking the prerequisite."
+  },
+  {
+    "code": "MATH 920",
+    "title": "Seminar and Directed Readings",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 921",
+    "title": "Seminar",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 925",
+    "title": "Practical Training Course in Mathematics",
+    "credits": "1-3",
+    "prereq_raw": "Prerequisite, Successful completion of the written comprehensive examination degree requirement."
+  },
+  {
+    "code": "MATH 992",
+    "title": "Master's (Non-Thesis)",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 993",
+    "title": "Master's Research and Thesis",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "MATH 994",
+    "title": "Doctoral Research and Dissertation",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 113",
+    "title": "Decision Models for Business and Economics",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 110 ."
+  },
+  {
+    "code": "STOR 115",
+    "title": "Reasoning with Data: Navigating a Quantitative World",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 120",
+    "title": "Foundations of Statistics and Data Science",
+    "credits": "4",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 151",
+    "title": "Introduction to Data Analysis",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 110 ."
+  },
+  {
+    "code": "STOR 155",
+    "title": "Introduction to Data Models and Inference",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 110 ."
+  },
+  {
+    "code": "STOR 190",
+    "title": "Special Topics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 215",
+    "title": "Foundations of Decision Sciences",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, MATH 110 ."
+  },
+  {
+    "code": "STOR 235",
+    "title": "Mathematics for Data Science",
+    "credits": "4",
+    "prereq_raw": "Prerequisites, MATH 231 and MATH 232 ."
+  },
+  {
+    "code": "STOR 290",
+    "title": "Special Topics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 291",
+    "title": "Undergraduate Learning Assistantship",
+    "credits": "1",
+    "prereq_raw": "Prerequisite, STOR 120 grade of A- or higher."
+  },
+  {
+    "code": "STOR 305",
+    "title": "Introduction to Decision Analytics",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 120 , 155 , or MATH 152 ."
+  },
+  {
+    "code": "STOR 315",
+    "title": "Discrete Mathematics for Data Science",
+    "credits": "4",
+    "prereq_raw": "Prerequisite, MATH 232 ."
+  },
+  {
+    "code": "STOR 320",
+    "title": "Methods and Models of Data Science",
+    "credits": "4",
+    "prereq_raw": "Prerequisite, STOR 120 or 155 ."
+  },
+  {
+    "code": "STOR 323",
+    "title": "Ethics of Machine Learning in Society",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 120 or STOR 320 ."
+  },
+  {
+    "code": "STOR 358",
+    "title": "Sample Survey Methodology",
+    "credits": "4",
+    "prereq_raw": "Prerequisite, BIOS 650 ; permission of the instructor for students lacking the prerequisite."
+  },
+  {
+    "code": "STOR 390",
+    "title": "Special Topics in Statistics and Operations Research",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 415",
+    "title": "Introduction to Optimization",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 347 and STOR 315 , 215 , COMP 283 or MATH 381 ."
+  },
+  {
+    "code": "STOR 435",
+    "title": "Introduction to Probability",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH/ STOR 235 or MATH 233 ; and STOR 215 or STOR 315 or MATH 381 or COMP 283 ."
+  },
+  {
+    "code": "STOR 445",
+    "title": "Stochastic Modeling",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, BIOS 660 , STOR 435 or 535 ."
+  },
+  {
+    "code": "STOR 455",
+    "title": "Methods of Data Analysis",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 120 , or 155 ."
+  },
+  {
+    "code": "STOR 471",
+    "title": "Long-Term Actuarial Models",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 435 , or 535 ."
+  },
+  {
+    "code": "STOR 472",
+    "title": "Short Term Actuarial Models",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 435 , or 535 ."
+  },
+  {
+    "code": "STOR 475",
+    "title": "Healthcare Risk Analytics",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 435 , or 535 ."
+  },
+  {
+    "code": "STOR 490",
+    "title": "Special Topics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 493",
+    "title": "Internship in Statistics and Operations Research",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 496",
+    "title": "Undergraduate Reading and Research in Statistics and Operations Research",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 512",
+    "title": "Optimization for Machine Learning and Neural Networks",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, STOR 415 or STOR 612 ; or MATH 233 and MATH 347 , or MATH 235 , and COMP 110 or COMP 116 ; or permission of instructor."
+  },
+  {
+    "code": "STOR 52",
+    "title": "First-Year Seminar: Decisions, Decisions, Decisions",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 520",
+    "title": "Statistical Computing for Data Science",
+    "credits": "4",
+    "prereq_raw": "Prerequisites, STOR 435 or 535 , and STOR 455 ."
+  },
+  {
+    "code": "STOR 53",
+    "title": "FYS: Networks: Degrees of Separation and Other Phenomena Relating to Connected Systems",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 535",
+    "title": "Probability for Data Science",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH/ STOR 235 or MATH 233 ; and STOR 215 or STOR 315 or MATH 381 or COMP 283 ."
+  },
+  {
+    "code": "STOR 538",
+    "title": "Sports Analytics",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 320 or STOR 455 ."
+  },
+  {
+    "code": "STOR 54",
+    "title": "First-Year Seminar: Adventures in Statistics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 543",
+    "title": "Dynamic Decision Analytics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, STOR 435 or 535 , and MATH 347 ."
+  },
+  {
+    "code": "STOR 545",
+    "title": "Stochastic Models and their Applications",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 445 ."
+  },
+  {
+    "code": "STOR 55",
+    "title": "First-Year Seminar: Risk and Uncertainty in the Real World",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 555",
+    "title": "Mathematical Statistics",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 435 , or 535 ."
+  },
+  {
+    "code": "STOR 556",
+    "title": "Time Series Data Analysis",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, STOR 435 or 535 , and STOR 455 ."
+  },
+  {
+    "code": "STOR 557",
+    "title": "Advanced Methods of Data Analysis",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, STOR 435 or 535 , and STOR 455 ."
+  },
+  {
+    "code": "STOR 56",
+    "title": "First-Year Seminar: The Art and Science of Decision Making in War and Peace",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 565",
+    "title": "Machine Learning",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, STOR 215 or 315 or MATH 381 , and STOR 435 or 535 ."
+  },
+  {
+    "code": "STOR 566",
+    "title": "Introduction to Deep Learning",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, STOR 415 or 512 ; and COMP 110 or 116 ."
+  },
+  {
+    "code": "STOR 572",
+    "title": "Simulation for Analytics",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, STOR 120 or 155 , and STOR 435 or 535 ."
+  },
+  {
+    "code": "STOR 590",
+    "title": "Special Topics in Statistics and Operations Research",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 60",
+    "title": "First-Year Seminar: Statistical Decision-Making Concepts",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 61",
+    "title": "First-Year Seminar: Statistics for Environmental Change",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 612",
+    "title": "Foundations of Optimization",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, MATH 347 and 521 or permission of the instructor."
+  },
+  {
+    "code": "STOR 614",
+    "title": "Advanced Optimization",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 612 or equivalent (or permission of instructor)."
+  },
+  {
+    "code": "STOR 62",
+    "title": "First-Year Seminar: Probability and Paradoxes",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 63",
+    "title": "FYS: Statistics, Biostatistics, and Bioinformatics: An Introduction to the Ongoing Evolution",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 634",
+    "title": "Probability I",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 635",
+    "title": "Probability II",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 634 ; permission of the instructor for students lacking the prerequisite."
+  },
+  {
+    "code": "STOR 64",
+    "title": "First-Year Seminar: A Random Walk down Wall Street",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 641",
+    "title": "Stochastic Modeling I",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, Probability background at the level of STOR 435 or STOR 535 ."
+  },
+  {
+    "code": "STOR 642",
+    "title": "Stochastic Modeling II",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 641 ."
+  },
+  {
+    "code": "STOR 654",
+    "title": "Statistical Theory I",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 655",
+    "title": "Statistical Theory II",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 654 ."
+  },
+  {
+    "code": "STOR 66",
+    "title": "First-Year Seminar: Visualizing Data",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 664",
+    "title": "Applied Statistics I",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 665",
+    "title": "Applied Statistics II",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 664 ; permission of the instructor for students lacking the prerequisite."
+  },
+  {
+    "code": "STOR 672",
+    "title": "Simulation Modeling and Analysis",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, STOR 555 and 641 ."
+  },
+  {
+    "code": "STOR 674",
+    "title": "Statistical and Computational Tools for Reproducible Data Science",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 320 or 664 ."
+  },
+  {
+    "code": "STOR 690",
+    "title": "Special Topics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 691H",
+    "title": "Honors in Statistics and Analytics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 692H",
+    "title": "Honors in Statistics and Analytics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 697",
+    "title": "Capstone",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, Students are expected to have completed at least 75% of the core requirements for the STAN major."
+  },
+  {
+    "code": "STOR 701",
+    "title": "Statistics and Operations Research Colloquium",
+    "credits": "1",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 702",
+    "title": "Seminar in Teaching",
+    "credits": "1",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 712",
+    "title": "Optimization for Machine Learning and Data Science",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 612 or equivalent."
+  },
+  {
+    "code": "STOR 713",
+    "title": "Mathematical Programming II",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 712 ; permission of the instructor for students lacking the prerequisite."
+  },
+  {
+    "code": "STOR 72",
+    "title": "First-Year Seminar: Unlocking the Genetic Code",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 722",
+    "title": "Integer Programming",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 614 ; permission of the instructor for students lacking the prerequisite."
+  },
+  {
+    "code": "STOR 734",
+    "title": "Stochastic Processes",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 435 ."
+  },
+  {
+    "code": "STOR 743",
+    "title": "Reinforcement Learning and Markov Decision Processes",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 641 or permission of instructor."
+  },
+  {
+    "code": "STOR 754",
+    "title": "Time Series and Multivariate Analysis",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, STOR 435 and 555 ."
+  },
+  {
+    "code": "STOR 755",
+    "title": "Estimation, Hypothesis Testing, and Statistical Decision",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, STOR 635 and 655 ."
+  },
+  {
+    "code": "STOR 757",
+    "title": "Bayesian Statistics and Generalized Linear Models",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 555 ."
+  },
+  {
+    "code": "STOR 765",
+    "title": "Statistical Consulting",
+    "credits": "1.5",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 766",
+    "title": "Leading Research Teams",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, STOR 664 , STOR 665 and STOR 765 , or Instructor's Permission."
+  },
+  {
+    "code": "STOR 767",
+    "title": "Advanced Statistical Machine Learning",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, STOR 654 , 655 , 664 , 665 and permission of the instructor."
+  },
+  {
+    "code": "STOR 790",
+    "title": "Operations Research and Systems Analysis Student Seminar",
+    "credits": "1",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 822",
+    "title": "Topics in Discrete Optimization",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 712 ; Permission of the instructor for students lacking the prerequisite."
+  },
+  {
+    "code": "STOR 824",
+    "title": "Computational Methods in Mathematical Programming",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 712 ; Permission of the instructor for students lacking the prerequisite."
+  },
+  {
+    "code": "STOR 831",
+    "title": "Advanced Probability",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, STOR 634 and 635 ."
+  },
+  {
+    "code": "STOR 832",
+    "title": "Stochastic Processes",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, STOR 634 and 635 ."
+  },
+  {
+    "code": "STOR 834",
+    "title": "Extreme Value Theory",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, STOR 635 and 654 ."
+  },
+  {
+    "code": "STOR 835",
+    "title": "Point Processes",
+    "credits": "3",
+    "prereq_raw": "Prerequisite, STOR 635 ."
+  },
+  {
+    "code": "STOR 836",
+    "title": "Stochastic Analysis",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, STOR 634 and 635 ."
+  },
+  {
+    "code": "STOR 854",
+    "title": "Statistical Large Sample Theory",
+    "credits": "3",
+    "prereq_raw": "Prerequisites, STOR 635 and 655 ."
+  },
+  {
+    "code": "STOR 871",
+    "title": "Convex Analysis and Optimization Theory",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 881",
+    "title": "Object Oriented Data Analysis",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 89",
+    "title": "First-Year Seminar: Special Topics",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 890",
+    "title": "Special Problems",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 891",
+    "title": "Special Problems",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 892",
+    "title": "Special Topics in Operations Research and Systems Analysis",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 893",
+    "title": "Special Topics",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 894",
+    "title": "Special Topics at SAMSI",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 910",
+    "title": "Directed Reading in Statistics and Operations Research",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 930",
+    "title": "Advanced Research",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 940",
+    "title": "Seminar in Theoretical Statistics",
+    "credits": "1-3",
+    "prereq_raw": "Prerequisite, STOR 655 ."
+  },
+  {
+    "code": "STOR 950",
+    "title": "Advanced Research",
+    "credits": "0.5",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 960",
+    "title": "Seminar in Theoretical Statistics",
+    "credits": "0.5",
+    "prereq_raw": "Prerequisite, STOR 655 ."
+  },
+  {
+    "code": "STOR 970",
+    "title": "Practicum",
+    "credits": "1-3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 992",
+    "title": "Master's (Non-Thesis)",
+    "credits": "3",
+    "prereq_raw": ""
+  },
+  {
+    "code": "STOR 994",
+    "title": "Doctoral Research and Dissertation",
+    "credits": "3",
+    "prereq_raw": ""
+  }
+]

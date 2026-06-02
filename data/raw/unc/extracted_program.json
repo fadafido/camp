@@ -1,0 +1,31 @@
+{
+  "programme": "Bachelor of Science in Economics",
+  "university": "unc",
+  "source_url": "https://catalog.unc.edu/undergraduate/programs-study/economics-major-bs/",
+  "course_source_urls": {
+    "econ": "https://catalog.unc.edu/courses/econ/",
+    "math": "https://catalog.unc.edu/courses/math/",
+    "stor": "https://catalog.unc.edu/courses/stor/",
+    "comp": "https://catalog.unc.edu/courses/comp/"
+  },
+  "access_date": "2026-06-02",
+  "referenced_course_codes": [
+    "COMP 110",
+    "COMP 116",
+    "COMP 283",
+    "ECON 101",
+    "ECON 400",
+    "ECON 410",
+    "ECON 420",
+    "ECON 470",
+    "MATH 231",
+    "MATH 232",
+    "MATH 233",
+    "MATH 235",
+    "MATH 347",
+    "MATH 381",
+    "STOR 415",
+    "STOR 435",
+    "STOR 535"
+  ]
+}
