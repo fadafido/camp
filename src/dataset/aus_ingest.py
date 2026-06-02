@@ -1,11 +1,15 @@
 """American University of Sharjah (Information Systems & Business Analytics)
 ingestion into CAP-Bench v2.1.
 
-Scoping (locked Phase INGEST-4): all undergraduate courses (number < 500) in the
-business-core subjects ISA/ACC/FIN/MGT/MKT/ECO/STA/QBA/BLW, plus any course
-referenced by the IS major in extracted_program.json (e.g. CMP 320, COE 420,
-EGM 362, SCM 310/311, UPL 302). ISA is the major subject; the other business
-subjects and referenced extras form the SUPPORT block.
+Scoping: the BSBA **Information Systems & Business Analytics MAJOR** — ISA is the
+home (major) subject (its undergraduate courses, number < 500), plus ONLY the
+specific business-core support courses the degree requires (ACC/FIN/MGT/MKT/ECO/
+STA/QBA/BLW/SCM courses listed in the catalogue's BSBA business core, plus the
+ISA prerequisite closure), as enumerated in extracted_program.json's
+``referenced_course_codes``. This deliberately does NOT scope the whole business
+school — only the IS major + its required core — so the scoped scale matches a
+single ~120-credit major (consistent with Khalifa COSC and UNC ECON), rather than
+all nine business subjects.
 
 Module: AI503. British English.
 """
@@ -18,12 +22,14 @@ CONFIG = InstConfig(
     programme_name=("Bachelor of Science in Business Administration, "
                     "Major in Information Systems and Business Analytics"),
     primary_department="ISA",
-    home_subjects={"ISA", "ACC", "FIN", "MGT", "MKT", "ECO", "STA", "QBA", "BLW"},
+    home_subjects={"ISA"},  # ISA is the major; only ISA undergrad courses are "home"
     major_subject="ISA",
-    support_subjects=set(),  # non-ISA scoping handled via home_subjects + referenced
+    # The business-core support subjects; individual courses are kept only when
+    # listed in referenced_course_codes (the BSBA business core + ISA prereqs).
+    support_subjects={"ACC", "FIN", "MGT", "MKT", "ECO", "STA", "QBA", "BLW", "SCM"},
     home_max_number=500,
     digits=3,
-    keep_any_referenced=True,
+    keep_any_referenced=False,  # do NOT keep arbitrary referenced courses wholesale
     native_total_credits=120,
     native_total_credits_note=(
         "Standard AUS BSBA degree total (120 credits); the full degree includes "

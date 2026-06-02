@@ -35,7 +35,7 @@
     "rule_index": 1,
     "rule_name": "Support courses",
     "rule_type": "min_courses",
-    "min_courses": 169,
+    "min_courses": 13,
     "min_credits": null,
     "min_grade_each": 1.0,
     "selector_type": "explicit_list",

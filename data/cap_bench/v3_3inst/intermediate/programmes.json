@@ -20,12 +20,12 @@
     "version": "2024",
     "effective_from_term": "2024FA",
     "effective_to_term": null,
-    "total_credits_required": 341,
+    "total_credits_required": 60,
     "min_gpa_required": 2.0,
     "max_terms_to_complete": 14,
     "primary_department": "ISA",
     "native_total_credits": 120,
-    "graduation_threshold_note": "Reconstructed realistic threshold (Phase MERGE-4): CORE = major-subject gateway courses (all required), SUPPORT = support-subject gateway courses (all required), ELECTIVES = min_credits over terminal courses tuned so gateways + elective-minimum = total_credits_required, leaving >=40% of the terminal pool as un-required electives. native total 120 is unreachable from the scoped subset (pool 544 cr incl. no general education); scoped total set to 341."
+    "graduation_threshold_note": "Reconstructed realistic threshold (Phase MERGE-4): CORE = major-subject gateway courses (all required), SUPPORT = support-subject gateway courses (all required), ELECTIVES = min_credits over terminal courses tuned so gateways + elective-minimum = total_credits_required, leaving >=40% of the terminal pool as un-required electives. native total 120 is unreachable from the scoped subset (pool 78 cr incl. no general education); scoped total set to 60."
   },
   {
     "programme_id": "UNC_BS_ECON_v2024",

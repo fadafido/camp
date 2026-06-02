@@ -32,7 +32,7 @@
     "is_required": true,
     "scope": "programme",
     "owner_university_id": null,
-    "min_credits_in_block": 505,
+    "min_credits_in_block": 39,
     "description": "Required Support Courses"
   }
 ]

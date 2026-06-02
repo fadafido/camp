@@ -29,6 +29,7 @@ from __future__ import annotations
 
 import json
 import re
+from collections import deque
 from pathlib import Path
 
 from pdfminer.high_level import extract_text
@@ -65,8 +66,19 @@ def _flatten(text: str) -> str:
     return re.sub(r"\s+", " ", text)
 
 
-def parse_pdf() -> tuple[list[dict], dict]:
-    """Parse the PDF into (course_records, diagnostics)."""
+# Business-school subjects that make up the BSBA-IS major + its required business
+# core (the IS major's scope). CMP/COE/EGM/SCM-style cross-listings outside this
+# set appear only as OR-alternative prerequisites and are NOT part of the major.
+_BUSINESS_SUBJECTS = {"ISA", "ACC", "FIN", "MGT", "MKT", "ECO", "STA", "QBA", "BLW", "SCM"}
+
+
+def _course_num(code: str) -> int:
+    m = re.search(r"\d+", code)
+    return int(m.group(0)) if m else -1
+
+
+def parse_pdf() -> tuple[list[dict], dict, str]:
+    """Parse the PDF into (course_records, diagnostics, flattened_text)."""
     raw = extract_text(str(_PDF))
     flat = _flatten(raw)
 
@@ -95,23 +107,55 @@ def parse_pdf() -> tuple[list[dict], dict]:
         "by_subject": {s: sum(1 for c in courses if c["code"].startswith(s + " "))
                        for s in _SUBJECTS},
     }
-    return courses, diagnostics
+    return courses, diagnostics, flat
 
 
-def referenced_codes(courses: list[dict]) -> list[str]:
-    """Courses the IS major requires.
+def _business_core_codes(flat: str) -> set[str]:
+    """The BSBA business core, read verbatim from the catalogue's authoritative
+    'following business core courses:' bullet list (45-credit core required of
+    every BSBA major). Restricted to business subjects present in the text."""
+    m = re.search(r"following business core courses\s*:?", flat)
+    if not m:
+        return set()
+    seg = flat[m.start(): m.start() + 1500]
+    end = seg.find("Major Requirements")  # the bullet list ends here
+    if end > 0:
+        seg = seg[:end]
+    return {f"{a} {b}" for a, b in re.findall(r"\b([A-Z]{2,4})\s+(\d{3})\b", seg)
+            if a in _BUSINESS_SUBJECTS}
 
-    The IS major's required courses are not exposed as a clean table in the
-    flattened PDF; we take the verbatim prerequisite references among the scoped
-    courses as the referenced set, plus the ISA major courses themselves. This is
-    the same role ``referenced_course_codes`` plays for the other institutions:
-    it tells the ingest which cross-listed support courses to keep.
+
+def _isa_prereq_closure(courses: list[dict]) -> set[str]:
+    """ISA major courses plus the business-subject courses on a prerequisite path
+    to them (transitive closure over real prereq references, business subjects
+    only, undergraduate level)."""
+    by = {c["code"]: c for c in courses}
+    present = {c for c in by
+               if c.split()[0] in _BUSINESS_SUBJECTS and _course_num(c) < 500}
+    closure = {c for c in present if c.split()[0] == "ISA"}
+    queue = deque(closure)
+    while queue:
+        raw = by.get(queue.popleft(), {}).get("prereq_raw", "") or ""
+        for mm in re.finditer(r"\b([A-Z]{2,4})\s+(\d{3})\b", raw):
+            ref = f"{mm.group(1)} {mm.group(2)}"
+            if ref in present and ref not in closure:
+                closure.add(ref)
+                queue.append(ref)
+    return closure
+
+
+def referenced_codes(courses: list[dict], flat: str) -> list[str]:
+    """Courses the BSBA Information Systems & Business Analytics major requires.
+
+    Defined as the union of (a) the ISA major + its prerequisite closure and
+    (b) the authoritative BSBA business core, restricted to business subjects
+    actually present in the extraction. This narrows the IS major to a real
+    ~major-scale set (not the whole business school), so the ingest keeps only
+    the IS major + its required business core as support — matching how Khalifa
+    (COSC) and UNC (ECON) are scoped to a single major plus referenced support.
     """
-    refs: set[str] = set()
-    for c in courses:
-        refs.add(c["code"])  # all scoped courses are candidates for the major
-        for m in re.finditer(rf"\b({_SUBJ_RE})\s+(\d{{3}})\b", c["prereq_raw"]):
-            refs.add(f"{m.group(1)} {m.group(2)}")
+    present = {c["code"] for c in courses}
+    refs = (_isa_prereq_closure(courses) | _business_core_codes(flat)) & present
     return sorted(refs)
 
 
@@ -119,8 +163,8 @@ def main() -> None:
     print("AUS — parsing 2024-2025 catalogue PDF (BSBA Information Systems) ...")
     if not _PDF.exists():
         raise SystemExit(f"STOP: AUS PDF not found at {_PDF}")
-    courses, diag = parse_pdf()
-    referenced = referenced_codes(courses)
+    courses, diag, flat = parse_pdf()
+    referenced = referenced_codes(courses, flat)
 
     with (_AUS_DIR / "extracted_courses.json").open("w") as fh:
         json.dump(courses, fh, indent=2, ensure_ascii=False)
