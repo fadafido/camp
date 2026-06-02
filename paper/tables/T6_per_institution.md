@@ -1,0 +1,5 @@
+| Institution | Field | CAMP NDCG@10 | CAMP violation rate | Deep NN NDCG@10 (contrast) |
+|---|---|---|---|---|
+| khalifa | Computer Science | 0.663 | 0.000 | 0.817 |
+| aus | Information Systems | 0.717 | 0.000 | 0.807 |
+| unc | Economics | 0.541 | 0.000 | 0.758 |

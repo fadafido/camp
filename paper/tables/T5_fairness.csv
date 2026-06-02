@@ -1,0 +1,7 @@
+Attribute,NDCG@10 disparity (max−min),Equal-opportunity gap,Max violation rate across groups
+gpa_band,0.007,0.016,0.000
+gender,0.029,0.011,0.000
+major_track,0.189,0.105,0.000
+cold_start,0.123,0.000,0.000
+start_state_type,0.125,0.064,0.000
+university,0.177,0.054,0.000
