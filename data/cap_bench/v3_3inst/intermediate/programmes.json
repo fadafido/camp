@@ -1,0 +1,44 @@
+[
+  {
+    "programme_id": "KHAL_BSC_CS_v2024",
+    "university": "khalifa",
+    "name": "Bachelor of Science in Computer Science",
+    "version": "2024",
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "total_credits_required": 130,
+    "min_gpa_required": 2.0,
+    "max_terms_to_complete": 14,
+    "primary_department": "COSC",
+    "native_total_credits": 130,
+    "graduation_threshold_note": "Reconstructed realistic threshold (Phase MERGE-4): CORE = major-subject gateway courses (all required), SUPPORT = support-subject gateway courses (all required), ELECTIVES = min_credits over terminal courses tuned so gateways + elective-minimum = total_credits_required, leaving >=40% of the terminal pool as un-required electives. total equals the native degree total."
+  },
+  {
+    "programme_id": "AUS_BSBA_IS_v2024",
+    "university": "aus",
+    "name": "Bachelor of Science in Business Administration, Major in Information Systems and Business Analytics",
+    "version": "2024",
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "total_credits_required": 341,
+    "min_gpa_required": 2.0,
+    "max_terms_to_complete": 14,
+    "primary_department": "ISA",
+    "native_total_credits": 120,
+    "graduation_threshold_note": "Reconstructed realistic threshold (Phase MERGE-4): CORE = major-subject gateway courses (all required), SUPPORT = support-subject gateway courses (all required), ELECTIVES = min_credits over terminal courses tuned so gateways + elective-minimum = total_credits_required, leaving >=40% of the terminal pool as un-required electives. native total 120 is unreachable from the scoped subset (pool 544 cr incl. no general education); scoped total set to 341."
+  },
+  {
+    "programme_id": "UNC_BS_ECON_v2024",
+    "university": "unc",
+    "name": "Bachelor of Science in Economics",
+    "version": "2024",
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "total_credits_required": 120,
+    "min_gpa_required": 2.0,
+    "max_terms_to_complete": 14,
+    "primary_department": "ECON",
+    "native_total_credits": 120,
+    "graduation_threshold_note": "Reconstructed realistic threshold (Phase MERGE-4): CORE = major-subject gateway courses (all required), SUPPORT = support-subject gateway courses (all required), ELECTIVES = min_credits over terminal courses tuned so gateways + elective-minimum = total_credits_required, leaving >=40% of the terminal pool as un-required electives. total equals the native degree total."
+  }
+]

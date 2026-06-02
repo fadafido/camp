@@ -1,0 +1,18 @@
+[
+  {
+    "programme_id": "KHAL_BSC_CS_v2024",
+    "university": "khalifa",
+    "name": "Bachelor of Science in Computer Science",
+    "version": "2024",
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "total_credits_required": 182,
+    "min_gpa_required": 2.0,
+    "max_terms_to_complete": 12,
+    "primary_department": "COSC",
+    "native_total_credits": 130,
+    "native_total_credits_note": "BSc Computer Science total credit hours from the Khalifa University 2024-2025 undergraduate catalogue requirements page; the full degree includes general-education/university requirements outside the scoped Computer-Science subset.",
+    "credit_normalisation": "Published semester-credit values carried through verbatim; normalised total_credits_required is the sum of the scoped blocks (major core + electives + support). The native full-degree total (incl. general education outside the scoped subset) is recorded in native_total_credits.",
+    "block_structure_note": "Faithful reconstruction: source programme pages do not expose exact block credit splits for this major, so CORE = referenced home-subject courses, ELECTIVES = remaining home-subject courses, SUPPORT = scoped non-home courses; each block's min_credits is the sum of its courses' credits."
+  }
+]

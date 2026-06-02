@@ -1,0 +1,87 @@
+[
+  {
+    "rule_id": "UNC_RULE_CORE",
+    "course_id": "UNC_ECON_101",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "UNC_RULE_CORE",
+    "course_id": "UNC_ECON_400",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "UNC_RULE_CORE",
+    "course_id": "UNC_ECON_410",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "UNC_RULE_CORE",
+    "course_id": "UNC_ECON_420",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "UNC_RULE_CORE",
+    "course_id": "UNC_ECON_470",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "UNC_RULE_SUPPORT",
+    "course_id": "UNC_COMP_110",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "UNC_RULE_SUPPORT",
+    "course_id": "UNC_COMP_116",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "UNC_RULE_SUPPORT",
+    "course_id": "UNC_COMP_283",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "UNC_RULE_SUPPORT",
+    "course_id": "UNC_MATH_231",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "UNC_RULE_SUPPORT",
+    "course_id": "UNC_MATH_232",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "UNC_RULE_SUPPORT",
+    "course_id": "UNC_MATH_233",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "UNC_RULE_SUPPORT",
+    "course_id": "UNC_MATH_235",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "UNC_RULE_SUPPORT",
+    "course_id": "UNC_MATH_347",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "UNC_RULE_SUPPORT",
+    "course_id": "UNC_MATH_381",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "UNC_RULE_SUPPORT",
+    "course_id": "UNC_STOR_415",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "UNC_RULE_SUPPORT",
+    "course_id": "UNC_STOR_435",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "UNC_RULE_SUPPORT",
+    "course_id": "UNC_STOR_535",
+    "weight_credits": null
+  }
+]

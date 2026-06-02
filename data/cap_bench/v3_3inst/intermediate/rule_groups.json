@@ -1,0 +1,74 @@
+[
+  {
+    "rule_group_id": "KHAL_BLOCK_CORE_RG",
+    "block_id": "KHAL_BLOCK_CORE",
+    "group_index": 1,
+    "group_name": "COSC core",
+    "is_required": true,
+    "description": "COSC core"
+  },
+  {
+    "rule_group_id": "KHAL_BLOCK_SUPPORT_RG",
+    "block_id": "KHAL_BLOCK_SUPPORT",
+    "group_index": 1,
+    "group_name": "Support core",
+    "is_required": true,
+    "description": "Support core"
+  },
+  {
+    "rule_group_id": "KHAL_BLOCK_ELECTIVES_RG",
+    "block_id": "KHAL_BLOCK_ELECTIVES",
+    "group_index": 1,
+    "group_name": "Elective credits",
+    "is_required": true,
+    "description": "Elective credits"
+  },
+  {
+    "rule_group_id": "AUS_BLOCK_CORE_RG",
+    "block_id": "AUS_BLOCK_CORE",
+    "group_index": 1,
+    "group_name": "ISA core",
+    "is_required": true,
+    "description": "ISA core"
+  },
+  {
+    "rule_group_id": "AUS_BLOCK_SUPPORT_RG",
+    "block_id": "AUS_BLOCK_SUPPORT",
+    "group_index": 1,
+    "group_name": "Support core",
+    "is_required": true,
+    "description": "Support core"
+  },
+  {
+    "rule_group_id": "AUS_BLOCK_ELECTIVES_RG",
+    "block_id": "AUS_BLOCK_ELECTIVES",
+    "group_index": 1,
+    "group_name": "Elective credits",
+    "is_required": true,
+    "description": "Elective credits"
+  },
+  {
+    "rule_group_id": "UNC_BLOCK_CORE_RG",
+    "block_id": "UNC_BLOCK_CORE",
+    "group_index": 1,
+    "group_name": "ECON core",
+    "is_required": true,
+    "description": "ECON core"
+  },
+  {
+    "rule_group_id": "UNC_BLOCK_SUPPORT_RG",
+    "block_id": "UNC_BLOCK_SUPPORT",
+    "group_index": 1,
+    "group_name": "Support core",
+    "is_required": true,
+    "description": "Support core"
+  },
+  {
+    "rule_group_id": "UNC_BLOCK_ELECTIVES_RG",
+    "block_id": "UNC_BLOCK_ELECTIVES",
+    "group_index": 1,
+    "group_name": "Elective credits",
+    "is_required": true,
+    "description": "Elective credits"
+  }
+]

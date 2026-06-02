@@ -1,0 +1,26 @@
+[
+  {
+    "rule_group_id": "AUS_BLOCK_CORE_RG",
+    "block_id": "AUS_BLOCK_CORE",
+    "group_index": 1,
+    "group_name": "ISA core requirements",
+    "is_required": true,
+    "description": "ISA core requirements"
+  },
+  {
+    "rule_group_id": "AUS_BLOCK_ELECTIVES_RG",
+    "block_id": "AUS_BLOCK_ELECTIVES",
+    "group_index": 1,
+    "group_name": "ISA elective requirements",
+    "is_required": true,
+    "description": "ISA elective requirements"
+  },
+  {
+    "rule_group_id": "AUS_BLOCK_SUPPORT_RG",
+    "block_id": "AUS_BLOCK_SUPPORT",
+    "group_index": 1,
+    "group_name": "Support requirements",
+    "is_required": true,
+    "description": "Support requirements"
+  }
+]

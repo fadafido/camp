@@ -1,0 +1,169 @@
+{
+  "n_students": 4500,
+  "n_students_per_institution": {
+    "khalifa": 1500,
+    "aus": 1500,
+    "unc": 1500
+  },
+  "overall": {
+    "n_students": 4500,
+    "graduation_rate": 0.4953,
+    "mean_final_gpa": 2.9472,
+    "mean_terms_to_graduate": 10.8125,
+    "population_pass_rate": 0.9551,
+    "total_enrolment_rows": 208507,
+    "graded_enrolment_rows": 205943
+  },
+  "per_institution": {
+    "khalifa": {
+      "n_students": 1500,
+      "graduation_rate": 0.7273,
+      "mean_final_gpa": 2.952,
+      "mean_terms_to_graduate": 10.9423,
+      "population_pass_rate": 0.9548,
+      "distinct_transcripts_sample": 199,
+      "sample_size": 200
+    },
+    "aus": {
+      "n_students": 1500,
+      "graduation_rate": 0.0,
+      "mean_final_gpa": 2.9374,
+      "mean_terms_to_graduate": null,
+      "population_pass_rate": 0.9541,
+      "distinct_transcripts_sample": 199,
+      "sample_size": 200
+    },
+    "unc": {
+      "n_students": 1500,
+      "graduation_rate": 0.7587,
+      "mean_final_gpa": 2.9521,
+      "mean_terms_to_graduate": 10.688,
+      "population_pass_rate": 0.9566,
+      "distinct_transcripts_sample": 200,
+      "sample_size": 200
+    }
+  },
+  "courses_per_term": {
+    "mean": 3.8176,
+    "std": 1.2781,
+    "min": 1,
+    "max": 6,
+    "histogram": {
+      "1": 2651,
+      "2": 8728,
+      "3": 6039,
+      "4": 16663,
+      "5": 18117,
+      "6": 1747
+    }
+  },
+  "start_state_mix": {
+    "new": 2682,
+    "transfer": 700,
+    "returning": 239,
+    "mid_degree": 879
+  },
+  "term_load_mix": {
+    "overload": 458,
+    "full_time": 3124,
+    "part_time": 918
+  },
+  "demographics": {
+    "gender": {
+      "M": 2247,
+      "F": 2253
+    },
+    "gpa_band": {
+      "med": 2252,
+      "low": 1092,
+      "high": 1156
+    },
+    "chosen_track": {
+      "ai": 502,
+      "cybersecurity": 494,
+      "general": 1569,
+      "business_analytics": 460,
+      "information_systems": 495,
+      "quantitative": 466,
+      "policy": 514
+    }
+  },
+  "merge": {
+    "programmes": 3,
+    "courses": 315,
+    "courses_per_institution": {
+      "khalifa": 59,
+      "aus": 182,
+      "unc": 74
+    },
+    "id_collisions": 0,
+    "per_institution": {
+      "khalifa": {
+        "native_total": 130,
+        "scoped_total": 130,
+        "core_gateway_courses": 13,
+        "core_gateway_credits": 41,
+        "support_gateway_courses": 6,
+        "support_gateway_credits": 21,
+        "required_gateway_credits": 62,
+        "elective_min_credits": 68,
+        "elective_pool_courses": 40,
+        "elective_pool_credits": 120,
+        "elective_buffer_credits": 52,
+        "uses_native_total": true,
+        "dag": {
+          "n_courses": 59,
+          "real_edges": 56,
+          "augmented_edges": 11,
+          "is_acyclic": true,
+          "max_chain_depth": 6,
+          "n_courses_with_prereq": 55
+        }
+      },
+      "aus": {
+        "native_total": 120,
+        "scoped_total": 341,
+        "core_gateway_courses": 3,
+        "core_gateway_credits": 9,
+        "support_gateway_courses": 43,
+        "support_gateway_credits": 130,
+        "required_gateway_credits": 139,
+        "elective_min_credits": 202,
+        "elective_pool_courses": 136,
+        "elective_pool_credits": 405,
+        "elective_buffer_credits": 203,
+        "uses_native_total": false,
+        "dag": {
+          "n_courses": 182,
+          "real_edges": 247,
+          "augmented_edges": 20,
+          "is_acyclic": true,
+          "max_chain_depth": 5,
+          "n_courses_with_prereq": 168
+        }
+      },
+      "unc": {
+        "native_total": 120,
+        "scoped_total": 120,
+        "core_gateway_courses": 10,
+        "core_gateway_credits": 31,
+        "support_gateway_courses": 7,
+        "support_gateway_credits": 25,
+        "required_gateway_credits": 56,
+        "elective_min_credits": 64,
+        "elective_pool_courses": 57,
+        "elective_pool_credits": 151,
+        "elective_buffer_credits": 87,
+        "uses_native_total": true,
+        "dag": {
+          "n_courses": 74,
+          "real_edges": 104,
+          "augmented_edges": 10,
+          "is_acyclic": true,
+          "max_chain_depth": 4,
+          "n_courses_with_prereq": 63
+        }
+      }
+    }
+  }
+}

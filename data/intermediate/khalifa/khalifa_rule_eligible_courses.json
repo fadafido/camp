@@ -1,0 +1,247 @@
+[
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_101",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_201",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_230",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_301",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_310",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_312",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_320",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_330",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_333",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_336",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_340",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_354",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_377",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_399",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_401",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_410",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_412",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_430",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_432",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_434",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_435",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_436",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_438",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_440",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_442",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_444",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_449",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_452",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_454",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_456",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_460",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_462",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_464",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_477",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_497",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "course_id": "KHAL_COSC_498",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_SUPPORT",
+    "course_id": "KHAL_CCEN_356",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_SUPPORT",
+    "course_id": "KHAL_CCEN_446",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_SUPPORT",
+    "course_id": "KHAL_CCEN_448",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_SUPPORT",
+    "course_id": "KHAL_CCEN_481",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_SUPPORT",
+    "course_id": "KHAL_CHEM_115",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_SUPPORT",
+    "course_id": "KHAL_MATH_111",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_SUPPORT",
+    "course_id": "KHAL_MATH_112",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_SUPPORT",
+    "course_id": "KHAL_MATH_204",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_SUPPORT",
+    "course_id": "KHAL_MATH_214",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_SUPPORT",
+    "course_id": "KHAL_MATH_232",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_SUPPORT",
+    "course_id": "KHAL_MATH_234",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_SUPPORT",
+    "course_id": "KHAL_MATH_243",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "KHAL_RULE_SUPPORT",
+    "course_id": "KHAL_PHYS_121",
+    "weight_credits": null
+  }
+]

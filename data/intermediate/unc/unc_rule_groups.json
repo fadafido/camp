@@ -1,0 +1,26 @@
+[
+  {
+    "rule_group_id": "UNC_BLOCK_CORE_RG",
+    "block_id": "UNC_BLOCK_CORE",
+    "group_index": 1,
+    "group_name": "ECON core requirements",
+    "is_required": true,
+    "description": "ECON core requirements"
+  },
+  {
+    "rule_group_id": "UNC_BLOCK_ELECTIVES_RG",
+    "block_id": "UNC_BLOCK_ELECTIVES",
+    "group_index": 1,
+    "group_name": "ECON elective requirements",
+    "is_required": true,
+    "description": "ECON elective requirements"
+  },
+  {
+    "rule_group_id": "UNC_BLOCK_SUPPORT_RG",
+    "block_id": "UNC_BLOCK_SUPPORT",
+    "group_index": 1,
+    "group_name": "Support requirements",
+    "is_required": true,
+    "description": "Support requirements"
+  }
+]

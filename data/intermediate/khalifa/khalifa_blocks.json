@@ -1,0 +1,38 @@
+[
+  {
+    "block_id": "KHAL_BLOCK_CORE",
+    "programme_id": "KHAL_BSC_CS_v2024",
+    "block_index": 1,
+    "block_name": "COSC Major Core",
+    "block_type": "major_core",
+    "is_required": true,
+    "scope": "programme",
+    "owner_university_id": null,
+    "min_credits_in_block": 107,
+    "description": "COSC Major Core"
+  },
+  {
+    "block_id": "KHAL_BLOCK_ELECTIVES",
+    "programme_id": "KHAL_BSC_CS_v2024",
+    "block_index": 2,
+    "block_name": "COSC Major Electives",
+    "block_type": "free_elective",
+    "is_required": true,
+    "scope": "programme",
+    "owner_university_id": null,
+    "min_credits_in_block": 31,
+    "description": "COSC Major Electives"
+  },
+  {
+    "block_id": "KHAL_BLOCK_SUPPORT",
+    "programme_id": "KHAL_BSC_CS_v2024",
+    "block_index": 3,
+    "block_name": "Required Support Courses",
+    "block_type": "breadth",
+    "is_required": true,
+    "scope": "programme",
+    "owner_university_id": null,
+    "min_credits_in_block": 44,
+    "description": "Required Support Courses"
+  }
+]

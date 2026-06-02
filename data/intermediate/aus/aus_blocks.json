@@ -1,0 +1,38 @@
+[
+  {
+    "block_id": "AUS_BLOCK_CORE",
+    "programme_id": "AUS_BSBA_IS_v2024",
+    "block_index": 1,
+    "block_name": "ISA Major Core",
+    "block_type": "major_core",
+    "is_required": true,
+    "scope": "programme",
+    "owner_university_id": null,
+    "min_credits_in_block": 39,
+    "description": "ISA Major Core"
+  },
+  {
+    "block_id": "AUS_BLOCK_ELECTIVES",
+    "programme_id": "AUS_BSBA_IS_v2024",
+    "block_index": 2,
+    "block_name": "ISA Major Electives",
+    "block_type": "free_elective",
+    "is_required": true,
+    "scope": "programme",
+    "owner_university_id": null,
+    "min_credits_in_block": 0,
+    "description": "ISA Major Electives"
+  },
+  {
+    "block_id": "AUS_BLOCK_SUPPORT",
+    "programme_id": "AUS_BSBA_IS_v2024",
+    "block_index": 3,
+    "block_name": "Required Support Courses",
+    "block_type": "breadth",
+    "is_required": true,
+    "scope": "programme",
+    "owner_university_id": null,
+    "min_credits_in_block": 505,
+    "description": "Required Support Courses"
+  }
+]

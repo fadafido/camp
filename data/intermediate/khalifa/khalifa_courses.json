@@ -1,0 +1,1402 @@
+[
+  {
+    "course_id": "KHAL_CCEN_356",
+    "university": "khalifa",
+    "code_local": "CCEN 356",
+    "title": "Computer Networks",
+    "description_summary": null,
+    "credits": 4,
+    "level": 300,
+    "department": "CCEN",
+    "subject_area": "CCEN",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_201"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_CCEN_446",
+    "university": "khalifa",
+    "code_local": "CCEN 446",
+    "title": "Network Security",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "CCEN",
+    "subject_area": "CCEN",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_CCEN_356"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_CCEN_448",
+    "university": "khalifa",
+    "code_local": "CCEN 448",
+    "title": "Cloud Infrastructure and Services",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "CCEN",
+    "subject_area": "CCEN",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_CCEN_356"
+      ],
+      [
+        "KHAL_COSC_354"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_CCEN_481",
+    "university": "khalifa",
+    "code_local": "CCEN 481",
+    "title": "Wireless Sensor Networks and Internet of Things",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "CCEN",
+    "subject_area": "CCEN",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_CHEM_115",
+    "university": "khalifa",
+    "code_local": "CHEM 115",
+    "title": "General Chemistry I",
+    "description_summary": null,
+    "credits": 4,
+    "level": 100,
+    "department": "CHEM",
+    "subject_area": "CHEM",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.3,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_011",
+    "university": "khalifa",
+    "code_local": "COSC 011",
+    "title": "Foundations of Computing",
+    "description_summary": null,
+    "credits": 4,
+    "level": 0,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.3,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_101",
+    "university": "khalifa",
+    "code_local": "COSC 101",
+    "title": "Foundations of Computer Science",
+    "description_summary": null,
+    "credits": 3,
+    "level": 100,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.3,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_114"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_114",
+    "university": "khalifa",
+    "code_local": "COSC 114",
+    "title": "Introduction to Computing- Python",
+    "description_summary": null,
+    "credits": 4,
+    "level": 100,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.3,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_201",
+    "university": "khalifa",
+    "code_local": "COSC 201",
+    "title": "Computer Systems Organization",
+    "description_summary": null,
+    "credits": 3,
+    "level": 200,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.5,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_101"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_202",
+    "university": "khalifa",
+    "code_local": "COSC 202",
+    "title": "Data Science and Artificial Intelligence",
+    "description_summary": null,
+    "credits": 3,
+    "level": 200,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.5,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_114"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_230",
+    "university": "khalifa",
+    "code_local": "COSC 230",
+    "title": "Object-Oriented Programming",
+    "description_summary": null,
+    "credits": 4,
+    "level": 200,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.5,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_114"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_296",
+    "university": "khalifa",
+    "code_local": "COSC 296",
+    "title": "Directed Study",
+    "description_summary": null,
+    "credits": 3,
+    "level": 200,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.5,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_301",
+    "university": "khalifa",
+    "code_local": "COSC 301",
+    "title": "Automata, Computability, and Complexity",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_101"
+      ],
+      [
+        "KHAL_MATH_234"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_310",
+    "university": "khalifa",
+    "code_local": "COSC 310",
+    "title": "Data Structures",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_230"
+      ],
+      [
+        "KHAL_MATH_234"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_312",
+    "university": "khalifa",
+    "code_local": "COSC 312",
+    "title": "Design and Analysis of Algorithms",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_301"
+      ],
+      [
+        "KHAL_COSC_310"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_320",
+    "university": "khalifa",
+    "code_local": "COSC 320",
+    "title": "Principles of Programming Languages",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_301"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_330",
+    "university": "khalifa",
+    "code_local": "COSC 330",
+    "title": "Introduction to Artificial Intelligence",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_230"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_333",
+    "university": "khalifa",
+    "code_local": "COSC 333",
+    "title": "System Analysis & Software Design",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_336"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_336",
+    "university": "khalifa",
+    "code_local": "COSC 336",
+    "title": "Introduction to Software Engineering",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_230"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_340",
+    "university": "khalifa",
+    "code_local": "COSC 340",
+    "title": "Introduction to Computer Security",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_354"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_354",
+    "university": "khalifa",
+    "code_local": "COSC 354",
+    "title": "Operating Systems",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_230"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_377",
+    "university": "khalifa",
+    "code_local": "COSC 377",
+    "title": "Undergraduate Research",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_391",
+    "university": "khalifa",
+    "code_local": "COSC 391",
+    "title": "Independent Study I",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": [
+      "Department Approval",
+      "Junior standing",
+      "Students must have a CGPA of 3"
+    ]
+  },
+  {
+    "course_id": "KHAL_COSC_395",
+    "university": "khalifa",
+    "code_local": "COSC 395",
+    "title": "Special Topics in Computer Science",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_399",
+    "university": "khalifa",
+    "code_local": "COSC 399",
+    "title": "Computer Science Internship",
+    "description_summary": null,
+    "credits": 1,
+    "level": 300,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_401",
+    "university": "khalifa",
+    "code_local": "COSC 401",
+    "title": "Computational Social Science",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_312"
+      ],
+      [
+        "KHAL_COSC_410"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_410",
+    "university": "khalifa",
+    "code_local": "COSC 410",
+    "title": "Parallel and Distributed Computing",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_312"
+      ],
+      [
+        "KHAL_COSC_354"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_412",
+    "university": "khalifa",
+    "code_local": "COSC 412",
+    "title": "Numerical Computing",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_312"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_430",
+    "university": "khalifa",
+    "code_local": "COSC 430",
+    "title": "Data Analytics",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_330"
+      ],
+      [
+        "KHAL_MATH_243"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_432",
+    "university": "khalifa",
+    "code_local": "COSC 432",
+    "title": "Algorithmic Robotics",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_330"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_433",
+    "university": "khalifa",
+    "code_local": "COSC 433",
+    "title": "Neural Networks",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_330"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_434",
+    "university": "khalifa",
+    "code_local": "COSC 434",
+    "title": "Introduction to Machine Learning",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_330"
+      ],
+      [
+        "KHAL_MATH_204"
+      ],
+      [
+        "KHAL_MATH_243"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_435",
+    "university": "khalifa",
+    "code_local": "COSC 435",
+    "title": "Introduction to AI/ML for Cybersecurity",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_330"
+      ],
+      [
+        "KHAL_COSC_340"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_436",
+    "university": "khalifa",
+    "code_local": "COSC 436",
+    "title": "Software Testing and Quality Assurance",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_336"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_438",
+    "university": "khalifa",
+    "code_local": "COSC 438",
+    "title": "Software Architecture",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_440",
+    "university": "khalifa",
+    "code_local": "COSC 440",
+    "title": "Digital Forensics",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_340"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_442",
+    "university": "khalifa",
+    "code_local": "COSC 442",
+    "title": "Applied Cryptography",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_340"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_444",
+    "university": "khalifa",
+    "code_local": "COSC 444",
+    "title": "Database Systems",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_336"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_449",
+    "university": "khalifa",
+    "code_local": "COSC 449",
+    "title": "iOS App Development",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_230"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_452",
+    "university": "khalifa",
+    "code_local": "COSC 452",
+    "title": "Human-Computer Interaction",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_336"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_454",
+    "university": "khalifa",
+    "code_local": "COSC 454",
+    "title": "Computer Graphics",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_312"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_456",
+    "university": "khalifa",
+    "code_local": "COSC 456",
+    "title": "Image Processing and Analysis",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_230"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_460",
+    "university": "khalifa",
+    "code_local": "COSC 460",
+    "title": "Bioinformatics and Genomic Data Science",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_312"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_462",
+    "university": "khalifa",
+    "code_local": "COSC 462",
+    "title": "Mobile and Web Applications Development",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_310"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_464",
+    "university": "khalifa",
+    "code_local": "COSC 464",
+    "title": "Natural Language Processing",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_330"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_477",
+    "university": "khalifa",
+    "code_local": "COSC 477",
+    "title": "Undergraduate Research",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_491",
+    "university": "khalifa",
+    "code_local": "COSC 491",
+    "title": "Independent Study II",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": [
+      "Department Approval",
+      "Senior Standing",
+      "Students must have a CGPA of 3"
+    ]
+  },
+  {
+    "course_id": "KHAL_COSC_495",
+    "university": "khalifa",
+    "code_local": "COSC 495",
+    "title": "Special Topics in Computer Science",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_496",
+    "university": "khalifa",
+    "code_local": "COSC 496",
+    "title": "Artificial Intelligence Project",
+    "description_summary": null,
+    "credits": 2,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_497",
+    "university": "khalifa",
+    "code_local": "COSC 497",
+    "title": "Senior Design Project I",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_312"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_COSC_498",
+    "university": "khalifa",
+    "code_local": "COSC 498",
+    "title": "Senior Design Project II",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COSC",
+    "subject_area": "COSC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_COSC_497"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_MATH_111",
+    "university": "khalifa",
+    "code_local": "MATH 111",
+    "title": "Calculus I",
+    "description_summary": null,
+    "credits": 4,
+    "level": 100,
+    "department": "MATH",
+    "subject_area": "MATH",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.3,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_MATH_112",
+    "university": "khalifa",
+    "code_local": "MATH 112",
+    "title": "Calculus II",
+    "description_summary": null,
+    "credits": 4,
+    "level": 100,
+    "department": "MATH",
+    "subject_area": "MATH",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.3,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_MATH_111"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_MATH_204",
+    "university": "khalifa",
+    "code_local": "MATH 204",
+    "title": "Linear Algebra",
+    "description_summary": null,
+    "credits": 3,
+    "level": 200,
+    "department": "MATH",
+    "subject_area": "MATH",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.5,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_MATH_112"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_MATH_214",
+    "university": "khalifa",
+    "code_local": "MATH 214",
+    "title": "Mathematical and Statistical Software",
+    "description_summary": null,
+    "credits": 3,
+    "level": 200,
+    "department": "MATH",
+    "subject_area": "MATH",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.5,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_MATH_204"
+      ],
+      [
+        "KHAL_MATH_243"
+      ],
+      [
+        "KHAL_COSC_114"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_MATH_232",
+    "university": "khalifa",
+    "code_local": "MATH 232",
+    "title": "Engineering Mathematics",
+    "description_summary": null,
+    "credits": 3,
+    "level": 200,
+    "department": "MATH",
+    "subject_area": "MATH",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.5,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_MATH_112"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_MATH_234",
+    "university": "khalifa",
+    "code_local": "MATH 234",
+    "title": "Discrete Mathematics",
+    "description_summary": null,
+    "credits": 3,
+    "level": 200,
+    "department": "MATH",
+    "subject_area": "MATH",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.5,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_MATH_112"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_MATH_243",
+    "university": "khalifa",
+    "code_local": "MATH 243",
+    "title": "Probability and Statistical Inference",
+    "description_summary": null,
+    "credits": 3,
+    "level": 200,
+    "department": "MATH",
+    "subject_area": "MATH",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.5,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_MATH_112"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "KHAL_PHYS_121",
+    "university": "khalifa",
+    "code_local": "PHYS 121",
+    "title": "University Physics I",
+    "description_summary": null,
+    "credits": 4,
+    "level": 100,
+    "department": "PHYS",
+    "subject_area": "PHYS",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.3,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "KHAL_MATH_111"
+      ]
+    ],
+    "prereq_notes": []
+  }
+]

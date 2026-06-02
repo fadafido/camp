@@ -1,0 +1,47 @@
+[
+  {
+    "rule_id": "KHAL_RULE_CORE",
+    "rule_group_id": "KHAL_BLOCK_CORE_RG",
+    "rule_index": 1,
+    "rule_name": "COSC core courses",
+    "rule_type": "min_courses",
+    "min_courses": 36,
+    "min_credits": null,
+    "min_grade_each": 1.0,
+    "selector_type": "explicit_list",
+    "attribute_filter": null,
+    "target_block_type": null,
+    "target_block_id": null,
+    "member_group_ids": null
+  },
+  {
+    "rule_id": "KHAL_RULE_ELECTIVES",
+    "rule_group_id": "KHAL_BLOCK_ELECTIVES_RG",
+    "rule_index": 1,
+    "rule_name": "COSC electives — 31 credits",
+    "rule_type": "min_credits",
+    "min_courses": null,
+    "min_credits": 31,
+    "min_grade_each": 1.0,
+    "selector_type": "attribute_match",
+    "attribute_filter": "subject_area==COSC",
+    "target_block_type": null,
+    "target_block_id": null,
+    "member_group_ids": null
+  },
+  {
+    "rule_id": "KHAL_RULE_SUPPORT",
+    "rule_group_id": "KHAL_BLOCK_SUPPORT_RG",
+    "rule_index": 1,
+    "rule_name": "Support courses",
+    "rule_type": "min_courses",
+    "min_courses": 13,
+    "min_credits": null,
+    "min_grade_each": 1.0,
+    "selector_type": "explicit_list",
+    "attribute_filter": null,
+    "target_block_type": null,
+    "target_block_id": null,
+    "member_group_ids": null
+  }
+]

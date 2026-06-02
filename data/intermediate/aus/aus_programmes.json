@@ -1,0 +1,18 @@
+[
+  {
+    "programme_id": "AUS_BSBA_IS_v2024",
+    "university": "aus",
+    "name": "Bachelor of Science in Business Administration, Major in Information Systems and Business Analytics",
+    "version": "2024",
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "total_credits_required": 544,
+    "min_gpa_required": 2.0,
+    "max_terms_to_complete": 12,
+    "primary_department": "ISA",
+    "native_total_credits": 120,
+    "native_total_credits_note": "Standard AUS BSBA degree total (120 credits); the full degree includes the general-education programme and free electives outside the scoped Information-Systems subset. Source: AUS 2024-2025 undergraduate catalogue (PDF).",
+    "credit_normalisation": "Published semester-credit values carried through verbatim; normalised total_credits_required is the sum of the scoped blocks (major core + electives + support). The native full-degree total (incl. general education outside the scoped subset) is recorded in native_total_credits.",
+    "block_structure_note": "Faithful reconstruction: source programme pages do not expose exact block credit splits for this major, so CORE = referenced home-subject courses, ELECTIVES = remaining home-subject courses, SUPPORT = scoped non-home courses; each block's min_credits is the sum of its courses' credits."
+  }
+]

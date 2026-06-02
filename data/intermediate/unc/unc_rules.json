@@ -1,0 +1,47 @@
+[
+  {
+    "rule_id": "UNC_RULE_CORE",
+    "rule_group_id": "UNC_BLOCK_CORE_RG",
+    "rule_index": 1,
+    "rule_name": "ECON core courses",
+    "rule_type": "min_courses",
+    "min_courses": 5,
+    "min_credits": null,
+    "min_grade_each": 1.0,
+    "selector_type": "explicit_list",
+    "attribute_filter": null,
+    "target_block_type": null,
+    "target_block_id": null,
+    "member_group_ids": null
+  },
+  {
+    "rule_id": "UNC_RULE_ELECTIVES",
+    "rule_group_id": "UNC_BLOCK_ELECTIVES_RG",
+    "rule_index": 1,
+    "rule_name": "ECON electives — 149 credits",
+    "rule_type": "min_credits",
+    "min_courses": null,
+    "min_credits": 149,
+    "min_grade_each": 1.0,
+    "selector_type": "attribute_match",
+    "attribute_filter": "subject_area==ECON",
+    "target_block_type": null,
+    "target_block_id": null,
+    "member_group_ids": null
+  },
+  {
+    "rule_id": "UNC_RULE_SUPPORT",
+    "rule_group_id": "UNC_BLOCK_SUPPORT_RG",
+    "rule_index": 1,
+    "rule_name": "Support courses",
+    "rule_type": "min_courses",
+    "min_courses": 12,
+    "min_credits": null,
+    "min_grade_each": 1.0,
+    "selector_type": "explicit_list",
+    "attribute_filter": null,
+    "target_block_type": null,
+    "target_block_id": null,
+    "member_group_ids": null
+  }
+]
