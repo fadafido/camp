@@ -1,0 +1,88 @@
+{
+  "programme": "Bachelor of Science in Business Administration, Major in Information Systems and Business Analytics",
+  "source": "AUS 2024-2025 Undergraduate Catalog (cached PDF)",
+  "total_credits_stated": 123,
+  "min_cgpa": 2.0,
+  "blocks": {
+    "general_education": {
+      "credits": 36,
+      "type": "distribution",
+      "note": "min 36 cr; specific requirements satisfied through named courses (maths MTH 102/103, statistics QBA 201, ethics MGT 360, writing ENG 204/208/225, etc.); outside the recommender's academic scope."
+    },
+    "innovation_entrepreneurship": {
+      "credits": 3,
+      "courses": [
+        "IEN 301"
+      ]
+    },
+    "business_core": {
+      "credits": 45,
+      "courses_explicit": [
+        "BLW 301",
+        "BUS 100",
+        "ECO 201",
+        "ECO 202",
+        "ENG 225",
+        "FIN 201",
+        "ISA 201",
+        "MGT 201",
+        "MGT 360",
+        "MGT 406",
+        "MKT 201",
+        "QBA 201",
+        "SCM 202"
+      ],
+      "courses_inferred_from_arithmetic": [
+        "ACC 201",
+        "ACC 202"
+      ],
+      "note": "Catalogue states 45 cr. The bullet list names 13 courses (39 cr); ACC 201 + ACC 202 appear immediately adjacent (column-flatten) and close the arithmetic to 45 cr, so the core is these 15 courses."
+    },
+    "major_requirements": {
+      "credits": 18,
+      "courses": [
+        "ISA 301",
+        "CMP 320",
+        "ISA 303",
+        "COE 420",
+        "ISA 377",
+        "ISA 388",
+        "ISA 405",
+        "ISA 497"
+      ],
+      "or_choices": [
+        "ISA 301 OR CMP 320",
+        "ISA 303 OR COE 420"
+      ]
+    },
+    "major_electives": {
+      "credits": 12,
+      "pool": [
+        "ACC 380",
+        "ECO 351",
+        "ECO 452",
+        "FIN 375",
+        "MGT 315",
+        "MGT 380",
+        "EGM 362",
+        "MKT 302",
+        "MKT 360",
+        "SCM 310",
+        "SCM 311",
+        "STA 401",
+        "UPL 302"
+      ],
+      "open_rules": [
+        "MGT 380 OR EGM 362 (one pair in the pool)",
+        "any 300-level or above ISA courses not listed as major requirements",
+        "any approved special-topic courses at the 300 level or above"
+      ]
+    },
+    "major_requirements_plus_electives_total": 30,
+    "free_electives": {
+      "credits": 9,
+      "note": "outside the academic/recommender scope"
+    }
+  },
+  "computed_total_check": 123
+}
