@@ -8,7 +8,7 @@
     "is_required": true,
     "scope": "programme",
     "owner_university_id": null,
-    "min_credits_in_block": 39,
+    "min_credits_in_block": 21,
     "description": "ISA Major Core"
   },
   {
@@ -20,7 +20,7 @@
     "is_required": true,
     "scope": "programme",
     "owner_university_id": null,
-    "min_credits_in_block": 0,
+    "min_credits_in_block": 18,
     "description": "ISA Major Electives"
   },
   {
@@ -32,7 +32,7 @@
     "is_required": true,
     "scope": "programme",
     "owner_university_id": null,
-    "min_credits_in_block": 39,
+    "min_credits_in_block": 148,
     "description": "Required Support Courses"
   }
 ]

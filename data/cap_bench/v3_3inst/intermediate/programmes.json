@@ -20,12 +20,12 @@
     "version": "2024",
     "effective_from_term": "2024FA",
     "effective_to_term": null,
-    "total_credits_required": 60,
+    "total_credits_required": 78,
     "min_gpa_required": 2.0,
     "max_terms_to_complete": 14,
     "primary_department": "ISA",
-    "native_total_credits": 120,
-    "graduation_threshold_note": "Reconstructed realistic threshold (Phase MERGE-4): CORE = major-subject gateway courses (all required), SUPPORT = support-subject gateway courses (all required), ELECTIVES = min_credits over terminal courses tuned so gateways + elective-minimum = total_credits_required, leaving >=40% of the terminal pool as un-required electives. native total 120 is unreachable from the scoped subset (pool 78 cr incl. no general education); scoped total set to 60."
+    "native_total_credits": 123,
+    "graduation_threshold_note": "REAL BSBA-IS catalogue structure (2024-2025): General Education 36 + Innovation & Entrepreneurship 3 + Business Core 45 + Major Requirements 18 + Major Electives 12 + Free Electives 9 = 123 cr. Modelled academic scope = Core 45 + I&E 3 + Major Req 18 + Major Electives 12 = 78 cr; the 36-cr general-education distribution and 9-cr free electives sit outside the recommender's rankable course universe. ACC 201/ACC 202 are a disclosed inference completing the stated 45-cr core."
   },
   {
     "programme_id": "UNC_BS_ECON_v2024",

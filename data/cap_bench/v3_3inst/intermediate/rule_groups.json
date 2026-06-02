@@ -27,25 +27,33 @@
     "rule_group_id": "AUS_BLOCK_CORE_RG",
     "block_id": "AUS_BLOCK_CORE",
     "group_index": 1,
-    "group_name": "ISA core",
+    "group_name": "AUS_BLOCK_CORE",
     "is_required": true,
-    "description": "ISA core"
+    "description": "AUS_BLOCK_CORE"
   },
   {
-    "rule_group_id": "AUS_BLOCK_SUPPORT_RG",
-    "block_id": "AUS_BLOCK_SUPPORT",
+    "rule_group_id": "AUS_BLOCK_IE_RG",
+    "block_id": "AUS_BLOCK_IE",
     "group_index": 1,
-    "group_name": "Support core",
+    "group_name": "AUS_BLOCK_IE",
     "is_required": true,
-    "description": "Support core"
+    "description": "AUS_BLOCK_IE"
+  },
+  {
+    "rule_group_id": "AUS_BLOCK_MAJREQ_RG",
+    "block_id": "AUS_BLOCK_MAJREQ",
+    "group_index": 1,
+    "group_name": "AUS_BLOCK_MAJREQ",
+    "is_required": true,
+    "description": "AUS_BLOCK_MAJREQ"
   },
   {
     "rule_group_id": "AUS_BLOCK_ELECTIVES_RG",
     "block_id": "AUS_BLOCK_ELECTIVES",
     "group_index": 1,
-    "group_name": "Elective credits",
+    "group_name": "AUS_BLOCK_ELECTIVES",
     "is_required": true,
-    "description": "Elective credits"
+    "description": "AUS_BLOCK_ELECTIVES"
   },
   {
     "rule_group_id": "UNC_BLOCK_CORE_RG",

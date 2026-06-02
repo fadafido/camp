@@ -22,15 +22,16 @@ CONFIG = InstConfig(
     programme_name=("Bachelor of Science in Business Administration, "
                     "Major in Information Systems and Business Analytics"),
     primary_department="ISA",
-    home_subjects={"ISA"},  # ISA is the major; only ISA undergrad courses are "home"
+    home_subjects={"ISA"},  # ISA is the major; all ISA undergrad courses are "home"
     major_subject="ISA",
-    # The business-core support subjects; individual courses are kept only when
-    # listed in referenced_course_codes (the BSBA business core + ISA prereqs).
-    support_subjects={"ACC", "FIN", "MGT", "MKT", "ECO", "STA", "QBA", "BLW", "SCM"},
+    support_subjects=set(),  # non-ISA academic courses kept via referenced_course_codes
     home_max_number=500,
     digits=3,
-    keep_any_referenced=False,  # do NOT keep arbitrary referenced courses wholesale
-    native_total_credits=120,
+    # referenced_course_codes is the REAL BSBA-IS academic scope (Business Core +
+    # I&E + Major Requirements incl. "or" alternatives + Major Electives pool +
+    # prerequisite closure); keep exactly those, regardless of subject.
+    keep_any_referenced=True,
+    native_total_credits=123,  # real BSBA degree total (catalogue-authoritative)
     native_total_credits_note=(
         "Standard AUS BSBA degree total (120 credits); the full degree includes "
         "the general-education programme and free electives outside the scoped "

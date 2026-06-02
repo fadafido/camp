@@ -9,11 +9,11 @@
 | Institution | Field | Courses | Grad. credits | Required / electives | Grad. rate |
 |---|---|---:|---|---|---:|
 | khalifa | Computer Science | 59 | 130 (native 130) | 13+6 gateway / 68cr from 40 electives | 0.7273 |
-| aus | Information Systems | 26 | 60 (native 120) | 3+8 gateway / 27cr from 15 electives | 0.898 |
+| aus | Information Systems | 61 | 78 (native 123) | 22+0 gateway / 12cr from 19 electives | 0.8153 |
 | unc | Economics | 74 | 120 (native 120) | 10+7 gateway / 64cr from 57 electives | 0.7587 |
 
-Totals: 3 programmes, 159 courses,
-4500 synthetic students, 153043 enrolment rows.
+Totals: 3 programmes, 194 courses,
+4500 synthetic students, 179098 enrolment rows.
 All identifiers are institution-prefixed (`KHAL_*` / `AUS_*` / `UNC_*`); **zero ID
 collisions**. Each student belongs to ONE institution and is simulated only
 against that institution's programme, prerequisite DAG and constraint engine
@@ -51,7 +51,7 @@ Published semester-credit values are carried through as integers.
 Prerequisites are parsed from the real catalogues (free-text → AND-of-OR groups),
 with minimal curriculum-informed augmentation only for courses left without any
 prerequisite at level ≥ 200. Real edges dominate everywhere
-(56:11 Computer Science, 36:1 Information Systems, 104:10 Economics).
+(56:11 Computer Science, 97:2 Information Systems, 104:10 Economics).
 All DAGs are acyclic.
 
 ## Realistic student mix
@@ -61,13 +61,13 @@ All DAGs are acyclic.
   (a gap term + retakes).
 - **Term load** (full_time 69%, part_time 20%, overload 10%): full-time (4–5), part-time (2–3),
   overload (5–6), plus occasional summer terms (~30 % of students). Term sizes are
-  non-uniform: courses-per-term mean 3.7299, **std 1.2916**
+  non-uniform: courses-per-term mean 3.739, **std 1.2869**
   (range 1–6).
 - **Demographics:** gender, GPA band, cohort, chosen field track, cold-start flag,
   start-state type, term-load type, university — all recorded for fairness work.
 
 Selection is a ~70/30 greedy/stochastic mix; grades are band-calibrated
-(population pass rate 0.9555).
+(population pass rate 0.955).
 
 ## Splits
 

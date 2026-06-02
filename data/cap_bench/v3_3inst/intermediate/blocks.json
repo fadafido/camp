@@ -39,37 +39,49 @@
     "block_id": "AUS_BLOCK_CORE",
     "programme_id": "AUS_BSBA_IS_v2024",
     "block_index": 1,
-    "block_name": "ISA Major Core (required gateway courses)",
+    "block_name": "Business Core (45 credits, all required)",
     "block_type": "major_core",
     "is_required": true,
     "scope": "programme",
     "owner_university_id": null,
-    "min_credits_in_block": 9,
-    "description": "ISA Major Core (required gateway courses)"
+    "min_credits_in_block": 45,
+    "description": "Business Core (45 credits, all required)"
   },
   {
-    "block_id": "AUS_BLOCK_SUPPORT",
+    "block_id": "AUS_BLOCK_IE",
     "programme_id": "AUS_BSBA_IS_v2024",
     "block_index": 2,
-    "block_name": "Required Support Courses",
+    "block_name": "Innovation & Entrepreneurship (IEN 301)",
     "block_type": "breadth",
     "is_required": true,
     "scope": "programme",
     "owner_university_id": null,
-    "min_credits_in_block": 24,
-    "description": "Required Support Courses"
+    "min_credits_in_block": 3,
+    "description": "Innovation & Entrepreneurship (IEN 301)"
+  },
+  {
+    "block_id": "AUS_BLOCK_MAJREQ",
+    "programme_id": "AUS_BSBA_IS_v2024",
+    "block_index": 3,
+    "block_name": "IS&BA Major Requirements (18 credits)",
+    "block_type": "major_core",
+    "is_required": true,
+    "scope": "programme",
+    "owner_university_id": null,
+    "min_credits_in_block": 18,
+    "description": "IS&BA Major Requirements (18 credits)"
   },
   {
     "block_id": "AUS_BLOCK_ELECTIVES",
     "programme_id": "AUS_BSBA_IS_v2024",
-    "block_index": 3,
-    "block_name": "Electives (27 credits from the elective pool)",
+    "block_index": 4,
+    "block_name": "IS&BA Major Electives (min 12 credits)",
     "block_type": "free_elective",
     "is_required": true,
     "scope": "programme",
     "owner_university_id": null,
-    "min_credits_in_block": 27,
-    "description": "Electives (27 credits from the elective pool)"
+    "min_credits_in_block": 12,
+    "description": "IS&BA Major Electives (min 12 credits)"
   },
   {
     "block_id": "UNC_BLOCK_CORE",

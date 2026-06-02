@@ -23,6 +23,54 @@
     ]
   },
   {
+    "course_id": "AUS_ACC_202",
+    "university": "aus",
+    "code_local": "ACC 202",
+    "title": "Fundamentals of Managerial Accounting",
+    "description_summary": null,
+    "credits": 3,
+    "level": 200,
+    "department": "ACC",
+    "subject_area": "ACC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.5,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_ACC_201"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "AUS_ACC_380",
+    "university": "aus",
+    "code_local": "ACC 380",
+    "title": "Data Analytics for Accounting",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "ACC",
+    "subject_area": "ACC",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_ACC_202"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
     "course_id": "AUS_BLW_301",
     "university": "aus",
     "code_local": "BLW 301",
@@ -55,6 +103,378 @@
       "junior II standing",
       "junior II standing"
     ]
+  },
+  {
+    "course_id": "AUS_BUS_100",
+    "university": "aus",
+    "code_local": "BUS 100",
+    "title": "Introduction to Business",
+    "description_summary": null,
+    "credits": 3,
+    "level": 100,
+    "department": "BUS",
+    "subject_area": "BUS",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.3,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "AUS_CMP_120",
+    "university": "aus",
+    "code_local": "CMP 120",
+    "title": "Programming I",
+    "description_summary": null,
+    "credits": 3,
+    "level": 100,
+    "department": "CMP",
+    "subject_area": "CMP",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.3,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": [
+      "sophomore standing"
+    ]
+  },
+  {
+    "course_id": "AUS_CMP_213",
+    "university": "aus",
+    "code_local": "CMP 213",
+    "title": "Discrete Structures",
+    "description_summary": null,
+    "credits": 3,
+    "level": 200,
+    "department": "CMP",
+    "subject_area": "CMP",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.5,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "AUS_CMP_220",
+    "university": "aus",
+    "code_local": "CMP 220",
+    "title": "Programming II",
+    "description_summary": null,
+    "credits": 3,
+    "level": 200,
+    "department": "CMP",
+    "subject_area": "CMP",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.5,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_CMP_120"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "AUS_CMP_257",
+    "university": "aus",
+    "code_local": "CMP 257",
+    "title": "Web Application Programming",
+    "description_summary": null,
+    "credits": 4,
+    "level": 200,
+    "department": "CMP",
+    "subject_area": "CMP",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.5,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_CMP_220"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "AUS_CMP_305",
+    "university": "aus",
+    "code_local": "CMP 305",
+    "title": "Data Structures and Algorithms",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "CMP",
+    "subject_area": "CMP",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_CMP_220"
+      ]
+    ],
+    "prereq_notes": [
+      "prerequisite/concurrent: CMP 213 or MTH 213"
+    ]
+  },
+  {
+    "course_id": "AUS_CMP_310",
+    "university": "aus",
+    "code_local": "CMP 310",
+    "title": "Operating Systems",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "CMP",
+    "subject_area": "CMP",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_CMP_305"
+      ],
+      [
+        "AUS_COE_241",
+        "AUS_COE_251"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "AUS_CMP_320",
+    "university": "aus",
+    "code_local": "CMP 320",
+    "title": "Database Systems",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "CMP",
+    "subject_area": "CMP",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_CMP_305"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "AUS_COE_221",
+    "university": "aus",
+    "code_local": "COE 221",
+    "title": "Digital Systems",
+    "description_summary": null,
+    "credits": 4,
+    "level": 200,
+    "department": "COE",
+    "subject_area": "COE",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.5,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_CMP_120"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "AUS_COE_241",
+    "university": "aus",
+    "code_local": "COE 241",
+    "title": "Microcontrollers: Programming and Interfacing",
+    "description_summary": null,
+    "credits": 4,
+    "level": 200,
+    "department": "COE",
+    "subject_area": "COE",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.5,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_CMP_120"
+      ],
+      [
+        "AUS_COE_221"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "AUS_COE_251",
+    "university": "aus",
+    "code_local": "COE 251",
+    "title": "Introduction to Computer Systems",
+    "description_summary": null,
+    "credits": 4,
+    "level": 200,
+    "department": "COE",
+    "subject_area": "COE",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.5,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_CMP_120"
+      ],
+      [
+        "AUS_COE_221"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "AUS_COE_312",
+    "university": "aus",
+    "code_local": "COE 312",
+    "title": "Software Design for Engineers",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "COE",
+    "subject_area": "COE",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_CMP_220"
+      ],
+      [
+        "AUS_COE_241",
+        "AUS_COE_251"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "AUS_COE_371",
+    "university": "aus",
+    "code_local": "COE 371",
+    "title": "Computer Networks I",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "COE",
+    "subject_area": "COE",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_COE_221"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "AUS_COE_375",
+    "university": "aus",
+    "code_local": "COE 375",
+    "title": "Modeling and Simulation of Stochastic Systems",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "COE",
+    "subject_area": "COE",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_STA_201"
+      ]
+    ],
+    "prereq_notes": [
+      "prerequisite/concurrent: COE 371"
+    ]
+  },
+  {
+    "course_id": "AUS_COE_420",
+    "university": "aus",
+    "code_local": "COE 420",
+    "title": "Software Engineering",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "COE",
+    "subject_area": "COE",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_CMP_305"
+      ],
+      [
+        "AUS_CMP_257",
+        "AUS_COE_312"
+      ]
+    ],
+    "prereq_notes": []
   },
   {
     "course_id": "AUS_ECO_201",
@@ -105,6 +525,192 @@
     ]
   },
   {
+    "course_id": "AUS_ECO_351",
+    "university": "aus",
+    "code_local": "ECO 351",
+    "title": "Introduction to Econometrics",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "ECO",
+    "subject_area": "ECO",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_ECO_201"
+      ],
+      [
+        "AUS_ECO_202"
+      ],
+      [
+        "AUS_QBA_201",
+        "AUS_STA_201",
+        "AUS_STA_202"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "AUS_ECO_452",
+    "university": "aus",
+    "code_local": "ECO 452",
+    "title": "Economic Forecasting",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "ECO",
+    "subject_area": "ECO",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_ECO_201"
+      ],
+      [
+        "AUS_ECO_202"
+      ],
+      [
+        "AUS_QBA_201",
+        "AUS_STA_201",
+        "AUS_STA_202"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "AUS_EGM_361",
+    "university": "aus",
+    "code_local": "EGM 361",
+    "title": "Management for Engineers",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "EGM",
+    "subject_area": "EGM",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": [
+      "junior standing"
+    ]
+  },
+  {
+    "course_id": "AUS_EGM_362",
+    "university": "aus",
+    "code_local": "EGM 362",
+    "title": "Engineering Project Management",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "EGM",
+    "subject_area": "EGM",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": [
+      "junior standing"
+    ]
+  },
+  {
+    "course_id": "AUS_EGM_364",
+    "university": "aus",
+    "code_local": "EGM 364",
+    "title": "Engineering Economy",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "EGM",
+    "subject_area": "EGM",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": [
+      "prerequisite/concurrent: ELE 241",
+      "prerequisite/concurrent: ELE 342L",
+      "prerequisite/concurrent: ELE 341 or ISM 243",
+      "prerequisite/concurrent: ELE 321 or ISM 351",
+      "prerequisite/concurrent: ELE 360",
+      "prerequisite/concurrent: ELE 371",
+      "prerequisite/concurrent: ELE 341",
+      "prerequisite/concurrent: ELE 360",
+      "prerequisite/concurrent: ELE 361",
+      "prerequisite/concurrent: ELE 360 or COE 375",
+      "prerequisite/concurrent: MTH 225",
+      "prerequisite/concurrent: INE 302",
+      "prerequisite/concurrent: MTH 203",
+      "prerequisite/concurrent: INE 322",
+      "prerequisite/concurrent: INE 332",
+      "prerequisite/concurrent: ELE 353 or MCE 410",
+      "prerequisite/concurrent: ISM 391L",
+      "prerequisite/concurrent: MCE 310",
+      "prerequisite/concurrent: MCE 313",
+      "prerequisite/concurrent: MCE 331",
+      "prerequisite/concurrent: MCE 331",
+      "prerequisite/concurrent: MCE 410",
+      "prerequisite/concurrent: MCE 310 or ISM 361",
+      "prerequisite/concurrent: MCE 344",
+      "prerequisite/concurrent: MCE 344",
+      "junior standing",
+      "senior standing",
+      "junior standing",
+      "senior standing",
+      "junior standing",
+      "senior standing",
+      "junior II standing",
+      "senior standing",
+      "junior standing",
+      "junior standing"
+    ]
+  },
+  {
+    "course_id": "AUS_ENG_225",
+    "university": "aus",
+    "code_local": "ENG 225",
+    "title": "Writing for Business",
+    "description_summary": null,
+    "credits": 3,
+    "level": 200,
+    "department": "ENG",
+    "subject_area": "ENG",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.5,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": [
+      "sophomore standing"
+    ]
+  },
+  {
     "course_id": "AUS_FIN_201",
     "university": "aus",
     "code_local": "FIN 201",
@@ -132,6 +738,79 @@
       ]
     ],
     "prereq_notes": []
+  },
+  {
+    "course_id": "AUS_FIN_330",
+    "university": "aus",
+    "code_local": "FIN 330",
+    "title": "Investments",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "FIN",
+    "subject_area": "FIN",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_ACC_202"
+      ],
+      [
+        "AUS_FIN_201"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "AUS_FIN_375",
+    "university": "aus",
+    "code_local": "FIN 375",
+    "title": "Trading and Financial Markets",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "FIN",
+    "subject_area": "FIN",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_FIN_330"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "AUS_IEN_301",
+    "university": "aus",
+    "code_local": "IEN 301",
+    "title": "Innovation and Entrepreneurship Mindset",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "IEN",
+    "subject_area": "IEN",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": [
+      "sophomore II standing"
+    ]
   },
   {
     "course_id": "AUS_ISA_201",
@@ -222,7 +901,8 @@
     "effective_to_term": null,
     "prerequisites": [
       [
-        "AUS_ISA_301"
+        "AUS_ISA_301",
+        "AUS_CMP_320"
       ]
     ],
     "prereq_notes": []
@@ -439,7 +1119,8 @@
     "effective_to_term": null,
     "prerequisites": [
       [
-        "AUS_ISA_303"
+        "AUS_ISA_303",
+        "AUS_COE_420"
       ]
     ],
     "prereq_notes": [
@@ -491,6 +1172,64 @@
     ]
   },
   {
+    "course_id": "AUS_MGT_301",
+    "university": "aus",
+    "code_local": "MGT 301",
+    "title": "Organizational Behavior",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "MGT",
+    "subject_area": "MGT",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_MGT_201"
+      ]
+    ],
+    "prereq_notes": [
+      "prerequisite/concurrent: ENG 203 or ENG 204"
+    ]
+  },
+  {
+    "course_id": "AUS_MGT_315",
+    "university": "aus",
+    "code_local": "MGT 315",
+    "title": "Enterprise Resource Planning",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "MGT",
+    "subject_area": "MGT",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_MGT_201"
+      ],
+      [
+        "AUS_ACC_201"
+      ],
+      [
+        "AUS_ISA_201",
+        "AUS_EGM_361",
+        "AUS_EGM_364"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
     "course_id": "AUS_MGT_360",
     "university": "aus",
     "code_local": "MGT 360",
@@ -515,6 +1254,41 @@
     "prereq_notes": [
       "prerequisite/concurrent: ENG 203 or ENG 204"
     ]
+  },
+  {
+    "course_id": "AUS_MGT_380",
+    "university": "aus",
+    "code_local": "MGT 380",
+    "title": "Project Management",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "MGT",
+    "subject_area": "MGT",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_ACC_202"
+      ],
+      [
+        "AUS_FIN_201"
+      ],
+      [
+        "AUS_ISA_201"
+      ],
+      [
+        "AUS_MGT_301",
+        "AUS_ISA_303",
+        "AUS_COE_420"
+      ]
+    ],
+    "prereq_notes": []
   },
   {
     "course_id": "AUS_MGT_406",
@@ -572,6 +1346,59 @@
     "prereq_notes": []
   },
   {
+    "course_id": "AUS_MKT_302",
+    "university": "aus",
+    "code_local": "MKT 302",
+    "title": "Marketing Research",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "MKT",
+    "subject_area": "MKT",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_MKT_201"
+      ],
+      [
+        "AUS_QBA_201",
+        "AUS_STA_201",
+        "AUS_STA_202"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "AUS_MKT_360",
+    "university": "aus",
+    "code_local": "MKT 360",
+    "title": "Digital Marketing",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "MKT",
+    "subject_area": "MKT",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_MKT_201"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
     "course_id": "AUS_QBA_201",
     "university": "aus",
     "code_local": "QBA 201",
@@ -621,6 +1448,54 @@
     "prereq_notes": []
   },
   {
+    "course_id": "AUS_SCM_310",
+    "university": "aus",
+    "code_local": "SCM 310",
+    "title": "Management of the Supply Chain",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "SCM",
+    "subject_area": "SCM",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_SCM_202"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
+    "course_id": "AUS_SCM_311",
+    "university": "aus",
+    "code_local": "SCM 311",
+    "title": "Logistics Management",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "SCM",
+    "subject_area": "SCM",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_SCM_202"
+      ]
+    ],
+    "prereq_notes": []
+  },
+  {
     "course_id": "AUS_STA_201",
     "university": "aus",
     "code_local": "STA 201",
@@ -659,5 +1534,183 @@
     "effective_to_term": null,
     "prerequisites": [],
     "prereq_notes": []
+  },
+  {
+    "course_id": "AUS_STA_401",
+    "university": "aus",
+    "code_local": "STA 401",
+    "title": "Introduction to Data Mining",
+    "description_summary": null,
+    "credits": 3,
+    "level": 400,
+    "department": "STA",
+    "subject_area": "STA",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.8,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [
+      [
+        "AUS_CMP_120",
+        "AUS_ISA_201"
+      ],
+      [
+        "AUS_STA_201",
+        "AUS_STA_202",
+        "AUS_QBA_201"
+      ]
+    ],
+    "prereq_notes": [
+      "prerequisite/concurrent: WRI 101",
+      "prerequisite/concurrent: ENG 203 or ENG 204",
+      "prerequisite/concurrent: MCE 325",
+      "prerequisite/concurrent: BIO 210",
+      "prerequisite/concurrent: BME 410",
+      "prerequisite/concurrent: BME 420",
+      "prerequisite/concurrent: CHM 215",
+      "prerequisite/concurrent: CHE 321 CBE 414 Biological Separation Processes (2-1-2)",
+      "prerequisite/concurrent: CHE 432",
+      "prerequisite/concurrent: CEM 201",
+      "prerequisite/concurrent: CEM 200",
+      "prerequisite/concurrent: CEM 251",
+      "prerequisite/concurrent: CEM 250",
+      "prerequisite/concurrent: CEM 301",
+      "prerequisite/concurrent: CEM 300",
+      "prerequisite/concurrent: CHE 206",
+      "prerequisite/concurrent: CHM 215",
+      "prerequisite/concurrent: MTH 203",
+      "prerequisite/concurrent: CHE 300",
+      "prerequisite/concurrent: CHE 307",
+      "prerequisite/concurrent: CBE 414 or CHE 412",
+      "prerequisite/concurrent: CHE 412",
+      "prerequisite/concurrent: CHE 432",
+      "prerequisite/concurrent: CBE 414 or CHE 412",
+      "prerequisite/concurrent: CHE 421",
+      "prerequisite/concurrent: CHE 412",
+      "prerequisite/concurrent: CHE 412",
+      "prerequisite/concurrent: CHE 329",
+      "prerequisite/concurrent: CHE 432",
+      "permission of the instructor",
+      "permission of the instructor",
+      "junior standing",
+      "senior standing",
+      "junior standing",
+      "senior standing",
+      "senior standing",
+      "junior standing",
+      "placement into WRI 101",
+      "EPT score less than 4",
+      "EPT score of 4 or ELPT score of 1 or WRI 001 or"
+    ]
+  },
+  {
+    "course_id": "AUS_UPL_302",
+    "university": "aus",
+    "code_local": "UPL 302",
+    "title": "Analysis of Spatial Phenomena",
+    "description_summary": null,
+    "credits": 3,
+    "level": 300,
+    "department": "UPL",
+    "subject_area": "UPL",
+    "attributes": [],
+    "tags": [],
+    "difficulty_default": 0.65,
+    "is_repeatable": false,
+    "is_active": true,
+    "effective_from_term": "2024FA",
+    "effective_to_term": null,
+    "prerequisites": [],
+    "prereq_notes": [
+      "prerequisite/concurrent: ART 111 or DES 111",
+      "prerequisite/concurrent: ARC 201 or DES 230 or IDE 201 or MUM 201 or VIS 201",
+      "prerequisite/concurrent: VIS 301",
+      "prerequisite/concurrent: DES 360 or MUM 360",
+      "prerequisite/concurrent: WRI 102",
+      "prerequisite/concurrent: WRI 101",
+      "prerequisite/concurrent: BIO 101L",
+      "prerequisite/concurrent: BIO 101",
+      "prerequisite/concurrent: BIO 102L",
+      "prerequisite/concurrent: BIO 102",
+      "prerequisite/concurrent: BIO 260",
+      "prerequisite/concurrent: BIO 260",
+      "prerequisite/concurrent: CHM 101L",
+      "prerequisite/concurrent: CHM 101",
+      "prerequisite/concurrent: CHM 102L",
+      "prerequisite/concurrent: CHM 102",
+      "prerequisite/concurrent: CHM 242",
+      "prerequisite/concurrent: CHM 325",
+      "prerequisite/concurrent: CHM 330",
+      "prerequisite/concurrent: CHM 350",
+      "prerequisite/concurrent: CHM 350",
+      "prerequisite/concurrent: CHM 350",
+      "prerequisite/concurrent: CHM 350",
+      "prerequisite/concurrent: CHM 350",
+      "prerequisite/concurrent: CHM 350",
+      "prerequisite/concurrent: ENV 252",
+      "prerequisite/concurrent: WRI 102",
+      "prerequisite/concurrent: WRI 102",
+      "prerequisite/concurrent: WRI 101",
+      "prerequisite/concurrent: WRI 101",
+      "prerequisite/concurrent: WRI 102",
+      "prerequisite/concurrent: WRI 102",
+      "prerequisite/concurrent: MCM 231",
+      "prerequisite/concurrent: WRI 101",
+      "prerequisite/concurrent: MTH 221",
+      "prerequisite/concurrent: PHY 101",
+      "prerequisite/concurrent: PHY 102L",
+      "prerequisite/concurrent: PHY 102",
+      "prerequisite/concurrent: MTH 101 or MTH 103 or MTH 111",
+      "prerequisite/concurrent: PHY 310",
+      "prerequisite/concurrent: WRI 101",
+      "prerequisite/concurrent: WRI 101",
+      "permission of instructor",
+      "permission of the instructor",
+      "permission of instructor",
+      "permission of instructor",
+      "junior standing",
+      "junior standing",
+      "junior II standing",
+      "senior standing",
+      "senior standing",
+      "junior II standing",
+      "senior standing",
+      "sophomore standing",
+      "senior standing",
+      "junior standing",
+      "junior II standing",
+      "senior standing",
+      "junior standing",
+      "junior II standing",
+      "junior standing",
+      "junior II standing",
+      "junior standing",
+      "junior II standing",
+      "junior standing",
+      "junior standing",
+      "junior standing",
+      "senior standing",
+      "junior II standing",
+      "junior standing",
+      "sophomore standing",
+      "senior standing",
+      "junior II standing",
+      "senior standing",
+      "senior standing",
+      "junior I standing",
+      "senior standing",
+      "senior standing",
+      "junior II standing",
+      "or placement test",
+      "SAT Subject Test–Math level 1 or level 2 with a minimum score of 600",
+      "SAT Subject Test–Math level 1 or level 2 with a minimum score of 600",
+      "SAT Subject Test–Math level 1 or level 2 with a minimum score of 600",
+      "SAT Subject Test– Math level 1 or level 2 with a minimum score of 600",
+      "any AUS math placement test or",
+      "College of Arts and Sciences"
+    ]
   }
 ]

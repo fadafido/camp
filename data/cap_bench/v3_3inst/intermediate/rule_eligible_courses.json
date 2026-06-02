@@ -296,67 +296,107 @@
   },
   {
     "rule_id": "AUS_RULE_CORE",
+    "course_id": "AUS_BLW_301",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_CORE",
+    "course_id": "AUS_BUS_100",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_CORE",
+    "course_id": "AUS_ECO_201",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_CORE",
+    "course_id": "AUS_ECO_202",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_CORE",
+    "course_id": "AUS_ENG_225",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_CORE",
+    "course_id": "AUS_FIN_201",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_CORE",
     "course_id": "AUS_ISA_201",
     "weight_credits": null
   },
   {
     "rule_id": "AUS_RULE_CORE",
-    "course_id": "AUS_ISA_301",
-    "weight_credits": null
-  },
-  {
-    "rule_id": "AUS_RULE_CORE",
-    "course_id": "AUS_ISA_303",
-    "weight_credits": null
-  },
-  {
-    "rule_id": "AUS_RULE_SUPPORT",
-    "course_id": "AUS_ACC_201",
-    "weight_credits": null
-  },
-  {
-    "rule_id": "AUS_RULE_SUPPORT",
-    "course_id": "AUS_ECO_202",
-    "weight_credits": null
-  },
-  {
-    "rule_id": "AUS_RULE_SUPPORT",
-    "course_id": "AUS_FIN_201",
-    "weight_credits": null
-  },
-  {
-    "rule_id": "AUS_RULE_SUPPORT",
     "course_id": "AUS_MGT_201",
     "weight_credits": null
   },
   {
-    "rule_id": "AUS_RULE_SUPPORT",
+    "rule_id": "AUS_RULE_CORE",
+    "course_id": "AUS_MGT_360",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_CORE",
+    "course_id": "AUS_MGT_406",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_CORE",
     "course_id": "AUS_MKT_201",
     "weight_credits": null
   },
   {
-    "rule_id": "AUS_RULE_SUPPORT",
+    "rule_id": "AUS_RULE_CORE",
     "course_id": "AUS_QBA_201",
     "weight_credits": null
   },
   {
-    "rule_id": "AUS_RULE_SUPPORT",
-    "course_id": "AUS_STA_201",
+    "rule_id": "AUS_RULE_CORE",
+    "course_id": "AUS_SCM_202",
     "weight_credits": null
   },
   {
-    "rule_id": "AUS_RULE_SUPPORT",
-    "course_id": "AUS_STA_202",
+    "rule_id": "AUS_RULE_CORE",
+    "course_id": "AUS_ACC_201",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_CORE",
+    "course_id": "AUS_ACC_202",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_IE",
+    "course_id": "AUS_IEN_301",
     "weight_credits": null
   },
   {
     "rule_id": "AUS_RULE_ELECTIVES",
-    "course_id": "AUS_BLW_301",
+    "course_id": "AUS_ACC_380",
     "weight_credits": null
   },
   {
     "rule_id": "AUS_RULE_ELECTIVES",
-    "course_id": "AUS_ECO_201",
+    "course_id": "AUS_ECO_351",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_ELECTIVES",
+    "course_id": "AUS_ECO_452",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_ELECTIVES",
+    "course_id": "AUS_EGM_362",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_ELECTIVES",
+    "course_id": "AUS_FIN_375",
     "weight_credits": null
   },
   {
@@ -381,11 +421,6 @@
   },
   {
     "rule_id": "AUS_RULE_ELECTIVES",
-    "course_id": "AUS_ISA_377",
-    "weight_credits": null
-  },
-  {
-    "rule_id": "AUS_RULE_ELECTIVES",
     "course_id": "AUS_ISA_380",
     "weight_credits": null
   },
@@ -396,32 +431,82 @@
   },
   {
     "rule_id": "AUS_RULE_ELECTIVES",
+    "course_id": "AUS_MGT_315",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_ELECTIVES",
+    "course_id": "AUS_MGT_380",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_ELECTIVES",
+    "course_id": "AUS_MKT_302",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_ELECTIVES",
+    "course_id": "AUS_MKT_360",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_ELECTIVES",
+    "course_id": "AUS_SCM_310",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_ELECTIVES",
+    "course_id": "AUS_SCM_311",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_ELECTIVES",
+    "course_id": "AUS_STA_401",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_ELECTIVES",
+    "course_id": "AUS_UPL_302",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_MAJREQ_1",
+    "course_id": "AUS_ISA_301",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_MAJREQ_1",
+    "course_id": "AUS_CMP_320",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_MAJREQ_2",
+    "course_id": "AUS_ISA_303",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_MAJREQ_2",
+    "course_id": "AUS_COE_420",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_MAJREQ_3",
+    "course_id": "AUS_ISA_377",
+    "weight_credits": null
+  },
+  {
+    "rule_id": "AUS_RULE_MAJREQ_4",
     "course_id": "AUS_ISA_388",
     "weight_credits": null
   },
   {
-    "rule_id": "AUS_RULE_ELECTIVES",
+    "rule_id": "AUS_RULE_MAJREQ_5",
     "course_id": "AUS_ISA_405",
     "weight_credits": null
   },
   {
-    "rule_id": "AUS_RULE_ELECTIVES",
+    "rule_id": "AUS_RULE_MAJREQ_6",
     "course_id": "AUS_ISA_497",
-    "weight_credits": null
-  },
-  {
-    "rule_id": "AUS_RULE_ELECTIVES",
-    "course_id": "AUS_MGT_360",
-    "weight_credits": null
-  },
-  {
-    "rule_id": "AUS_RULE_ELECTIVES",
-    "course_id": "AUS_MGT_406",
-    "weight_credits": null
-  },
-  {
-    "rule_id": "AUS_RULE_ELECTIVES",
-    "course_id": "AUS_SCM_202",
     "weight_credits": null
   },
   {

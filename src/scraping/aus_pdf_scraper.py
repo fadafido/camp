@@ -34,7 +34,10 @@ from pathlib import Path
 
 from pdfminer.high_level import extract_text
 
+from src.dataset import aus_is_structure as aus_is
+
 _REPO_ROOT = Path(__file__).resolve().parents[2]
+_NON_BUSINESS_NAMED = aus_is.NON_BUSINESS_NAMED  # BUS 100, ENG 225, IEN 301
 _AUS_DIR = _REPO_ROOT / "data" / "raw" / "aus"
 _PDF = _AUS_DIR / "raw_catalog_2024-2025.pdf"
 _SOURCE_URL = ("https://www.aus.edu/ (AUS 2024-2025 Undergraduate Catalog, "
@@ -66,17 +69,6 @@ def _flatten(text: str) -> str:
     return re.sub(r"\s+", " ", text)
 
 
-# Business-school subjects that make up the BSBA-IS major + its required business
-# core (the IS major's scope). CMP/COE/EGM/SCM-style cross-listings outside this
-# set appear only as OR-alternative prerequisites and are NOT part of the major.
-_BUSINESS_SUBJECTS = {"ISA", "ACC", "FIN", "MGT", "MKT", "ECO", "STA", "QBA", "BLW", "SCM"}
-
-
-def _course_num(code: str) -> int:
-    m = re.search(r"\d+", code)
-    return int(m.group(0)) if m else -1
-
-
 def parse_pdf() -> tuple[list[dict], dict, str]:
     """Parse the PDF into (course_records, diagnostics, flattened_text)."""
     raw = extract_text(str(_PDF))
@@ -100,6 +92,16 @@ def parse_pdf() -> tuple[list[dict], dict, str]:
             "prereq_raw": prereq_raw,
         }
 
+    # Named non-business-subject courses that are part of the BSBA-IS academic
+    # programme (BUS 100, ENG 225, IEN 301) but whose subjects were not in the
+    # business scrape. They are real catalogue courses (extracted, not invented).
+    for code in _NON_BUSINESS_NAMED:
+        if code in by_code:
+            continue
+        rec = _extract_named(flat, code)
+        if rec:
+            by_code[code] = rec
+
     courses = sorted(by_code.values(), key=lambda c: c["code"])
     diagnostics = {
         "n_courses": len(courses),
@@ -110,29 +112,26 @@ def parse_pdf() -> tuple[list[dict], dict, str]:
     return courses, diagnostics, flat
 
 
-def _business_core_codes(flat: str) -> set[str]:
-    """The BSBA business core, read verbatim from the catalogue's authoritative
-    'following business core courses:' bullet list (45-credit core required of
-    every BSBA major). Restricted to business subjects present in the text."""
-    m = re.search(r"following business core courses\s*:?", flat)
+def _extract_named(flat: str, code: str) -> dict | None:
+    """Extract one specific named course (any subject) from the flattened text."""
+    subj, num = code.split()
+    m = re.search(
+        rf"\b{subj}\s+{num}\s+([A-Z][^.()]{{2,90}}?)\s*\((\d+)-(\d+)-(\d+)\)\.\s*"
+        rf"(.*?)(?=\b[A-Z]{{2,4}}\s+\d{{3}}\s+[A-Z][^.()]{{2,90}}?\s*\(\d+-\d+-\d+\)\.|\Z)",
+        flat, re.S)
     if not m:
-        return set()
-    seg = flat[m.start(): m.start() + 1500]
-    end = seg.find("Major Requirements")  # the bullet list ends here
-    if end > 0:
-        seg = seg[:end]
-    return {f"{a} {b}" for a, b in re.findall(r"\b([A-Z]{2,4})\s+(\d{3})\b", seg)
-            if a in _BUSINESS_SUBJECTS}
+        return None
+    reqs = _REQ_RE.findall(m.group(5))
+    return {"code": code, "title": re.sub(r"\s+", " ", m.group(1)).strip() or None,
+            "credits": m.group(4), "prereq_raw": " ".join(r.strip() for r in reqs).strip()}
 
 
-def _isa_prereq_closure(courses: list[dict]) -> set[str]:
-    """ISA major courses plus the business-subject courses on a prerequisite path
-    to them (transitive closure over real prereq references, business subjects
-    only, undergraduate level)."""
+def _prereq_closure(courses: list[dict], seed: set[str]) -> set[str]:
+    """Transitive prerequisite closure of ``seed`` over real prereq references,
+    restricted to courses present in the extraction."""
     by = {c["code"]: c for c in courses}
-    present = {c for c in by
-               if c.split()[0] in _BUSINESS_SUBJECTS and _course_num(c) < 500}
-    closure = {c for c in present if c.split()[0] == "ISA"}
+    present = set(by)
+    closure = {c for c in seed if c in present}
     queue = deque(closure)
     while queue:
         raw = by.get(queue.popleft(), {}).get("prereq_raw", "") or ""
@@ -145,18 +144,15 @@ def _isa_prereq_closure(courses: list[dict]) -> set[str]:
 
 
 def referenced_codes(courses: list[dict], flat: str) -> list[str]:
-    """Courses the BSBA Information Systems & Business Analytics major requires.
-
-    Defined as the union of (a) the ISA major + its prerequisite closure and
-    (b) the authoritative BSBA business core, restricted to business subjects
-    actually present in the extraction. This narrows the IS major to a real
-    ~major-scale set (not the whole business school), so the ingest keeps only
-    the IS major + its required business core as support — matching how Khalifa
-    (COSC) and UNC (ECON) are scoped to a single major plus referenced support.
-    """
+    """The BSBA-IS academic course scope = the real degree-block courses (Business
+    Core + I&E + Major Requirements incl. "or" alternatives + Major Electives pool)
+    PLUS their transitive prerequisite closure, restricted to courses present in
+    the extraction. ISA electives ("any 300-level+ ISA not a major requirement")
+    enter scope via the ISA home subject downstream. Encodes the real catalogue
+    programme (see :mod:`src.dataset.aus_is_structure`)."""
     present = {c["code"] for c in courses}
-    refs = (_isa_prereq_closure(courses) | _business_core_codes(flat)) & present
-    return sorted(refs)
+    seed = set(aus_is.all_block_codes()) & present
+    return sorted(_prereq_closure(courses, seed))
 
 
 def main() -> None:

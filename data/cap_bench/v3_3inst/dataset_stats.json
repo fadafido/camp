@@ -7,12 +7,12 @@
   },
   "overall": {
     "n_students": 4500,
-    "graduation_rate": 0.7947,
-    "mean_final_gpa": 2.948,
-    "mean_terms_to_graduate": 8.9989,
-    "population_pass_rate": 0.9555,
-    "total_enrolment_rows": 153043,
-    "graded_enrolment_rows": 150941
+    "graduation_rate": 0.7671,
+    "mean_final_gpa": 2.9497,
+    "mean_terms_to_graduate": 10.7005,
+    "population_pass_rate": 0.955,
+    "total_enrolment_rows": 179098,
+    "graded_enrolment_rows": 176534
   },
   "per_institution": {
     "khalifa": {
@@ -26,11 +26,11 @@
     },
     "aus": {
       "n_students": 1500,
-      "graduation_rate": 0.898,
-      "mean_final_gpa": 2.9397,
-      "mean_terms_to_graduate": 5.9978,
-      "population_pass_rate": 0.9546,
-      "distinct_transcripts_sample": 148,
+      "graduation_rate": 0.8153,
+      "mean_final_gpa": 2.9449,
+      "mean_terms_to_graduate": 10.4963,
+      "population_pass_rate": 0.9533,
+      "distinct_transcripts_sample": 199,
       "sample_size": 200
     },
     "unc": {
@@ -44,17 +44,17 @@
     }
   },
   "courses_per_term": {
-    "mean": 3.7299,
-    "std": 1.2916,
+    "mean": 3.739,
+    "std": 1.2869,
     "min": 1,
     "max": 6,
     "histogram": {
-      "1": 2063,
-      "2": 7326,
-      "3": 5168,
-      "4": 12008,
-      "5": 12728,
-      "6": 1175
+      "1": 2386,
+      "2": 8431,
+      "3": 5963,
+      "4": 14068,
+      "5": 15071,
+      "6": 1295
     }
   },
   "start_state_mix": {
@@ -90,10 +90,10 @@
   },
   "merge": {
     "programmes": 3,
-    "courses": 159,
+    "courses": 194,
     "courses_per_institution": {
       "khalifa": 59,
-      "aus": 26,
+      "aus": 61,
       "unc": 74
     },
     "id_collisions": 0,
@@ -121,25 +121,32 @@
         }
       },
       "aus": {
-        "native_total": 120,
-        "scoped_total": 60,
-        "core_gateway_courses": 3,
-        "core_gateway_credits": 9,
-        "support_gateway_courses": 8,
-        "support_gateway_credits": 24,
-        "required_gateway_credits": 33,
-        "elective_min_credits": 27,
-        "elective_pool_courses": 15,
-        "elective_pool_credits": 45,
-        "elective_buffer_credits": 18,
+        "structure": "real_catalogue_bsba_is",
+        "native_total": 123,
+        "scoped_total": 78,
         "uses_native_total": false,
+        "business_core_courses": 15,
+        "business_core_credits": 45,
+        "innovation_courses": 1,
+        "major_requirement_groups": 6,
+        "major_requirement_or_choices": 2,
+        "major_elective_min_credits": 12,
+        "major_elective_pool_courses": 19,
+        "missing_required_courses": [],
+        "core_gateway_courses": 22,
+        "support_gateway_courses": 0,
+        "required_gateway_credits": 66,
+        "elective_min_credits": 12,
+        "elective_pool_courses": 19,
+        "elective_pool_credits": 57,
+        "elective_buffer_credits": 45,
         "dag": {
-          "n_courses": 26,
-          "real_edges": 36,
-          "augmented_edges": 1,
+          "n_courses": 61,
+          "real_edges": 97,
+          "augmented_edges": 2,
           "is_acyclic": true,
-          "max_chain_depth": 3,
-          "n_courses_with_prereq": 17
+          "max_chain_depth": 5,
+          "n_courses_with_prereq": 44
         }
       },
       "unc": {

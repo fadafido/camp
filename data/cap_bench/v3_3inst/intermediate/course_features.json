@@ -532,10 +532,28 @@
   },
   {
     "course_id": "AUS_ACC_201",
+    "centrality": 10,
+    "blocking_factor": 2,
+    "delay_factor": 4,
+    "level": 200,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_ACC_202",
     "centrality": 4,
+    "blocking_factor": 1,
+    "delay_factor": 4,
+    "level": 200,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_ACC_380",
+    "centrality": 0,
     "blocking_factor": 0,
     "delay_factor": 3,
-    "level": 200,
+    "level": 300,
     "credits": 3,
     "university": "aus"
   },
@@ -549,7 +567,205 @@
     "university": "aus"
   },
   {
+    "course_id": "AUS_BUS_100",
+    "centrality": 0,
+    "blocking_factor": 0,
+    "delay_factor": 1,
+    "level": 100,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_CMP_120",
+    "centrality": 16,
+    "blocking_factor": 12,
+    "delay_factor": 6,
+    "level": 100,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_CMP_213",
+    "centrality": 0,
+    "blocking_factor": 0,
+    "delay_factor": 2,
+    "level": 200,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_CMP_220",
+    "centrality": 9,
+    "blocking_factor": 3,
+    "delay_factor": 6,
+    "level": 200,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_CMP_257",
+    "centrality": 3,
+    "blocking_factor": 0,
+    "delay_factor": 5,
+    "level": 200,
+    "credits": 4,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_CMP_305",
+    "centrality": 6,
+    "blocking_factor": 1,
+    "delay_factor": 6,
+    "level": 300,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_CMP_310",
+    "centrality": 0,
+    "blocking_factor": 0,
+    "delay_factor": 4,
+    "level": 300,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_CMP_320",
+    "centrality": 3,
+    "blocking_factor": 0,
+    "delay_factor": 6,
+    "level": 300,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_COE_221",
+    "centrality": 8,
+    "blocking_factor": 1,
+    "delay_factor": 6,
+    "level": 200,
+    "credits": 4,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_COE_241",
+    "centrality": 5,
+    "blocking_factor": 0,
+    "delay_factor": 6,
+    "level": 200,
+    "credits": 4,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_COE_251",
+    "centrality": 5,
+    "blocking_factor": 0,
+    "delay_factor": 6,
+    "level": 200,
+    "credits": 4,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_COE_312",
+    "centrality": 3,
+    "blocking_factor": 0,
+    "delay_factor": 6,
+    "level": 300,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_COE_371",
+    "centrality": 0,
+    "blocking_factor": 0,
+    "delay_factor": 3,
+    "level": 300,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_COE_375",
+    "centrality": 0,
+    "blocking_factor": 0,
+    "delay_factor": 2,
+    "level": 300,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_COE_420",
+    "centrality": 2,
+    "blocking_factor": 0,
+    "delay_factor": 6,
+    "level": 400,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
     "course_id": "AUS_ECO_201",
+    "centrality": 2,
+    "blocking_factor": 0,
+    "delay_factor": 2,
+    "level": 200,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_ECO_202",
+    "centrality": 3,
+    "blocking_factor": 0,
+    "delay_factor": 2,
+    "level": 200,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_ECO_351",
+    "centrality": 0,
+    "blocking_factor": 0,
+    "delay_factor": 2,
+    "level": 300,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_ECO_452",
+    "centrality": 0,
+    "blocking_factor": 0,
+    "delay_factor": 2,
+    "level": 400,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_EGM_361",
+    "centrality": 1,
+    "blocking_factor": 0,
+    "delay_factor": 2,
+    "level": 300,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_EGM_362",
+    "centrality": 0,
+    "blocking_factor": 0,
+    "delay_factor": 1,
+    "level": 300,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_EGM_364",
+    "centrality": 1,
+    "blocking_factor": 0,
+    "delay_factor": 2,
+    "level": 300,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_ENG_225",
     "centrality": 0,
     "blocking_factor": 0,
     "delay_factor": 1,
@@ -558,27 +774,45 @@
     "university": "aus"
   },
   {
-    "course_id": "AUS_ECO_202",
-    "centrality": 1,
+    "course_id": "AUS_FIN_201",
+    "centrality": 5,
     "blocking_factor": 0,
-    "delay_factor": 2,
+    "delay_factor": 4,
     "level": 200,
     "credits": 3,
     "university": "aus"
   },
   {
-    "course_id": "AUS_FIN_201",
-    "centrality": 2,
+    "course_id": "AUS_FIN_330",
+    "centrality": 1,
+    "blocking_factor": 1,
+    "delay_factor": 4,
+    "level": 300,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_FIN_375",
+    "centrality": 0,
     "blocking_factor": 0,
-    "delay_factor": 3,
-    "level": 200,
+    "delay_factor": 4,
+    "level": 300,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_IEN_301",
+    "centrality": 0,
+    "blocking_factor": 0,
+    "delay_factor": 1,
+    "level": 300,
     "credits": 3,
     "university": "aus"
   },
   {
     "course_id": "AUS_ISA_201",
-    "centrality": 13,
-    "blocking_factor": 8,
+    "centrality": 16,
+    "blocking_factor": 6,
     "delay_factor": 4,
     "level": 200,
     "credits": 3,
@@ -595,8 +829,8 @@
   },
   {
     "course_id": "AUS_ISA_301",
-    "centrality": 3,
-    "blocking_factor": 3,
+    "centrality": 4,
+    "blocking_factor": 1,
     "delay_factor": 4,
     "level": 300,
     "credits": 3,
@@ -604,9 +838,9 @@
   },
   {
     "course_id": "AUS_ISA_303",
-    "centrality": 1,
-    "blocking_factor": 1,
-    "delay_factor": 4,
+    "centrality": 2,
+    "blocking_factor": 0,
+    "delay_factor": 6,
     "level": 300,
     "credits": 3,
     "university": "aus"
@@ -678,7 +912,7 @@
     "course_id": "AUS_ISA_405",
     "centrality": 0,
     "blocking_factor": 0,
-    "delay_factor": 4,
+    "delay_factor": 6,
     "level": 400,
     "credits": 3,
     "university": "aus"
@@ -694,10 +928,28 @@
   },
   {
     "course_id": "AUS_MGT_201",
-    "centrality": 4,
-    "blocking_factor": 1,
-    "delay_factor": 2,
+    "centrality": 7,
+    "blocking_factor": 2,
+    "delay_factor": 3,
     "level": 200,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_MGT_301",
+    "centrality": 1,
+    "blocking_factor": 0,
+    "delay_factor": 3,
+    "level": 300,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_MGT_315",
+    "centrality": 0,
+    "blocking_factor": 0,
+    "delay_factor": 2,
+    "level": 300,
     "credits": 3,
     "university": "aus"
   },
@@ -706,6 +958,15 @@
     "centrality": 0,
     "blocking_factor": 0,
     "delay_factor": 2,
+    "level": 300,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_MGT_380",
+    "centrality": 0,
+    "blocking_factor": 0,
+    "delay_factor": 6,
     "level": 300,
     "credits": 3,
     "university": "aus"
@@ -721,46 +982,100 @@
   },
   {
     "course_id": "AUS_MKT_201",
-    "centrality": 3,
-    "blocking_factor": 0,
+    "centrality": 5,
+    "blocking_factor": 1,
     "delay_factor": 2,
     "level": 200,
     "credits": 3,
     "university": "aus"
   },
   {
-    "course_id": "AUS_QBA_201",
-    "centrality": 6,
+    "course_id": "AUS_MKT_302",
+    "centrality": 0,
     "blocking_factor": 0,
-    "delay_factor": 3,
+    "delay_factor": 2,
+    "level": 300,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_MKT_360",
+    "centrality": 0,
+    "blocking_factor": 0,
+    "delay_factor": 2,
+    "level": 300,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_QBA_201",
+    "centrality": 15,
+    "blocking_factor": 0,
+    "delay_factor": 4,
     "level": 200,
     "credits": 3,
     "university": "aus"
   },
   {
     "course_id": "AUS_SCM_202",
-    "centrality": 0,
-    "blocking_factor": 0,
-    "delay_factor": 2,
+    "centrality": 2,
+    "blocking_factor": 2,
+    "delay_factor": 3,
     "level": 200,
     "credits": 3,
     "university": "aus"
   },
   {
-    "course_id": "AUS_STA_201",
-    "centrality": 6,
+    "course_id": "AUS_SCM_310",
+    "centrality": 0,
     "blocking_factor": 0,
     "delay_factor": 3,
+    "level": 300,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_SCM_311",
+    "centrality": 0,
+    "blocking_factor": 0,
+    "delay_factor": 3,
+    "level": 300,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_STA_201",
+    "centrality": 16,
+    "blocking_factor": 1,
+    "delay_factor": 4,
     "level": 200,
     "credits": 3,
     "university": "aus"
   },
   {
     "course_id": "AUS_STA_202",
-    "centrality": 6,
+    "centrality": 15,
     "blocking_factor": 0,
-    "delay_factor": 3,
+    "delay_factor": 4,
     "level": 200,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_STA_401",
+    "centrality": 0,
+    "blocking_factor": 0,
+    "delay_factor": 2,
+    "level": 400,
+    "credits": 3,
+    "university": "aus"
+  },
+  {
+    "course_id": "AUS_UPL_302",
+    "centrality": 0,
+    "blocking_factor": 0,
+    "delay_factor": 1,
+    "level": 300,
     "credits": 3,
     "university": "aus"
   },

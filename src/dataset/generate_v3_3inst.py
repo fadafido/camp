@@ -78,7 +78,12 @@ def build_all() -> tuple[dict[str, Any], dict[str, Any]]:
         courses = _load(INTER / uni / f"{uni}_courses.json")
         graph, _ = dag.build_real_inst_dag(courses, digits)
         graphs[uni] = graph
-        prog = GT.build_realistic_programme(uni, pid, pname, dept, home, courses, graph)
+        if uni == "aus":
+            # AUS uses the REAL BSBA-IS catalogue block structure (123-cr degree,
+            # 78-cr academic scope); Khalifa/UNC keep the reconstructed threshold.
+            prog = GT.build_aus_real_programme(pid, pname, dept, courses, graph)
+        else:
+            prog = GT.build_realistic_programme(uni, pid, pname, dept, home, courses, graph)
 
         merged["programmes.json"] += prog["programmes"]
         merged["blocks.json"] += prog["blocks"]

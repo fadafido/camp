@@ -39,6 +39,7 @@ from typing import Any
 
 import networkx as nx
 
+from . import aus_is_structure as aus_is
 from .prereq_parser import PREFIX
 
 # Native published full-degree totals (incl. general education outside scope).
@@ -59,6 +60,141 @@ TRACK_KEYWORDS = {
     "analytics": ["analytics", "data", "visualization", "business intelligence"],
     "general": [],
 }
+
+
+def build_aus_real_programme(
+    programme_id: str,
+    programme_name: str,
+    primary_department: str,
+    courses: list[dict[str, Any]],
+    graph: nx.DiGraph,
+) -> dict[str, Any]:
+    """Encode the REAL BSBA-IS catalogue block structure (123-cr degree; 78-cr
+    modelled academic scope) instead of a DAG-reconstructed threshold.
+
+    Blocks (all required): Business Core (45 cr, 15 courses) · Innovation &
+    Entrepreneurship (3 cr, IEN 301) · Major Requirements (18 cr, six rules — two
+    are "A or B" choices encoded as min_courses=1 over the alternatives) · Major
+    Electives (>=12 cr from the named pool + 300-level+ ISA electives). General
+    education (36 cr) and free electives (9 cr) are outside the modelled scope.
+    """
+    up = PREFIX["aus"]
+    by_local = {c["code_local"]: c for c in courses}            # "BLW 301" -> record
+    by_id = {c["course_id"]: c for c in courses}
+
+    def ids(codes: list[str]) -> list[str]:
+        return [by_local[c]["course_id"] for c in codes if c in by_local]
+
+    core_ids = ids(aus_is.BUSINESS_CORE)
+    ie_ids = ids(aus_is.INNOVATION)
+    majreq_groups = [ids(grp) for grp in aus_is.MAJOR_REQUIREMENT_GROUPS]
+    # ISA electives: 300-level-or-above ISA courses that are not a major requirement
+    # and not the core ISA 201 (the catalogue's "any 300+ ISA not a major req").
+    majreq_flat = {cid for grp in majreq_groups for cid in grp}
+    isa_elec_ids = sorted(
+        c["course_id"] for c in courses
+        if c["subject_area"] == "ISA" and c["level"] >= 300
+        and c["course_id"] not in majreq_flat and c["course_id"] not in set(core_ids))
+    elective_ids = sorted(set(ids(aus_is.MAJOR_ELECTIVE_POOL)) | set(isa_elec_ids))
+
+    # Report any required block course missing from the scope (would make a block
+    # unsatisfiable). Should be empty after extraction.
+    missing = [c for c in (aus_is.BUSINESS_CORE + aus_is.INNOVATION
+               + [x for g in aus_is.MAJOR_REQUIREMENT_GROUPS for x in g]) if c not in by_local]
+
+    cr = aus_is.CREDITS
+    total = cr["academic_scope_total"]   # 78
+    native = cr["native_total"]          # 123
+
+    programme = {
+        "programme_id": programme_id, "university": "aus", "name": programme_name,
+        "version": "2024", "effective_from_term": "2024FA", "effective_to_term": None,
+        "total_credits_required": total, "min_gpa_required": 2.0,
+        "max_terms_to_complete": 14, "primary_department": primary_department,
+        "native_total_credits": native,
+        "graduation_threshold_note": (
+            "REAL BSBA-IS catalogue structure (2024-2025): General Education 36 + "
+            "Innovation & Entrepreneurship 3 + Business Core 45 + Major Requirements "
+            "18 + Major Electives 12 + Free Electives 9 = 123 cr. Modelled academic "
+            "scope = Core 45 + I&E 3 + Major Req 18 + Major Electives 12 = 78 cr; "
+            "the 36-cr general-education distribution and 9-cr free electives sit "
+            "outside the recommender's rankable course universe. ACC 201/ACC 202 are "
+            "a disclosed inference completing the stated 45-cr core."),
+    }
+
+    def block(idx, bid, name, btype, mincr):
+        return {"block_id": bid, "programme_id": programme_id, "block_index": idx,
+                "block_name": name, "block_type": btype, "is_required": True,
+                "scope": "programme", "owner_university_id": None,
+                "min_credits_in_block": mincr, "description": name}
+
+    B_CORE = f"{up}_BLOCK_CORE"
+    B_IE = f"{up}_BLOCK_IE"
+    B_MAJREQ = f"{up}_BLOCK_MAJREQ"
+    B_ELEC = f"{up}_BLOCK_ELECTIVES"
+    blocks = [
+        block(1, B_CORE, "Business Core (45 credits, all required)", "major_core", cr["business_core"]),
+        block(2, B_IE, "Innovation & Entrepreneurship (IEN 301)", "breadth", cr["innovation_entrepreneurship"]),
+        block(3, B_MAJREQ, "IS&BA Major Requirements (18 credits)", "major_core", cr["major_requirements"]),
+        block(4, B_ELEC, "IS&BA Major Electives (min 12 credits)", "free_elective", cr["major_electives"]),
+    ]
+
+    def rg(bid):
+        return {"rule_group_id": f"{bid}_RG", "block_id": bid, "group_index": 1,
+                "group_name": bid, "is_required": True, "description": bid}
+    rule_groups = [rg(B_CORE), rg(B_IE), rg(B_MAJREQ), rg(B_ELEC)]
+
+    def mk_rule(rid, rg_id, idx, name, rtype, n=None, credits=None):
+        return {"rule_id": rid, "rule_group_id": rg_id, "rule_index": idx,
+                "rule_name": name, "rule_type": rtype, "min_courses": n,
+                "min_credits": credits, "min_grade_each": 1.0,
+                "selector_type": "explicit_list", "attribute_filter": None,
+                "target_block_type": None, "target_block_id": None, "member_group_ids": None}
+
+    rules = [
+        mk_rule(f"{up}_RULE_CORE", f"{B_CORE}_RG", 1, "All business core courses",
+                "min_courses", n=len(core_ids)),
+        mk_rule(f"{up}_RULE_IE", f"{B_IE}_RG", 1, "Innovation & Entrepreneurship",
+                "min_courses", n=len(ie_ids)),
+        mk_rule(f"{up}_RULE_ELECTIVES", f"{B_ELEC}_RG", 1,
+                f"{cr['major_electives']} major-elective credits", "min_credits",
+                credits=cr["major_electives"]),
+    ]
+    # One min_courses=1 rule per major-requirement group (encodes "A or B").
+    for i, grp in enumerate(majreq_groups, start=1):
+        rules.append(mk_rule(f"{up}_RULE_MAJREQ_{i}", f"{B_MAJREQ}_RG", i,
+                             f"Major requirement {i} (any of {len(grp)})", "min_courses", n=1))
+
+    rule_eligible = (
+        [{"rule_id": f"{up}_RULE_CORE", "course_id": c, "weight_credits": None} for c in core_ids]
+        + [{"rule_id": f"{up}_RULE_IE", "course_id": c, "weight_credits": None} for c in ie_ids]
+        + [{"rule_id": f"{up}_RULE_ELECTIVES", "course_id": c, "weight_credits": None} for c in elective_ids]
+    )
+    for i, grp in enumerate(majreq_groups, start=1):
+        rule_eligible += [{"rule_id": f"{up}_RULE_MAJREQ_{i}", "course_id": c,
+                           "weight_credits": None} for c in grp]
+
+    meta = {
+        "structure": "real_catalogue_bsba_is",
+        "native_total": native, "scoped_total": total, "uses_native_total": False,
+        "business_core_courses": len(core_ids), "business_core_credits": cr["business_core"],
+        "innovation_courses": len(ie_ids),
+        "major_requirement_groups": len(majreq_groups),
+        "major_requirement_or_choices": sum(1 for g in majreq_groups if len(g) > 1),
+        "major_elective_min_credits": cr["major_electives"],
+        "major_elective_pool_courses": len(elective_ids),
+        "missing_required_courses": missing,
+        # datasheet-compatibility keys
+        "core_gateway_courses": len(core_ids) + len(ie_ids) + len(majreq_groups),
+        "support_gateway_courses": 0,
+        "required_gateway_credits": cr["business_core"] + cr["innovation_entrepreneurship"] + cr["major_requirements"],
+        "elective_min_credits": cr["major_electives"],
+        "elective_pool_courses": len(elective_ids),
+        "elective_pool_credits": sum(by_id[c]["credits"] for c in elective_ids),
+        "elective_buffer_credits": sum(by_id[c]["credits"] for c in elective_ids) - cr["major_electives"],
+    }
+    return {"programmes": [programme], "blocks": blocks, "rule_groups": rule_groups,
+            "rules": rules, "rule_eligible_courses": rule_eligible, "meta": meta}
 
 
 def build_realistic_programme(
