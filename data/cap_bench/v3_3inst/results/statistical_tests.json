@@ -1,0 +1,129 @@
+{
+  "n_test_samples": 6454,
+  "seeds": [
+    42,
+    123,
+    2024,
+    7,
+    99
+  ],
+  "seed_timesteps": 100000,
+  "note": "5-seed CAMP stability uses 100k steps/inst (vs 200k finalised) for CPU budget; this stability mean is DISTINCT from the 200k finalised CAMP-full NDCG@10 (0.591). CF and MF are deterministic (no training randomness). Significance tests are per-sample paired (n=n_test) on the finalised models.",
+  "camp_stability_over_seeds": {
+    "NDCG@10": {
+      "mean": 0.605924,
+      "std": 0.004067,
+      "per_seed": [
+        0.608884,
+        0.606458,
+        0.607445,
+        0.597997,
+        0.608837
+      ]
+    },
+    "violation_rate": {
+      "mean": 0.0,
+      "std": 0.0,
+      "per_seed": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "graduation_compliance": {
+      "mean": 0.395789,
+      "std": 0.006383,
+      "per_seed": [
+        0.401491,
+        0.394381,
+        0.393899,
+        0.385566,
+        0.403608
+      ]
+    },
+    "pathway_feasibility": {
+      "mean": 1.0,
+      "std": 0.0,
+      "per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "baseline_ndcg10_over_seeds": {
+    "random_forest": {
+      "mean": 0.735307,
+      "std": 0.000475,
+      "per_seed": [
+        0.735823,
+        0.735273,
+        0.735044,
+        0.734578,
+        0.735817
+      ]
+    },
+    "deep_nn": {
+      "mean": 0.791629,
+      "std": 0.00173,
+      "per_seed": [
+        0.793016,
+        0.79247,
+        0.793492,
+        0.789085,
+        0.790083
+      ]
+    }
+  },
+  "camp_violation_rate_variance": 0.0,
+  "significance_per_sample_ndcg10": {
+    "camp_vs_collaborative_filtering": {
+      "camp_mean_ndcg10": 0.636658,
+      "other_mean_ndcg10": 0.534632,
+      "paired_t_stat": 32.1532,
+      "paired_t_p": 1.586859515666686e-210,
+      "wilcoxon_stat": 4615404.0,
+      "wilcoxon_p": 3.460271693531353e-211
+    },
+    "camp_vs_matrix_factorisation": {
+      "camp_mean_ndcg10": 0.636658,
+      "other_mean_ndcg10": 0.511882,
+      "paired_t_stat": 36.8799,
+      "paired_t_p": 2.359417465101787e-270,
+      "wilcoxon_stat": 4263371.5,
+      "wilcoxon_p": 8.887760005896527e-269
+    },
+    "camp_vs_random_forest": {
+      "camp_mean_ndcg10": 0.636658,
+      "other_mean_ndcg10": 0.735823,
+      "paired_t_stat": -27.114,
+      "paired_t_p": 2.036509398211077e-153,
+      "wilcoxon_stat": 4903886.5,
+      "wilcoxon_p": 1.5113282777454526e-163
+    },
+    "camp_vs_deep_nn": {
+      "camp_mean_ndcg10": 0.636658,
+      "other_mean_ndcg10": 0.793016,
+      "paired_t_stat": -51.432,
+      "paired_t_p": 0.0,
+      "wilcoxon_stat": 2178343.5,
+      "wilcoxon_p": 0.0
+    },
+    "camp_vs_pure_gnn": {
+      "camp_mean_ndcg10": 0.636658,
+      "other_mean_ndcg10": 0.18833,
+      "paired_t_stat": 104.2091,
+      "paired_t_p": 0.0,
+      "wilcoxon_stat": 696668.5,
+      "wilcoxon_p": 0.0
+    }
+  },
+  "anova_six_models": {
+    "F": 4383.8753,
+    "p": 0.0
+  }
+}

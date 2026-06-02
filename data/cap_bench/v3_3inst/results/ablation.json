@@ -1,0 +1,53 @@
+{
+  "n_test_samples": 6454,
+  "variant_timesteps": 100000,
+  "full_timesteps": 200000,
+  "note": "Retrained variants (no-planning/no-imitation/no-GNN) use 100k steps/institution (vs 200k for CAMP-full) for the CPU budget; directional effects are robust. CAMP-no-mask removes the eligibility mask at inference on the finalised policy (isolates the mask's role; retraining without the mask is prohibitively slow as episodes never terminate).",
+  "variants": [
+    {
+      "variant": "CAMP-full",
+      "NDCG@10": 0.636658,
+      "Recall@10": 0.712465,
+      "f1_micro": 0.363284,
+      "prereq_violation_rate_topk": 0.0,
+      "graduation_compliance": 0.40502,
+      "pathway_feasibility": 1.0
+    },
+    {
+      "variant": "CAMP-no-mask",
+      "NDCG@10": 0.336396,
+      "Recall@10": 0.36568,
+      "f1_micro": 0.207829,
+      "prereq_violation_rate_topk": 0.368291,
+      "graduation_compliance": 0.363857,
+      "pathway_feasibility": 0.631721
+    },
+    {
+      "variant": "CAMP-no-planning",
+      "NDCG@10": 0.621697,
+      "Recall@10": 0.711716,
+      "f1_micro": 0.362782,
+      "prereq_violation_rate_topk": 0.0,
+      "graduation_compliance": 0.349723,
+      "pathway_feasibility": 1.0
+    },
+    {
+      "variant": "CAMP-no-imitation",
+      "NDCG@10": 0.38206,
+      "Recall@10": 0.501544,
+      "f1_micro": 0.274457,
+      "prereq_violation_rate_topk": 0.0,
+      "graduation_compliance": 0.374152,
+      "pathway_feasibility": 1.0
+    },
+    {
+      "variant": "CAMP-no-GNN",
+      "NDCG@10": 0.600456,
+      "Recall@10": 0.691065,
+      "f1_micro": 0.355126,
+      "prereq_violation_rate_topk": 0.0,
+      "graduation_compliance": 0.42017,
+      "pathway_feasibility": 1.0
+    }
+  ]
+}

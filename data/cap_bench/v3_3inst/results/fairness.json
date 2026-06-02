@@ -1,0 +1,311 @@
+{
+  "n_test_samples": 6454,
+  "attributes": {
+    "gpa_band": {
+      "per_group": {
+        "high": {
+          "n": 1805,
+          "NDCG@10": 0.632388,
+          "Recall@10": 0.713389,
+          "HitRatio@10": 0.945706,
+          "violation_rate": 0.0,
+          "graduation_compliance": 0.417175,
+          "pathway_feasibility": 1.0
+        },
+        "low": {
+          "n": 1591,
+          "NDCG@10": 0.63979,
+          "Recall@10": 0.717809,
+          "HitRatio@10": 0.951603,
+          "violation_rate": 0.0,
+          "graduation_compliance": 0.395139,
+          "pathway_feasibility": 1.0
+        },
+        "med": {
+          "n": 3058,
+          "NDCG@10": 0.637549,
+          "Recall@10": 0.70914,
+          "HitRatio@10": 0.947678,
+          "violation_rate": 0.0,
+          "graduation_compliance": 0.402987,
+          "pathway_feasibility": 1.0
+        }
+      },
+      "demographic_parity": {
+        "ndcg10_gap": 0.007402,
+        "ndcg10_ratio": 0.988431,
+        "grad_compliance_gap": 0.022036
+      },
+      "equal_opportunity": {
+        "metric": "HitRatio@10 among graduated students",
+        "per_group": {
+          "high": 0.954391,
+          "low": 0.970199,
+          "med": 0.9604
+        },
+        "gap": 0.015808
+      },
+      "max_violation_rate_across_groups": 0.0
+    },
+    "gender": {
+      "per_group": {
+        "F": {
+          "n": 3511,
+          "NDCG@10": 0.623633,
+          "Recall@10": 0.701761,
+          "HitRatio@10": 0.941612,
+          "violation_rate": 0.0,
+          "graduation_compliance": 0.39343,
+          "pathway_feasibility": 1.0
+        },
+        "M": {
+          "n": 2943,
+          "NDCG@10": 0.652197,
+          "Recall@10": 0.725235,
+          "HitRatio@10": 0.955827,
+          "violation_rate": 0.0,
+          "graduation_compliance": 0.418847,
+          "pathway_feasibility": 1.0
+        }
+      },
+      "demographic_parity": {
+        "ndcg10_gap": 0.028564,
+        "ndcg10_ratio": 0.956203,
+        "grad_compliance_gap": 0.025417
+      },
+      "equal_opportunity": {
+        "metric": "HitRatio@10 among graduated students",
+        "per_group": {
+          "F": 0.955915,
+          "M": 0.966599
+        },
+        "gap": 0.010684
+      },
+      "max_violation_rate_across_groups": 0.0
+    },
+    "major_track": {
+      "per_group": {
+        "ai": {
+          "n": 768,
+          "NDCG@10": 0.66311,
+          "Recall@10": 0.791471,
+          "HitRatio@10": 0.977865,
+          "violation_rate": 0.0,
+          "graduation_compliance": 0.299479,
+          "pathway_feasibility": 1.0
+        },
+        "business_analytics": {
+          "n": 639,
+          "NDCG@10": 0.711182,
+          "Recall@10": 0.780203,
+          "HitRatio@10": 0.982786,
+          "violation_rate": 0.0,
+          "graduation_compliance": 0.568597,
+          "pathway_feasibility": 1.0
+        },
+        "cybersecurity": {
+          "n": 688,
+          "NDCG@10": 0.664271,
+          "Recall@10": 0.776308,
+          "HitRatio@10": 0.96657,
+          "violation_rate": 0.0,
+          "graduation_compliance": 0.307171,
+          "pathway_feasibility": 1.0
+        },
+        "general": {
+          "n": 2122,
+          "NDCG@10": 0.644119,
+          "Recall@10": 0.715198,
+          "HitRatio@10": 0.957587,
+          "violation_rate": 0.0,
+          "graduation_compliance": 0.40266,
+          "pathway_feasibility": 1.0
+        },
+        "information_systems": {
+          "n": 750,
+          "NDCG@10": 0.706895,
+          "Recall@10": 0.763533,
+          "HitRatio@10": 0.970667,
+          "violation_rate": 0.0,
+          "graduation_compliance": 0.558519,
+          "pathway_feasibility": 1.0
+        },
+        "policy": {
+          "n": 748,
+          "NDCG@10": 0.521926,
+          "Recall@10": 0.581417,
+          "HitRatio@10": 0.867647,
+          "violation_rate": 0.0,
+          "graduation_compliance": 0.339572,
+          "pathway_feasibility": 1.0
+        },
+        "quantitative": {
+          "n": 739,
+          "NDCG@10": 0.542448,
+          "Recall@10": 0.585318,
+          "HitRatio@10": 0.901218,
+          "violation_rate": 0.0,
+          "graduation_compliance": 0.381597,
+          "pathway_feasibility": 1.0
+        }
+      },
+      "demographic_parity": {
+        "ndcg10_gap": 0.189256,
+        "ndcg10_ratio": 0.733885,
+        "grad_compliance_gap": 0.269118
+      },
+      "equal_opportunity": {
+        "metric": "HitRatio@10 among graduated students",
+        "per_group": {
+          "ai": 0.975862,
+          "business_analytics": 0.989189,
+          "cybersecurity": 0.969981,
+          "general": 0.969679,
+          "information_systems": 0.975037,
+          "policy": 0.884298,
+          "quantitative": 0.94685
+        },
+        "gap": 0.104891
+      },
+      "max_violation_rate_across_groups": 0.0
+    },
+    "cold_start": {
+      "per_group": {
+        "False": {
+          "n": 6392,
+          "NDCG@10": 0.635477,
+          "Recall@10": 0.711619,
+          "HitRatio@10": 0.947904,
+          "violation_rate": 0.0,
+          "graduation_compliance": 0.408306,
+          "pathway_feasibility": 1.0
+        },
+        "True": {
+          "n": 62,
+          "NDCG@10": 0.758439,
+          "Recall@10": 0.799731,
+          "HitRatio@10": 0.967742,
+          "violation_rate": 0.0,
+          "graduation_compliance": 0.066308,
+          "pathway_feasibility": 1.0
+        }
+      },
+      "demographic_parity": {
+        "ndcg10_gap": 0.122962,
+        "ndcg10_ratio": 0.837875,
+        "grad_compliance_gap": 0.341998
+      },
+      "equal_opportunity": {
+        "metric": "HitRatio@10 among graduated students",
+        "per_group": {
+          "False": 0.960981
+        },
+        "gap": 0.0
+      },
+      "max_violation_rate_across_groups": 0.0
+    },
+    "start_state_type": {
+      "per_group": {
+        "mid_degree": {
+          "n": 1273,
+          "NDCG@10": 0.657103,
+          "Recall@10": 0.73332,
+          "HitRatio@10": 0.955224,
+          "violation_rate": 0.0,
+          "graduation_compliance": 0.413459,
+          "pathway_feasibility": 1.0
+        },
+        "new": {
+          "n": 3880,
+          "NDCG@10": 0.651569,
+          "Recall@10": 0.729815,
+          "HitRatio@10": 0.956443,
+          "violation_rate": 0.0,
+          "graduation_compliance": 0.416609,
+          "pathway_feasibility": 1.0
+        },
+        "returning": {
+          "n": 288,
+          "NDCG@10": 0.669749,
+          "Recall@10": 0.740104,
+          "HitRatio@10": 0.954861,
+          "violation_rate": 0.0,
+          "graduation_compliance": 0.453318,
+          "pathway_feasibility": 1.0
+        },
+        "transfer": {
+          "n": 1013,
+          "NDCG@10": 0.544448,
+          "Recall@10": 0.611945,
+          "HitRatio@10": 0.905232,
+          "violation_rate": 0.0,
+          "graduation_compliance": 0.336295,
+          "pathway_feasibility": 1.0
+        }
+      },
+      "demographic_parity": {
+        "ndcg10_gap": 0.125301,
+        "ndcg10_ratio": 0.812913,
+        "grad_compliance_gap": 0.117023
+      },
+      "equal_opportunity": {
+        "metric": "HitRatio@10 among graduated students",
+        "per_group": {
+          "mid_degree": 0.973333,
+          "new": 0.972012,
+          "returning": 0.968504,
+          "transfer": 0.908891
+        },
+        "gap": 0.064442
+      },
+      "max_violation_rate_across_groups": 0.0
+    },
+    "university": {
+      "per_group": {
+        "aus": {
+          "n": 1985,
+          "NDCG@10": 0.717262,
+          "Recall@10": 0.776574,
+          "HitRatio@10": 0.977834,
+          "violation_rate": 0.0,
+          "graduation_compliance": 0.558522,
+          "pathway_feasibility": 1.0
+        },
+        "khalifa": {
+          "n": 2204,
+          "NDCG@10": 0.66271,
+          "Recall@10": 0.78111,
+          "HitRatio@10": 0.970508,
+          "violation_rate": 0.0,
+          "graduation_compliance": 0.303085,
+          "pathway_feasibility": 1.0
+        },
+        "unc": {
+          "n": 2265,
+          "NDCG@10": 0.540668,
+          "Recall@10": 0.589485,
+          "HitRatio@10": 0.900221,
+          "violation_rate": 0.0,
+          "graduation_compliance": 0.369684,
+          "pathway_feasibility": 1.0
+        }
+      },
+      "demographic_parity": {
+        "ndcg10_gap": 0.176594,
+        "ndcg10_ratio": 0.753794,
+        "grad_compliance_gap": 0.255437
+      },
+      "equal_opportunity": {
+        "metric": "HitRatio@10 among graduated students",
+        "per_group": {
+          "aus": 0.982301,
+          "khalifa": 0.971023,
+          "unc": 0.92789
+        },
+        "gap": 0.054411
+      },
+      "max_violation_rate_across_groups": 0.0
+    }
+  },
+  "violation_rate_zero_in_every_subgroup": true
+}

@@ -1,0 +1,240 @@
+{
+  "feature_importance_method": "permutation importance (fraction of decisions whose top recommendation changes when a feature group is shuffled); SHAP substituted as it is awkward on a masked policy.",
+  "feature_importance_per_institution": {
+    "khalifa": {
+      "gnn_embedding": 0.048,
+      "completed_courses": 0.676,
+      "term_index": 0.008,
+      "gpa": 0.0,
+      "remaining_requirements": 0.004,
+      "credits_completed": 0.004
+    },
+    "aus": {
+      "gnn_embedding": 0.012,
+      "completed_courses": 0.628,
+      "term_index": 0.0,
+      "gpa": 0.0,
+      "remaining_requirements": 0.012,
+      "credits_completed": 0.004
+    },
+    "unc": {
+      "gnn_embedding": 0.012,
+      "completed_courses": 0.62,
+      "term_index": 0.012,
+      "gpa": 0.0,
+      "remaining_requirements": 0.004,
+      "credits_completed": 0.004
+    }
+  },
+  "feature_importance_overall": {
+    "gnn_embedding": 0.024,
+    "completed_courses": 0.6413,
+    "term_index": 0.0067,
+    "gpa": 0.0,
+    "remaining_requirements": 0.0067,
+    "credits_completed": 0.004
+  },
+  "top5_features": [
+    {
+      "feature": "completed_courses",
+      "importance": 0.6413
+    },
+    {
+      "feature": "gnn_embedding",
+      "importance": 0.024
+    },
+    {
+      "feature": "term_index",
+      "importance": 0.0067
+    },
+    {
+      "feature": "remaining_requirements",
+      "importance": 0.0067
+    },
+    {
+      "feature": "credits_completed",
+      "importance": 0.004
+    }
+  ],
+  "n_case_studies": 3,
+  "case_studies": [
+    {
+      "student_id": "S_KHALIFA_00001",
+      "university": "khalifa",
+      "term_index": 1,
+      "profile": {
+        "start_state_type": "new",
+        "major_track": "ai",
+        "gpa_band": "med",
+        "cold_start": false
+      },
+      "n_passed": 4,
+      "recommended_next_term": [
+        "KHAL_MATH_112",
+        "KHAL_COSC_230",
+        "KHAL_PHYS_121",
+        "KHAL_COSC_101",
+        "KHAL_COSC_202"
+      ],
+      "actual_next_term": [
+        "KHAL_MATH_112",
+        "KHAL_COSC_202",
+        "KHAL_PHYS_121",
+        "KHAL_COSC_101",
+        "KHAL_COSC_230"
+      ],
+      "top_recommendation": "KHAL_MATH_112",
+      "graph_path_for_top": {
+        "course": "KHAL_MATH_112",
+        "prerequisites": [
+          "KHAL_MATH_111"
+        ],
+        "prerequisites_satisfied_by_history": [
+          "KHAL_MATH_111"
+        ],
+        "unlocks_downstream": [
+          "KHAL_MATH_204",
+          "KHAL_MATH_232",
+          "KHAL_MATH_234",
+          "KHAL_MATH_243"
+        ],
+        "centrality": 24,
+        "blocking_factor": 4
+      },
+      "masked_out_examples": [
+        {
+          "course": "KHAL_CCEN_356",
+          "blocked_reason": "unmet prerequisite",
+          "needs_one_of": [
+            "KHAL_COSC_201"
+          ]
+        },
+        {
+          "course": "KHAL_CCEN_446",
+          "blocked_reason": "unmet prerequisite",
+          "needs_one_of": [
+            "KHAL_CCEN_356"
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "S_AUS_00082",
+      "university": "aus",
+      "term_index": 1,
+      "profile": {
+        "start_state_type": "mid_degree",
+        "major_track": "information_systems",
+        "gpa_band": "low",
+        "cold_start": false
+      },
+      "n_passed": 4,
+      "recommended_next_term": [
+        "AUS_ACC_201",
+        "AUS_QBA_201",
+        "AUS_CMP_220",
+        "AUS_COE_221"
+      ],
+      "actual_next_term": [
+        "AUS_QBA_201",
+        "AUS_COE_221",
+        "AUS_ISA_301",
+        "AUS_ISA_383"
+      ],
+      "top_recommendation": "AUS_ACC_201",
+      "graph_path_for_top": {
+        "course": "AUS_ACC_201",
+        "prerequisites": [],
+        "prerequisites_satisfied_by_history": [],
+        "unlocks_downstream": [
+          "AUS_ACC_202",
+          "AUS_BLW_301",
+          "AUS_FIN_201",
+          "AUS_MGT_315"
+        ],
+        "centrality": 10,
+        "blocking_factor": 2
+      },
+      "masked_out_examples": [
+        {
+          "course": "AUS_ACC_202",
+          "blocked_reason": "unmet prerequisite",
+          "needs_one_of": [
+            "AUS_ACC_201"
+          ]
+        },
+        {
+          "course": "AUS_ACC_380",
+          "blocked_reason": "unmet prerequisite",
+          "needs_one_of": [
+            "AUS_ACC_202"
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "S_UNC_00004",
+      "university": "unc",
+      "term_index": 1,
+      "profile": {
+        "start_state_type": "transfer",
+        "major_track": "policy",
+        "gpa_band": "high",
+        "cold_start": false
+      },
+      "n_passed": 4,
+      "recommended_next_term": [
+        "UNC_ECON_410",
+        "UNC_COMP_110",
+        "UNC_ECON_400",
+        "UNC_MATH_232"
+      ],
+      "actual_next_term": [
+        "UNC_ECON_410",
+        "UNC_ECON_400",
+        "UNC_COMP_116",
+        "UNC_ECON_89"
+      ],
+      "top_recommendation": "UNC_ECON_410",
+      "graph_path_for_top": {
+        "course": "UNC_ECON_410",
+        "prerequisites": [
+          "UNC_ECON_101",
+          "UNC_MATH_231"
+        ],
+        "prerequisites_satisfied_by_history": [
+          "UNC_ECON_101",
+          "UNC_MATH_231"
+        ],
+        "unlocks_downstream": [
+          "UNC_ECON_290",
+          "UNC_ECON_292",
+          "UNC_ECON_345",
+          "UNC_ECON_380",
+          "UNC_ECON_411",
+          "UNC_ECON_415",
+          "UNC_ECON_416",
+          "UNC_ECON_420"
+        ],
+        "centrality": 37,
+        "blocking_factor": 6
+      },
+      "masked_out_examples": [
+        {
+          "course": "UNC_ECON_193",
+          "blocked_reason": "unmet prerequisite",
+          "needs_one_of": [
+            "UNC_ECON_125"
+          ]
+        },
+        {
+          "course": "UNC_ECON_290",
+          "blocked_reason": "unmet prerequisite",
+          "needs_one_of": [
+            "UNC_ECON_400"
+          ]
+        }
+      ]
+    }
+  ]
+}
