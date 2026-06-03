@@ -137,7 +137,7 @@ def evaluate_model(
 ) -> dict[str, Any]:
     """Score a model's per-sample course scores through the full harness.
 
-    ``raw_scores`` is an ``(n_samples, 262)`` array in [0, 1]. For each sample,
+    ``raw_scores`` is an ``(n_samples, 194)`` array in [0, 1]. For each sample,
     courses already passed and **courses from the other institution** are removed
     from candidacy (institution-masking). When ``eligible_mask`` is True (CAMP),
     prerequisite-ineligible courses are *also* removed — so CAMP can only ever
@@ -232,7 +232,7 @@ def passed_matrix(students: list[dict[str, Any]]) -> np.ndarray:
 
 
 def history_vectors(samples: list[dict[str, Any]]) -> tuple[np.ndarray, np.ndarray]:
-    """Per-sample passed multi-hot (262) and per-course mean grade (262)."""
+    """Per-sample passed multi-hot (194) and per-course mean grade (194)."""
     multihot = np.zeros((len(samples), N_COURSES), dtype=float)
     grades = np.zeros((len(samples), N_COURSES), dtype=float)
     for i, s in enumerate(samples):
@@ -343,7 +343,7 @@ def run_random_forest(samples_train, samples_test, engines) -> dict[str, Any]:
         "model": "RandomForestClassifier (multi-output multilabel)",
         "n_estimators": 200, "max_depth": None, "min_samples_leaf": 2,
         "random_state": 42, "n_jobs": -1,
-        "note": "Multi-output multilabel (81 binary heads); ranks by per-course probability.",
+        "note": "Multi-output multilabel (194 binary heads); ranks by per-course probability.",
     }
     return evaluate_model("random_forest", hp, raw, samples_test, engines)
 
@@ -373,7 +373,7 @@ def _dnn_features(samples) -> np.ndarray:
 def scores_deep_nn(samples_train, samples_val, samples_test, seed: int = 42) -> tuple[np.ndarray, dict]:
     set_seed(seed)
     hp = {
-        "architecture": "MLP [in -> 256 -> 128 -> 81], ReLU, dropout 0.3",
+        "architecture": "MLP [in -> 256 -> 128 -> 194], ReLU, dropout 0.3",
         "loss": "BCEWithLogits (multi-label)",
         "optimizer": "Adam",
         "lr": 1e-3,

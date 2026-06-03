@@ -90,7 +90,7 @@ def course_university() -> dict[str, str]:
 
 
 def build_vocab(save: bool = True) -> dict[str, int]:
-    """Course-id -> index vocabulary over all 262 courses (sorted ids)."""
+    """Course-id -> index vocabulary over all 194 courses (sorted ids)."""
     course_ids = sorted(c["course_id"] for c in load_courses())
     vocab = {cid: i for i, cid in enumerate(course_ids)}
     if save:

@@ -1,8 +1,8 @@
 Variant,NDCG@10,Prereq-violation rate,Graduation-compliance,Pathway-feasibility
 CAMP-full,0.637,0.000,0.405,1.000
 CAMP-no-mask,0.336,0.368,0.364,0.632
-CAMP-no-planning,0.622,0.000,0.350,1.000
-CAMP-no-imitation,0.382,0.000,0.374,1.000
-CAMP-no-GNN,0.600,0.000,0.420,1.000
+CAMP-no-planning,0.660,0.000,0.372,1.000
+CAMP-no-imitation,0.415,0.000,0.368,1.000
+CAMP-no-GNN,0.625,0.000,0.403,1.000
 "CAMP-full (64-d encoder, 100k)†",0.617,0.000,0.401,1.000
 "CAMP-strong-encoder (128-d, 100k)†",0.616,0.000,0.456,1.000

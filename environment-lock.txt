@@ -1,0 +1,46 @@
+# CAMP — pinned environment lock (exact versions the experiments ran on)
+#
+# This file records the EXACT installed versions used to produce every committed
+# result (CAMP-full 200k, the seven-model comparison, the matched-200k ablation,
+# the 5-seed stability study, the statistical tests, and all baselines). It is
+# the reproducibility companion to requirements.txt: requirements.txt gives
+# loose ranges and deliberately leaves torch / torch-geometric / sb3-contrib /
+# gymnasium to a separate install, whereas this file pins the precise stack so a
+# reader can reproduce the same numbers bit-for-bit.
+#
+# Versions were read live from the running interpreter (see JOB 5), not asserted.
+#
+# Interpreter : CPython 3.13.5
+# Platform    : macOS 26.5, arm64 (Apple Silicon), Mach-O
+# Determinism : seed 42; CPU-only (no CUDA/MPS used for the reported runs)
+#
+# RL / GNN stack (installed separately from requirements.txt)
+torch==2.12.0
+torch-geometric==2.7.0
+stable_baselines3==2.8.0
+sb3_contrib==2.8.0
+gymnasium==1.2.3
+#
+# Classical ML / gradient boosting
+scikit-learn==1.6.1
+xgboost==2.1.4          # CPU build; needs OpenMP runtime — see libomp note below
+#
+# Scientific Python core
+numpy==2.3.2
+pandas==2.3.1
+scipy==1.16.1
+networkx==3.6.1
+matplotlib==3.10.5
+#
+# Scraping / catalogue ingestion
+beautifulsoup4==4.13.4
+pdfminer.six==20260107
+#
+# ---------------------------------------------------------------------------
+# libomp (macOS arm64): XGBoost's native library resolves libomp.dylib at import
+# time. Install it and put it on the loader path BEFORE launching Python:
+#   brew install libomp
+#   export DYLD_LIBRARY_PATH="/opt/homebrew/opt/libomp/lib:$DYLD_LIBRARY_PATH"
+# (dyld reads the variable at process launch, so setting os.environ in-process is
+# too late.) Only the gradient-boosted baseline needs this.
+# ---------------------------------------------------------------------------

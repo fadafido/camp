@@ -1,7 +1,7 @@
 {
   "model": "deep_nn",
   "hyperparameters": {
-    "architecture": "MLP [in -> 256 -> 128 -> 81], ReLU, dropout 0.3",
+    "architecture": "MLP [in -> 256 -> 128 -> 194], ReLU, dropout 0.3",
     "loss": "BCEWithLogits (multi-label)",
     "optimizer": "Adam",
     "lr": 0.001,

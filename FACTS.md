@@ -32,16 +32,17 @@ CAMP (ours, 200k)            0.6367  0.0000   0.8644     1.0
 - NDCG@10: {'aus': 0.717262, 'khalifa': 0.66271, 'unc': 0.540668}; violation 0.000 everywhere (total 0); grad-compliance 0.40502.
 - Convergence: khalifa=True; aus=True; unc=True
 
-## Ablation  [ablation.json] (retrains 100k; CAMP-full 200k)
+## Ablation  [ablation.json] (variants retrained at 200k, MATCHED to CAMP-full 200k)
 - CAMP-full: NDCG@10 0.6367, viol 0.0, feasib 1.0
-- CAMP-no-mask: NDCG@10 0.3364, viol 0.3683, feasib 0.6317
-- CAMP-no-planning: NDCG@10 0.6217, viol 0.0, feasib 1.0
-- CAMP-no-imitation: NDCG@10 0.3821, viol 0.0, feasib 1.0
-- CAMP-no-GNN: NDCG@10 0.6005, viol 0.0, feasib 1.0
+- CAMP-no-mask: NDCG@10 0.3364, viol 0.3683, feasib 0.6317 (inference-time mask removal on the 200k policy)
+- CAMP-no-planning: NDCG@10 0.6600, viol 0.0, feasib 1.0
+- CAMP-no-imitation: NDCG@10 0.4151, viol 0.0, feasib 1.0
+- CAMP-no-GNN: NDCG@10 0.6251, viol 0.0, feasib 1.0
 
 ## 5-seed stability + ANOVA  [statistical_tests.json]
 - CAMP 100k 5-seed NDCG@10 mean 0.605924 +/- 0.004067 (per-seed [0.608884, 0.606458, 0.607445, 0.597997, 0.608837]); violation 0.0+/-0.0; feasibility 1.0+/-0.0.
-- ANOVA six models: F=4383.8753, p=0.0.
+- ANOVA seven models (T2 systems incl. unmasked XGBoost): F=3973.8438, p<1e-300.
+- CAMP vs XGBoost (unmasked) per-sample NDCG@10: CAMP 0.636658 < XGBoost 0.716066; paired t=-21.337 (p~1.14e-97), Wilcoxon p~2.35e-97 (CAMP honestly mid-pack on ranking).
 
 ## Fairness  [fairness.json]
 - violation 0.000 in EVERY subgroup: True.

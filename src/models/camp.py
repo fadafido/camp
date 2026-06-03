@@ -234,7 +234,7 @@ _ROLLOUT_DEPTH = 12  # greedy next-course picks used to form the priority rankin
 def _camp_scores(
     uni: str, model: MaskablePPO, samples: list[dict[str, Any]], env_kwargs: dict | None = None
 ) -> np.ndarray:
-    """Per-sample global (262-d) priority scores from a greedy sequential rollout.
+    """Per-sample global (194-d) priority scores from a greedy sequential rollout.
 
     CAMP is a sequential planner, so a one-shot action distribution is a poor
     ranking. Instead we roll the deterministic policy forward from the student's
@@ -276,7 +276,7 @@ def _camp_scores(
 def camp_raw_scores(
     models: dict[str, MaskablePPO], samples_test: list[dict[str, Any]], env_kwargs: dict | None = None
 ) -> np.ndarray:
-    """Global (N×262) priority scores for CAMP over all test samples."""
+    """Global (N×194) priority scores for CAMP over all test samples."""
     raw = np.zeros((len(samples_test), len(task.load_vocab())), dtype=float)
     for uni, model in models.items():
         idx = [i for i, s in enumerate(samples_test) if s["university"] == uni]

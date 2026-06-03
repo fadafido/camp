@@ -3,7 +3,8 @@
 | CAMP vs Collaborative filtering | 0.637 | 0.535 | 32.153 | 1.59e-210 | 3.46e-211 |
 | CAMP vs Matrix factorisation | 0.637 | 0.512 | 36.88 | 2.36e-270 | 8.89e-269 |
 | CAMP vs Random forest | 0.637 | 0.736 | -27.114 | 2.04e-153 | 1.51e-163 |
-| CAMP vs Deep NN | 0.637 | 0.793 | -51.432 | 0.00e+00 | 0.00e+00 |
-| CAMP vs Pure GNN | 0.637 | 0.188 | 104.209 | 0.00e+00 | 0.00e+00 |
+| CAMP vs Deep NN | 0.637 | 0.793 | -51.432 | <1e-300 | <1e-300 |
+| CAMP vs Pure GNN | 0.637 | 0.188 | 104.209 | <1e-300 | <1e-300 |
+| CAMP vs Gradient-boosted (XGBoost) | 0.637 | 0.716 | -21.337 | 1.14e-97 | 2.35e-97 |
 | CAMP 5-seed stability (100k; n_seeds=5) | 0.606 ± 0.004 | — (distinct from 0.637 final) | — | — | — |
-| One-way ANOVA (6 models) | — | — | F=4383.8753 | 0.00e+00 | — |
+| One-way ANOVA (7 models) | — | — | F=3973.8438 | <1e-300 | — |

@@ -45,6 +45,14 @@ def _f3(x):
     return f"{x:.3f}" if isinstance(x, float) else x
 
 
+def _pfmt(p, thresholded=None):
+    """Render a p-value, never as an impossible exact 0.00e+00: prefer an explicit
+    thresholded string ('<1e-300') when supplied or when p underflows to 0.0."""
+    if thresholded is not None:
+        return thresholded
+    return "<1e-300" if p == 0.0 else f"{p:.2e}"
+
+
 def write_table(name: str, headers: list[str], rows: list[list]) -> None:
     with (OUT / f"{name}.csv").open("w", newline="") as fh:
         w = csv.writer(fh)
@@ -141,15 +149,22 @@ def main() -> None:
     # ---- T4 statistical significance ----
     rows = []
     sig = stat["significance_per_sample_ndcg10"]
-    for m in ("collaborative_filtering", "matrix_factorisation", "random_forest", "deep_nn", "pure_gnn"):
+    # The five original baselines, then the UNMASKED XGBoost baseline appended
+    # (the seventh system in T2); CAMP is the reference. Order keeps the original
+    # five rows unchanged and adds XGBoost last.
+    for m in ("collaborative_filtering", "matrix_factorisation", "random_forest",
+              "deep_nn", "pure_gnn", "gradient_boosted"):
         s = sig[f"camp_vs_{m}"]
         rows.append([f"CAMP vs {MODEL_LABEL[m]}", _f3(s["camp_mean_ndcg10"]), _f3(s["other_mean_ndcg10"]),
-                     round(s["paired_t_stat"], 3), f"{s['paired_t_p']:.2e}", f"{s['wilcoxon_p']:.2e}"])
+                     round(s["paired_t_stat"], 3),
+                     _pfmt(s["paired_t_p"], s.get("paired_t_p_thresholded")),
+                     _pfmt(s["wilcoxon_p"], s.get("wilcoxon_p_thresholded"))])
     cs = stat["camp_stability_over_seeds"]["NDCG@10"]
     rows.append([f"CAMP 5-seed stability (100k; n_seeds={len(stat['seeds'])})",
                  f"{cs['mean']:.3f} ± {cs['std']:.3f}", f"— (distinct from {abl['CAMP-full']['NDCG@10']:.3f} final)", "—", "—", "—"])
-    an = stat["anova_six_models"]
-    rows.append(["One-way ANOVA (6 models)", "—", "—", f"F={an['F']}", f"{an['p']:.2e}", "—"])
+    an = stat["anova_seven_models"]
+    rows.append(["One-way ANOVA (7 models)", "—", "—", f"F={an['F']}",
+                 _pfmt(an["p"], an.get("p_thresholded")), "—"])
     write_table("T4_statistical_significance",
                 ["Comparison", "CAMP mean NDCG@10", "Other mean NDCG@10",
                  "Paired t / F", "t / ANOVA p-value", "Wilcoxon p-value"], rows)

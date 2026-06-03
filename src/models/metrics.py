@@ -6,7 +6,7 @@ samples, so model comparison is contamination-free.
 Two families:
   * :func:`evaluate_ranking` — Recall/Precision/NDCG/MAP/HitRatio @ K over ranked
     course-index lists vs. true target sets.
-  * :func:`evaluate_classification` — multi-label metrics over the 262 courses
+  * :func:`evaluate_classification` — multi-label metrics over the 194 courses
     (micro/macro Accuracy, Precision, Recall, F1, ROC-AUC), via sklearn.
 
 Run ``python -m src.models.metrics`` for the self-test on a hand-built example

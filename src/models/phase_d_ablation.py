@@ -9,9 +9,9 @@ and metric harness as everything else:
   * CAMP-no-imitation— use_imitation OFF
   * CAMP-no-GNN      — GraphSAGE state embedding zeroed
 
-Variants are trained at a reduced 100k timesteps/institution (vs 200k for the
-finalised CAMP-full) to fit the CPU budget — documented; the directional effects
-are robust to this. Writes ``results/ablation.json``. Seed 42; British English.
+Retrained variants are trained at the SAME 200k timesteps/institution as the
+finalised CAMP-full, so the component ablation is a matched-budget comparison
+(no 100k/200k confound). Writes ``results/ablation.json``. Seed 42; British English.
 """
 
 from __future__ import annotations
@@ -28,7 +28,7 @@ from src.models import task
 from src.utils.seed import set_seed
 
 RESULTS_DIR = task.BUNDLE / "results"
-ABLATION_TIMESTEPS = 100_000
+ABLATION_TIMESTEPS = 200_000  # matched to CAMP-full's 200k (removes the budget confound)
 SEED = 42
 
 # Variants that require retraining (the env/reward/obs differ). All keep the
@@ -101,11 +101,12 @@ def main() -> None:
         "n_test_samples": len(samples_test),
         "variant_timesteps": ABLATION_TIMESTEPS,
         "full_timesteps": 200_000,
-        "note": "Retrained variants (no-planning/no-imitation/no-GNN) use 100k "
-        "steps/institution (vs 200k for CAMP-full) for the CPU budget; directional "
-        "effects are robust. CAMP-no-mask removes the eligibility mask at inference "
-        "on the finalised policy (isolates the mask's role; retraining without the "
-        "mask is prohibitively slow as episodes never terminate).",
+        "note": "Retrained variants (no-planning/no-imitation/no-GNN) use 200k "
+        "steps/institution, MATCHED to CAMP-full's 200k (no budget confound). "
+        "CAMP-no-mask removes the eligibility mask at inference on the finalised "
+        "200k policy (isolates the mask's role; retraining without the mask is "
+        "prohibitively slow as episodes never terminate, so it is already "
+        "effectively 200k).",
         "variants": rows,
     }
     with (RESULTS_DIR / "ablation.json").open("w") as fh:

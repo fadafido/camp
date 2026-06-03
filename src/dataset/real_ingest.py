@@ -1,4 +1,4 @@
-"""Shared ingestion for the four real-catalogue institutions (Phase INGEST-4).
+"""Shared ingestion for the three real-catalogue institutions (Phase INGEST-4).
 
 Sources arrive as ``extracted_courses.json`` + ``extracted_program.json``
 (parsed from public course catalogues). The per-institution scripts

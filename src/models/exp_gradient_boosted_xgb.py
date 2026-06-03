@@ -19,10 +19,10 @@ launch, so setting ``os.environ`` from inside the process would be too late.)
 
 Method
 ------
-One-vs-rest XGBoost over the 262 courses — one ``XGBClassifier`` per course —
+One-vs-rest XGBoost over the 194 courses — one ``XGBClassifier`` per course —
 using the SAME features the Random Forest baseline uses (``bl.summary_features``) and
 ``bl.multilabel_targets`` (no new features invented). Same train split, seed 42.
-Per-course probabilities form the ``(n_test, 262)`` score matrix, scored through
+Per-course probabilities form the ``(n_test, 194)`` score matrix, scored through
 the IDENTICAL harness (``bl.evaluate_model``) on the SAME 6,606 test split with
 institution-masking, in two variants:
   * ``gradient_boosted``        — unmasked (constraint-blind),
@@ -52,7 +52,7 @@ OUT_PATH = bl.RESULTS_DIR / "gradient_boosted.json"
 # XGBoost hyperparameters (documented; deterministic given seed). Standard,
 # reasonable defaults for a strong gradient-boosted tabular baseline — CPU-only.
 GB_HP = {
-    "model": "XGBoost XGBClassifier (one-vs-rest over 262 courses)",
+    "model": "XGBoost XGBClassifier (one-vs-rest over 194 courses)",
     "library": "XGBoost",
     "library_version": xgb.__version__,
     "n_estimators": 300,
@@ -80,7 +80,7 @@ def scores_gradient_boosted_xgb(samples_train, samples_test, seed: int = 42) -> 
     """
     set_seed(seed)
     x_train = bl.summary_features(samples_train)
-    y_train = bl.multilabel_targets(samples_train)  # (n_train, 262) int {0,1}
+    y_train = bl.multilabel_targets(samples_train)  # (n_train, 194) int {0,1}
     x_test = bl.summary_features(samples_test)
     raw = np.zeros((len(samples_test), bl.N_COURSES), dtype=float)
     for j in range(bl.N_COURSES):

@@ -7,10 +7,13 @@ Two analyses, both on the test split:
      finalised CAMP-full uses 200k — documented.) Baselines with stochastic
      training (Random Forest, Deep NN) are also re-seeded; CF and MF are
      deterministic and noted as such.
-  2. **Significance:** per-sample NDCG@10 (n=7105) for the finalised models, then
-     paired t-test and Wilcoxon signed-rank (CAMP vs each baseline) and a one-way
-     ANOVA across all six models. Violation rate is deterministically 0 for CAMP
-     (no variance) — framed accordingly.
+  2. **Significance:** per-sample NDCG@10 for the finalised models, then paired
+     t-test and Wilcoxon signed-rank (CAMP vs each baseline) and a one-way ANOVA
+     across all seven systems in Table T2 — CF, MF, RF, Deep NN, pure GNN, the
+     UNMASKED XGBoost baseline, and CAMP. Violation rate is deterministically 0
+     for CAMP (no variance) — framed accordingly. Exact-zero p-values (below
+     float resolution) are emitted with a thresholded ``*_thresholded`` sibling
+     (``"<1e-300"``) so nothing reads as an impossible exact zero.
 
 Writes ``results/statistical_tests.json``. Seeds explicit; British English.
 """
@@ -33,6 +36,13 @@ from src.models import task
 RESULTS_DIR = task.BUNDLE / "results"
 SEEDS = [42, 123, 2024, 7, 99]
 SEED_TIMESTEPS = 100_000
+
+
+def _p_thresholded(p: float) -> str:
+    """Display string for a p-value that underflows to exactly 0.0 — reported as
+    a threshold rather than an impossible exact zero. Non-zero p's pass through
+    as their plain repr."""
+    return "<1e-300" if p == 0.0 else repr(p)
 
 
 def _agg(metrics_list: list[dict[str, float]]) -> dict[str, Any]:
@@ -91,12 +101,17 @@ def main() -> None:
     rk, tg = bl.rank_samples(camp_raw, samples_test, engines, eligible_mask=True)
     persample["camp"] = metrics_mod.ndcg_at_k_per_sample(rk, tg, 10)
     # Baselines.
+    # XGBoost is imported lazily: its native lib needs libomp on the loader path
+    # (DYLD_LIBRARY_PATH) and only this seven-model analysis uses it.
+    from src.models import exp_gradient_boosted_xgb as xgb_exp
     raw_by_model = {
         "collaborative_filtering": bl.scores_collaborative_filtering(train_students, samples_test),
         "matrix_factorisation": bl.scores_matrix_factorisation(train_students, samples_test),
         "random_forest": bl.scores_random_forest(samples_train, samples_test),
         "deep_nn": bl.scores_deep_nn(samples_train, samples_val, samples_test)[0],
         "pure_gnn": bl.scores_pure_gnn(samples_test),
+        # UNMASKED XGBoost — the same 0.716 baseline that appears in Table T2.
+        "gradient_boosted": xgb_exp.scores_gradient_boosted_xgb(samples_train, samples_test),
     }
     for name, raw in raw_by_model.items():
         rk, tg = bl.rank_samples(raw, samples_test, engines, eligible_mask=False)
@@ -111,12 +126,19 @@ def main() -> None:
             w_stat, w_p = stats.wilcoxon(camp_ps, persample[name])
         except ValueError:
             w_stat, w_p = float("nan"), float("nan")
-        pairwise[f"camp_vs_{name}"] = {
+        entry = {
             "camp_mean_ndcg10": round(float(camp_ps.mean()), 6),
             "other_mean_ndcg10": round(float(persample[name].mean()), 6),
             "paired_t_stat": round(float(t_stat), 4), "paired_t_p": float(t_p),
             "wilcoxon_stat": round(float(w_stat), 4), "wilcoxon_p": float(w_p),
         }
+        # Thresholded display for p-values that underflow to exact 0.0.
+        if float(t_p) == 0.0:
+            entry["paired_t_p_thresholded"] = _p_thresholded(float(t_p))
+        if float(w_p) == 0.0:
+            entry["wilcoxon_p_thresholded"] = _p_thresholded(float(w_p))
+        pairwise[f"camp_vs_{name}"] = entry
+    # Seven-model ANOVA across exactly the systems in Table T2.
     f_stat, f_p = stats.f_oneway(*[persample[m] for m in ["camp", *raw_by_model.keys()]])
 
     out = {
@@ -126,7 +148,10 @@ def main() -> None:
         "note": "5-seed CAMP stability uses 100k steps/inst (vs 200k finalised) for CPU budget; "
         "this stability mean is DISTINCT from the 200k finalised CAMP-full NDCG@10 (0.637). "
         "CF and MF are deterministic (no training randomness). Significance tests are "
-        "per-sample paired (n=n_test) on the finalised models.",
+        "per-sample paired (n=n_test) on the finalised models. The ANOVA and pairwise "
+        "tests cover the seven systems in Table T2 (CF, MF, RF, Deep NN, pure GNN, "
+        "UNMASKED XGBoost, CAMP); XGBoost is the same 0.716 unmasked model in T2. "
+        "Exact-zero p-values (float underflow) carry a '*_thresholded' sibling ('<1e-300').",
         "camp_stability_over_seeds": _agg(camp_seed_metrics),
         "baseline_ndcg10_over_seeds": {
             k: {"mean": round(float(np.mean(v)), 6), "std": round(float(np.std(v)), 6), "per_seed": [round(x, 6) for x in v]}
@@ -134,7 +159,12 @@ def main() -> None:
         },
         "camp_violation_rate_variance": 0.0,
         "significance_per_sample_ndcg10": pairwise,
-        "anova_six_models": {"F": round(float(f_stat), 4), "p": float(f_p)},
+        "anova_seven_models": {
+            "models": ["camp", *raw_by_model.keys()],
+            "F": round(float(f_stat), 4),
+            "p": float(f_p),
+            "p_thresholded": _p_thresholded(float(f_p)),
+        },
     }
     with (RESULTS_DIR / "statistical_tests.json").open("w") as fh:
         json.dump(out, fh, indent=2)

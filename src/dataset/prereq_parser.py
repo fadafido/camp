@@ -1,7 +1,7 @@
-"""Shared prerequisite-string parser for the four real-catalogue institutions
+"""Shared prerequisite-string parser for the three real-catalogue institutions
 (Khalifa, AUS, UNC).
 
-The four catalogues expose *real* prerequisites as free-text strings
+The three catalogues expose *real* prerequisites as free-text strings
 (``prereq_raw``). This module parses one such string into the CAP-Bench
 prerequisite form: an AND-of-OR-groups array of prefixed ``course_id`` values
 (an AND-of-OR-groups array of prefixed ``course_id`` values).

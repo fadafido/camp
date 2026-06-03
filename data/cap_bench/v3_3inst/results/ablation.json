@@ -1,8 +1,8 @@
 {
   "n_test_samples": 6454,
-  "variant_timesteps": 100000,
+  "variant_timesteps": 200000,
   "full_timesteps": 200000,
-  "note": "Retrained variants (no-planning/no-imitation/no-GNN) use 100k steps/institution (vs 200k for CAMP-full) for the CPU budget; directional effects are robust. CAMP-no-mask removes the eligibility mask at inference on the finalised policy (isolates the mask's role; retraining without the mask is prohibitively slow as episodes never terminate).",
+  "note": "Retrained variants (no-planning/no-imitation/no-GNN) use 200k steps/institution, MATCHED to CAMP-full's 200k (no budget confound). CAMP-no-mask removes the eligibility mask at inference on the finalised 200k policy (isolates the mask's role; retraining without the mask is prohibitively slow as episodes never terminate, so it is already effectively 200k).",
   "variants": [
     {
       "variant": "CAMP-full",
@@ -24,29 +24,29 @@
     },
     {
       "variant": "CAMP-no-planning",
-      "NDCG@10": 0.621697,
-      "Recall@10": 0.711716,
-      "f1_micro": 0.362782,
+      "NDCG@10": 0.660037,
+      "Recall@10": 0.738291,
+      "f1_micro": 0.37335,
       "prereq_violation_rate_topk": 0.0,
-      "graduation_compliance": 0.349723,
+      "graduation_compliance": 0.372465,
       "pathway_feasibility": 1.0
     },
     {
       "variant": "CAMP-no-imitation",
-      "NDCG@10": 0.38206,
-      "Recall@10": 0.501544,
-      "f1_micro": 0.274457,
+      "NDCG@10": 0.415063,
+      "Recall@10": 0.52718,
+      "f1_micro": 0.286613,
       "prereq_violation_rate_topk": 0.0,
-      "graduation_compliance": 0.374152,
+      "graduation_compliance": 0.367765,
       "pathway_feasibility": 1.0
     },
     {
       "variant": "CAMP-no-GNN",
-      "NDCG@10": 0.600456,
-      "Recall@10": 0.691065,
-      "f1_micro": 0.355126,
+      "NDCG@10": 0.625084,
+      "Recall@10": 0.705903,
+      "f1_micro": 0.360511,
       "prereq_violation_rate_topk": 0.0,
-      "graduation_compliance": 0.42017,
+      "graduation_compliance": 0.402799,
       "pathway_feasibility": 1.0
     }
   ]

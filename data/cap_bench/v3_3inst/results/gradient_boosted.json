@@ -9,7 +9,7 @@
     "gradient_boosted": {
       "model": "gradient_boosted",
       "hyperparameters": {
-        "model": "XGBoost XGBClassifier (one-vs-rest over 262 courses)",
+        "model": "XGBoost XGBClassifier (one-vs-rest over 194 courses)",
         "library": "XGBoost",
         "library_version": "2.1.4",
         "n_estimators": 300,
@@ -73,7 +73,7 @@
     "gradient_boosted_masked": {
       "model": "gradient_boosted_masked",
       "hyperparameters": {
-        "model": "XGBoost XGBClassifier (one-vs-rest over 262 courses)",
+        "model": "XGBoost XGBClassifier (one-vs-rest over 194 courses)",
         "library": "XGBoost",
         "library_version": "2.1.4",
         "n_estimators": 300,

@@ -8,7 +8,7 @@
     99
   ],
   "seed_timesteps": 100000,
-  "note": "5-seed CAMP stability uses 100k steps/inst (vs 200k finalised) for CPU budget; this stability mean is DISTINCT from the 200k finalised CAMP-full NDCG@10 (0.637). CF and MF are deterministic (no training randomness). Significance tests are per-sample paired (n=n_test) on the finalised models.",
+  "note": "5-seed CAMP stability uses 100k steps/inst (vs 200k finalised) for CPU budget; this stability mean is DISTINCT from the 200k finalised CAMP-full NDCG@10 (0.637). CF and MF are deterministic (no training randomness). Significance tests are per-sample paired (n=n_test) on the finalised models. The ANOVA and pairwise tests cover the seven systems in Table T2 (CF, MF, RF, Deep NN, pure GNN, UNMASKED XGBoost, CAMP); XGBoost is the same 0.716 unmasked model in T2. Exact-zero p-values (float underflow) carry a '*_thresholded' sibling ('<1e-300').",
   "camp_stability_over_seeds": {
     "NDCG@10": {
       "mean": 0.605924,
@@ -111,7 +111,9 @@
       "paired_t_stat": -51.432,
       "paired_t_p": 0.0,
       "wilcoxon_stat": 2178343.5,
-      "wilcoxon_p": 0.0
+      "wilcoxon_p": 0.0,
+      "paired_t_p_thresholded": "<1e-300",
+      "wilcoxon_p_thresholded": "<1e-300"
     },
     "camp_vs_pure_gnn": {
       "camp_mean_ndcg10": 0.636658,
@@ -119,11 +121,31 @@
       "paired_t_stat": 104.2091,
       "paired_t_p": 0.0,
       "wilcoxon_stat": 696668.5,
-      "wilcoxon_p": 0.0
+      "wilcoxon_p": 0.0,
+      "paired_t_p_thresholded": "<1e-300",
+      "wilcoxon_p_thresholded": "<1e-300"
+    },
+    "camp_vs_gradient_boosted": {
+      "camp_mean_ndcg10": 0.636658,
+      "other_mean_ndcg10": 0.716066,
+      "paired_t_stat": -21.3371,
+      "paired_t_p": 1.140836026296128e-97,
+      "wilcoxon_stat": 5809816.0,
+      "wilcoxon_p": 2.35298629352772e-97
     }
   },
-  "anova_six_models": {
-    "F": 4383.8753,
-    "p": 0.0
+  "anova_seven_models": {
+    "models": [
+      "camp",
+      "collaborative_filtering",
+      "matrix_factorisation",
+      "random_forest",
+      "deep_nn",
+      "pure_gnn",
+      "gradient_boosted"
+    ],
+    "F": 3973.8438,
+    "p": 0.0,
+    "p_thresholded": "<1e-300"
   }
 }

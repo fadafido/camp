@@ -1,4 +1,4 @@
-"""Realistic graduation-threshold construction for the four real institutions
+"""Realistic graduation-threshold construction for the three real institutions
 (Phase MERGE-4, Part 1).
 
 The ingested ``total_credits_required`` was the *scoped credit pool* (the sum of

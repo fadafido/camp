@@ -3,7 +3,7 @@
 Builds a course/student heterogeneous graph from the Phase A artefacts:
 
 Nodes
-  * ``course`` (262): [level (scaled), credits (scaled), subject-area one-hot,
+  * ``course`` (194): [level (scaled), credits (scaled), subject-area one-hot,
     centrality, blocking_factor, delay_factor].
   * ``student`` (**train students only**, leakage guard): [gpa-band one-hot,
     gender one-hot, cohort (scaled), cold-start flag, completed-course count
