@@ -21,7 +21,7 @@ CAMP is retrained at the reduced **100k timesteps/institution** (the ablation
 budget) to fit the CPU budget. The 200k finalised CAMP (NDCG@10 0.637) is
 therefore NOT the comparator. We freshly train **CAMP-full at 100k/64d/seed 42**
 in this same run as the matched comparator, and report the delta against THAT.
-(The Phase D 5-seed study's 100k CAMP-full mean 0.568 ± 0.008 corroborates the
+(The Phase D 5-seed study's 100k CAMP-full mean 0.606 ± 0.004 corroborates the
 comparator's scale.) Everything else — reward weights w_plan=1.0/w_imit=12.0,
 PPO hyperparameters, mask, warm-start — is identical between the two arms.
 
@@ -255,7 +255,7 @@ def run() -> dict[str, Any]:
         "comparator_note": (
             "Matched-budget comparator = CAMP-full trained at 100k/seed42/64-d IN THIS RUN. "
             "The 200k finalised CAMP (NDCG@10 0.637) is NOT the comparator. Phase D 5-seed "
-            "100k CAMP-full mean 0.568 +/- 0.008 corroborates the comparator scale."
+            "100k CAMP-full mean 0.606 +/- 0.004 corroborates the comparator scale."
         ),
         "stronger_encoder": enc,
         "arms": {
