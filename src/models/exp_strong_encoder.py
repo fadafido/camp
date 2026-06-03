@@ -18,7 +18,7 @@ val-edge split, SAME optimiser/lr/aggregator, seed 42. Saved to a NEW file
 Apples-to-apples budget
 -----------------------
 CAMP is retrained at the reduced **100k timesteps/institution** (the ablation
-budget) to fit the CPU budget. The 200k finalised CAMP (NDCG@10 0.591) is
+budget) to fit the CPU budget. The 200k finalised CAMP (NDCG@10 0.637) is
 therefore NOT the comparator. We freshly train **CAMP-full at 100k/64d/seed 42**
 in this same run as the matched comparator, and report the delta against THAT.
 (The Phase D 5-seed study's 100k CAMP-full mean 0.568 ± 0.008 corroborates the
@@ -254,7 +254,7 @@ def run() -> dict[str, Any]:
         "budget_timesteps_per_institution": BUDGET,
         "comparator_note": (
             "Matched-budget comparator = CAMP-full trained at 100k/seed42/64-d IN THIS RUN. "
-            "The 200k finalised CAMP (NDCG@10 0.591) is NOT the comparator. Phase D 5-seed "
+            "The 200k finalised CAMP (NDCG@10 0.637) is NOT the comparator. Phase D 5-seed "
             "100k CAMP-full mean 0.568 +/- 0.008 corroborates the comparator scale."
         ),
         "stronger_encoder": enc,
@@ -283,7 +283,7 @@ def verify() -> None:
     print(f"stronger encoder: {enc['architecture']}")
     print(f"  val link-prediction AUC : {enc['final_val_auc']}  (committed 2-layer/64-d: {enc['committed_encoder_val_auc']})")
     print(f"budget used               : {out['budget_timesteps_per_institution']} timesteps/institution")
-    print(f"matched comparator        : CAMP-full @100k @64d (this run) — NOT the 200k 0.591")
+    print(f"matched comparator        : CAMP-full @100k @64d (this run) — NOT the 200k 0.637")
     print("\n-- convergence (eval reward first-q -> last-q; converged flag) --")
     for arm_name, arm in (("full64d", full), ("strong128d", strong)):
         for uni, t in arm["training"].items():

@@ -3,7 +3,7 @@
   "framing": "CAMP variant (encoder swap); NOT a new baseline or headline claim",
   "n_test_samples": 6454,
   "budget_timesteps_per_institution": 100000,
-  "comparator_note": "Matched-budget comparator = CAMP-full trained at 100k/seed42/64-d IN THIS RUN. The 200k finalised CAMP (NDCG@10 0.591) is NOT the comparator. Phase D 5-seed 100k CAMP-full mean 0.568 +/- 0.008 corroborates the comparator scale.",
+  "comparator_note": "Matched-budget comparator = CAMP-full trained at 100k/seed42/64-d IN THIS RUN. The 200k finalised CAMP (NDCG@10 0.637) is NOT the comparator. Phase D 5-seed 100k CAMP-full mean 0.568 +/- 0.008 corroborates the comparator scale.",
   "stronger_encoder": {
     "architecture": "3-layer heterogeneous GraphSAGE, 128-d (deeper+wider)",
     "final_val_auc": 0.657395,

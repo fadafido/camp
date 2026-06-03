@@ -124,7 +124,7 @@ def main() -> None:
         "seeds": SEEDS,
         "seed_timesteps": SEED_TIMESTEPS,
         "note": "5-seed CAMP stability uses 100k steps/inst (vs 200k finalised) for CPU budget; "
-        "this stability mean is DISTINCT from the 200k finalised CAMP-full NDCG@10 (0.591). "
+        "this stability mean is DISTINCT from the 200k finalised CAMP-full NDCG@10 (0.637). "
         "CF and MF are deterministic (no training randomness). Significance tests are "
         "per-sample paired (n=n_test) on the finalised models.",
         "camp_stability_over_seeds": _agg(camp_seed_metrics),
