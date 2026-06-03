@@ -19,10 +19,9 @@ codes appear both as headers *and* inside prerequisite text. We anchor a genuine
 course header on a clean title (no ``.`` / ``(`` / ``)``) immediately followed by
 the ``(L-L-C).`` credit marker, which excludes in-text references.
 
-The recovered ``aus_pdf_parser.py`` (a debug-dict parser for the *Management*
-major) was used only as a structural reference; this module targets the IS major
-and emits the ingest schema. PDF parsing is brittle: unparseable fragments are
-counted and logged rather than guessed. British English. Deterministic.
+This module targets the IS major and emits the ingest schema. PDF parsing is
+brittle: unparseable fragments are counted and logged rather than guessed.
+British English. Deterministic.
 """
 
 from __future__ import annotations

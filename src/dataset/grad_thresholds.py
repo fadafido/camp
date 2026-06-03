@@ -43,7 +43,9 @@ from . import aus_is_structure as aus_is
 from .prereq_parser import PREFIX
 
 # Native published full-degree totals (incl. general education outside scope).
-NATIVE_TOTAL = {"khalifa": 130, "aus": 120, "unc": 120}
+# AUS uses the real BSBA-IS structure (123 cr) via build_aus_real_programme, which
+# reads aus_is_structure.CREDITS["native_total"]; this map serves khalifa/unc.
+NATIVE_TOTAL = {"khalifa": 130, "aus": 123, "unc": 120}
 # Field-appropriate elective tracks (recorded per student; soft elective bias).
 TRACKS = {
     "khalifa": ["ai", "cybersecurity", "general"],

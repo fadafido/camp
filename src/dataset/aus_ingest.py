@@ -8,8 +8,8 @@ STA/QBA/BLW/SCM courses listed in the catalogue's BSBA business core, plus the
 ISA prerequisite closure), as enumerated in extracted_program.json's
 ``referenced_course_codes``. This deliberately does NOT scope the whole business
 school — only the IS major + its required core — so the scoped scale matches a
-single ~120-credit major (consistent with Khalifa COSC and UNC ECON), rather than
-all nine business subjects.
+single major (consistent with Khalifa COSC and UNC ECON), rather than all nine
+business subjects.
 
 Module: AI503. British English.
 """
@@ -33,10 +33,10 @@ CONFIG = InstConfig(
     keep_any_referenced=True,
     native_total_credits=123,  # real BSBA degree total (catalogue-authoritative)
     native_total_credits_note=(
-        "Standard AUS BSBA degree total (120 credits); the full degree includes "
-        "the general-education programme and free electives outside the scoped "
-        "Information-Systems subset. Source: AUS 2024-2025 undergraduate "
-        "catalogue (PDF)."),
+        "Real BSBA Information Systems & Business Analytics degree total "
+        "(123 credits); the full degree includes the general-education programme "
+        "and free electives outside the scoped Information-Systems subset. "
+        "Source: AUS 2024-2025 undergraduate catalogue (PDF)."),
 )
 
 

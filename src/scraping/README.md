@@ -34,14 +34,6 @@ British English; vendor-neutral.
   *programme-structure* pages — not the course-description pages parsed by
   `aus_pdf_scraper.py`. Extraction-and-report only: it modifies no dataset.
 
-## Superseded
-
-- `aus_pdf_parser.py` — an earlier skeleton PDF parser targeting the AUS BSBA
-  *Management* programme (a different programme from the Information Systems major
-  used in the benchmark). Superseded by `aus_pdf_scraper.py` /
-  `aus_requirements_extract.py` and not used to build CAP-Bench; kept as a
-  reference only.
-
 ## Downstream
 
 The `extracted_*.json` outputs feed `src/dataset/<inst>_ingest.py`
