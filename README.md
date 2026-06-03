@@ -159,16 +159,16 @@ verified numbers, every value traceable to the result JSON named in brackets.
 
 ## 6. Reproduce end to end
 
-> **Exact stack:** `requirements.txt` uses loose ranges and leaves PyTorch /
-> PyTorch Geometric / sb3-contrib / gymnasium to a separate install. For
-> bit-for-bit reproduction, [`environment-lock.txt`](environment-lock.txt) pins
-> the **exact** versions every committed result ran on (CPython 3.13.5, CPU-only,
-> seed 42 — torch 2.12.0, torch-geometric 2.7.0, sb3-contrib 2.8.0,
-> gymnasium 1.2.3, scikit-learn 1.6.1, xgboost 2.1.4, plus the scientific-Python
-> core). On macOS arm64, XGBoost also needs `libomp` (see that file's note).
+> **Exact stack:** `requirements.txt` is fully pinned to the exact versions every
+> committed result ran on (CPython 3.13.5, CPU-only, seed 42 — torch 2.12.0,
+> torch-geometric 2.7.0, sb3-contrib 2.8.0, gymnasium 1.2.3, scikit-learn 1.6.1,
+> xgboost 2.1.4, plus the scientific-Python core), and matches
+> [`environment-lock.txt`](environment-lock.txt), the bit-for-bit reproducibility
+> lock. PyTorch / PyTorch Geometric may need the CPU wheel index and, on macOS
+> arm64, XGBoost needs `libomp` — both noted at the top of `requirements.txt`.
 
 ```bash
-pip install -r requirements.txt   # loose ranges; see environment-lock.txt for exact pins
+pip install -r requirements.txt   # fully pinned; mirrors environment-lock.txt
 
 # 1. Collect catalogues (re-scrape; or use the cached data/raw/ inputs as-is)
 python -m src.scraping.khalifa_catalog_scraper

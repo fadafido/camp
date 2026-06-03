@@ -1,20 +1,39 @@
-pandas>=2.0,<3.0
-pyarrow>=14.0  # parquet engine for the flat enrolments table (Phase A)
-numpy>=1.24,<2.0
-scikit-learn>=1.3,<2.0
-matplotlib>=3.7,<4.0
-networkx>=3.0,<4.0
-pyyaml>=6.0,<7.0
-pdfminer.six>=20240706
-requests>=2.31,<3.0
-beautifulsoup4>=4.12,<5.0
-lxml>=4.9,<6.0
-tqdm>=4.65,<5.0
-jupyter>=1.0,<2.0
-ipykernel>=6.25,<7.0
-# PyTorch (CPU build) and PyTorch Geometric are installed separately — install the
-# CPU PyTorch wheel for your platform, then run `pip install torch-geometric`.
-# XGBoost (==2.1.4, CPU) is installed separately — it needs the OpenMP runtime
-# (brew install libomp) and DYLD_LIBRARY_PATH="/opt/homebrew/opt/libomp/lib:..."
-# set before launch so libomp.dylib resolves at import. Used only by the
-# gradient-boosted baseline (src/models/exp_gradient_boosted_xgb.py).
+# CAMP — pip requirements (clean, fully pinned)
+#
+# Python : CPython 3.13.5   |   CPU-only (no CUDA/MPS)   |   seed 42
+#
+# Versions match environment-lock.txt (the bit-for-bit reproducibility lock).
+# Two install notes:
+#   * torch / torch-geometric: install the CPU build. You may need the CPU wheel
+#     index, e.g.
+#       pip install torch==2.12.0 --index-url https://download.pytorch.org/whl/cpu
+#       pip install torch-geometric==2.7.0
+#   * xgboost on macOS arm64 needs the OpenMP runtime (libomp) on the loader path
+#     BEFORE Python launches (only the gradient-boosted baseline uses it):
+#       brew install libomp
+#       export DYLD_LIBRARY_PATH="/opt/homebrew/opt/libomp/lib:$DYLD_LIBRARY_PATH"
+
+# Scientific Python core
+numpy==2.3.2
+pandas==2.3.1
+pyarrow==24.0.0
+scipy==1.16.1
+scikit-learn==1.6.1
+matplotlib==3.10.5
+networkx==3.6.1
+
+# Scraping / catalogue ingestion
+requests==2.32.4
+beautifulsoup4==4.13.4
+lxml==6.0.0
+pdfminer.six==20260107
+
+# RL / GNN stack (CPU)
+torch==2.12.0
+torch-geometric==2.7.0
+stable-baselines3==2.8.0
+sb3-contrib==2.8.0
+gymnasium==1.2.3
+
+# Gradient-boosted baseline (needs libomp — see note above)
+xgboost==2.1.4
