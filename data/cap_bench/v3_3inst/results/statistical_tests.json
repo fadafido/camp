@@ -8,7 +8,7 @@
     99
   ],
   "seed_timesteps": 100000,
-  "note": "5-seed CAMP stability uses 100k steps/inst (vs 200k finalised) for CPU budget; this stability mean is DISTINCT from the 200k finalised CAMP-full NDCG@10 (0.591). CF and MF are deterministic (no training randomness). Significance tests are per-sample paired (n=n_test) on the finalised models.",
+  "note": "5-seed CAMP stability uses 100k steps/inst (vs 200k finalised) for CPU budget; this stability mean is DISTINCT from the 200k finalised CAMP-full NDCG@10 (0.637). CF and MF are deterministic (no training randomness). Significance tests are per-sample paired (n=n_test) on the finalised models.",
   "camp_stability_over_seeds": {
     "NDCG@10": {
       "mean": 0.605924,
