@@ -32,8 +32,13 @@ DPI = 300
 # Colour-blind-safe (Wong) palette.
 CB = {"blue": "#0072B2", "orange": "#E69F00", "green": "#009E73", "red": "#D55E00",
       "purple": "#CC79A7", "yellow": "#F0E442", "sky": "#56B4E9", "grey": "#999999"}
-plt.rcParams.update({"font.size": 11, "axes.grid": False,
+# Figures are sized for a single Springer column (~6.3 in / 16 cm printed width)
+# so every element stays legible (>= ~9 pt) without down-scaling. Base font 10 pt.
+plt.rcParams.update({"font.size": 10, "axes.grid": False,
+                     "axes.titlesize": 11, "axes.labelsize": 9,
+                     "xtick.labelsize": 9, "ytick.labelsize": 9, "legend.fontsize": 9,
                      "figure.dpi": DPI, "savefig.dpi": DPI})
+COL_W = 6.3  # single-column printed width target (inches)
 
 MODEL_LABEL = {"collaborative_filtering": "CF", "matrix_factorisation": "MF",
                "random_forest": "RF", "gradient_boosted": "XGBoost",
@@ -57,35 +62,42 @@ def _save(fig, name):
 
 # ---------------------------------------------------------------- F1 architecture
 def fig1_architecture():
-    fig, ax = plt.subplots(figsize=(11, 3.2))
-    ax.set_xlim(0, 11); ax.set_ylim(0, 3.2); ax.axis("off")
+    # ~16:6.6 aspect at column width; box x-positions are computed so every box
+    # (including the final "Next-term course set") sits fully inside the canvas.
+    fig, ax = plt.subplots(figsize=(COL_W, 2.85), layout="constrained")
+    ax.set_xlim(0, 16); ax.set_ylim(0, 7.0); ax.axis("off")
+    # Labels are wrapped to short lines so they fit inside the narrow column-width
+    # boxes without spilling over the edges or into the arrow gaps.
     boxes = [
-        (0.2, "Student\nhistory\n(transcript)", CB["grey"]),
-        (2.1, "GraphSAGE\nencoder\n(prereq graph)", CB["blue"]),
-        (4.0, "State vector\n(emb + completed\n+ scalars)", CB["sky"]),
-        (6.0, "MaskablePPO\npolicy", CB["green"]),
-        (8.0, "Constraint mask\n(eligible courses)", CB["orange"]),
-        (10.0, "Next-term\ncourse set", CB["purple"]),
+        ("Student\nhistory\n(transcript)", CB["grey"]),
+        ("GraphSAGE\nencoder\n(prereq\ngraph)", CB["blue"]),
+        ("State vector\n(emb +\ncompleted\n+ scalars)", CB["sky"]),
+        ("MaskablePPO\npolicy", CB["green"]),
+        ("Constraint\nmask\n(eligible\ncourses)", CB["orange"]),
+        ("Next-term\ncourse set", CB["purple"]),
     ]
-    w = 1.6
-    for x, label, c in boxes:
-        ax.add_patch(FancyBboxPatch((x, 1.0), w, 1.2, boxstyle="round,pad=0.05",
-                                    fc=c, ec="black", alpha=0.85))
-        ax.text(x + w / 2, 1.6, label, ha="center", va="center", fontsize=9, color="white", weight="bold")
-    for x, _, _ in boxes[:-1]:
-        ax.add_patch(FancyArrowPatch((x + w, 1.6), (x + 1.9, 1.6),
-                                     arrowstyle="-|>", mutation_scale=16, color="black"))
-    ax.text(8.8, 0.55, "0 prerequisite violations by construction", ha="center",
-            fontsize=9, style="italic", color=CB["red"])
-    ax.text(5.5, 2.85, "CAMP — Constraint-Aware Multi-term Planner",
-            ha="center", fontsize=12, weight="bold")
+    n = len(boxes); w = 2.30; h = 3.0; left = 0.30; y0 = 1.9
+    gap = (16 - 2 * left - n * w) / (n - 1)
+    xs = [left + i * (w + gap) for i in range(n)]
+    for x, (label, c) in zip(xs, boxes):
+        ax.add_patch(FancyBboxPatch((x, y0), w, h, boxstyle="round,pad=0.05",
+                                    fc=c, ec="black", alpha=0.9))
+        ax.text(x + w / 2, y0 + h / 2, label, ha="center", va="center",
+                fontsize=7.5, color="white", weight="bold")
+    for i in range(n - 1):
+        ax.add_patch(FancyArrowPatch((xs[i] + w, y0 + h / 2), (xs[i + 1], y0 + h / 2),
+                                     arrowstyle="-|>", mutation_scale=12, color="black"))
+    ax.text(8, 1.0, "0 prerequisite violations by construction", ha="center",
+            fontsize=8, style="italic", color=CB["red"])
+    ax.text(8, 6.5, "CAMP — Constraint-Aware Multi-term Planner",
+            ha="center", fontsize=11, weight="bold")
     _save(fig, "F1_architecture")
 
 
 # ------------------------------------------------------- F2 RL training curves
 def fig2_rl_training_curves():
     rows = list(csv.DictReader((MODELS / "camp_training_curve.csv").open()))
-    fig, ax = plt.subplots(figsize=(7, 4.5))
+    fig, ax = plt.subplots(figsize=(COL_W, 3.9), layout="constrained")
     cols = {"khalifa": CB["blue"], "aus": CB["orange"], "unc": CB["green"]}
     label = {"khalifa": "Khalifa (CS)", "aus": "AUS (IS)", "unc": "UNC (Econ)"}
     for uni, c in cols.items():
@@ -111,7 +123,7 @@ def fig3_model_comparison_bars():
     viol = [rec[m]["prereq_violation_rate_topk"] for m in MODEL_ORDER]
     import numpy as np
     x = np.arange(len(labels)); wbar = 0.38
-    fig, ax = plt.subplots(figsize=(9.5, 4.6))
+    fig, ax = plt.subplots(figsize=(COL_W, 4.0), layout="constrained")
     b1 = ax.bar(x - wbar / 2, ndcg, wbar, label="NDCG@10", color=CB["blue"])
     b2 = ax.bar(x + wbar / 2, viol, wbar, label="Prereq-violation rate", color=CB["red"])
     ax.set_xticks(x); ax.set_xticklabels(labels)
@@ -142,11 +154,13 @@ def fig4_ablation():
     viol = [variants[v]["prereq_violation_rate_topk"] for v in order]
     import numpy as np
     x = np.arange(len(order)); wbar = 0.38
-    fig, ax = plt.subplots(figsize=(8, 4.6))
+    fig, ax = plt.subplots(figsize=(COL_W, 4.2), layout="constrained")
     b1 = ax.bar(x - wbar / 2, ndcg, wbar, label="NDCG@10", color=CB["blue"])
     b2 = ax.bar(x + wbar / 2, viol, wbar, label="Prereq-violation rate", color=CB["red"])
     ax.set_xticks(x); ax.set_xticklabels([v.replace("CAMP-", "") for v in order], rotation=15)
-    ax.set_ylabel("Value"); ax.set_ylim(0, 0.75)
+    # Headroom above the tallest bar (no-planning 0.660) so value labels and the
+    # upper-left legend do not collide with any bar or its label.
+    ax.set_ylabel("Value"); ax.set_ylim(0, 0.82)
     ax.set_title(f"Ablation: removing the mask flips violations 0 → {viol[1]:.3f}")
     # Annotate every NDCG bar with its value (matches F3's style).
     for r in b1:
@@ -166,10 +180,12 @@ def fig4_ablation():
             ax.plot([r.get_x(), r.get_x() + r.get_width()], [0, 0],
                     color=CB["red"], linewidth=2.0, solid_capstyle="butt")
         ax.annotate(f"{h:.3f}", (cx, h), ha="center", va="bottom", fontsize=7)
+    # Point at the body of the no-mask violation bar (not its top), so the arrow
+    # never crosses the "0.368" value label sitting just above the bar.
     ax.annotate("mask off → violations appear",
-                (1 + wbar / 2, viol[1]), xytext=(1.6, 0.55), fontsize=8,
+                (1 + wbar / 2, 0.20), xytext=(2.15, 0.52), fontsize=8,
                 arrowprops=dict(arrowstyle="->", color=CB["red"]))
-    ax.legend(); ax.grid(True, axis="y", alpha=0.3)
+    ax.legend(loc="upper left"); ax.grid(True, axis="y", alpha=0.3)
     _save(fig, "F4_ablation")
 
 
@@ -186,39 +202,61 @@ def fig5_prereq_graph():
     for u, v in sub.edges():  # u requires v
         H.add_edge(v, u)
     H.add_nodes_from(sub.nodes())
-    pos = {}
     from collections import defaultdict
     by_level = defaultdict(list)
     for n in H.nodes():
         by_level[by[n]["level"]].append(n)
-    for lvl, ns in sorted(by_level.items()):
-        for i, n in enumerate(sorted(ns)):
-            pos[n] = (lvl / 100.0, i)
-    fig, ax = plt.subplots(figsize=(10, 6.5))
+    # Layered left->right layout: one column per course level, nodes centred and
+    # evenly spaced within a column. The densest column sets the figure height so
+    # every label has room — no two labels overlap.
+    ranks = sorted(by_level)
+    rank_idx = {lvl: i for i, lvl in enumerate(ranks)}
+    n_max = max(len(v) for v in by_level.values())
+    num = lambda n: int(n.replace("KHAL_COSC_", ""))
+    pos = {}
+    for lvl, ns in by_level.items():
+        ordered = sorted(ns, key=num)
+        count = len(ordered)
+        for i, n in enumerate(ordered):
+            pos[n] = (rank_idx[lvl] * 1.0, i - (count - 1) / 2.0)
+    height = max(7.0, n_max * 0.24 + 1.6)
+    fig, ax = plt.subplots(figsize=(COL_W, height), layout="constrained")
     levels = [by[n]["level"] for n in H.nodes()]
-    nx.draw_networkx_nodes(H, pos, node_size=420, node_color=levels, cmap="viridis", ax=ax)
-    nx.draw_networkx_edges(H, pos, arrowstyle="-|>", arrowsize=10, edge_color=CB["grey"],
-                           width=0.8, ax=ax, node_size=420)
-    nx.draw_networkx_labels(H, pos, {n: n.replace("KHAL_COSC_", "") for n in H.nodes()},
-                            font_size=7, ax=ax)
+    nx.draw_networkx_nodes(H, pos, node_size=90, node_color=levels, cmap="viridis", ax=ax)
+    nx.draw_networkx_edges(H, pos, arrowstyle="-|>", arrowsize=7, edge_color=CB["grey"],
+                           width=0.6, alpha=0.6, ax=ax, node_size=90)
+    # Labels sit just to the right of each node (not on the coloured marker), so
+    # they stay black-on-white and legible; columns are far enough apart that a
+    # label never reaches the next column.
+    label_pos = {n: (x + 0.12, y) for n, (x, y) in pos.items()}
+    nx.draw_networkx_labels(H, label_pos, {n: n.replace("KHAL_COSC_", "") for n in H.nodes()},
+                            font_size=9, horizontalalignment="left", ax=ax)
+    top = (n_max - 1) / 2.0
+    for lvl in ranks:
+        ax.text(rank_idx[lvl] * 1.0, top + 1.1, f"{lvl}-level", ha="center",
+                va="bottom", fontsize=9, weight="bold")
+    ax.set_xlim(-0.45, (len(ranks) - 1) + 0.85)
+    ax.set_ylim(-top - 1.0, top + 2.2)
+    ax.axis("off")
     ax.set_title("Khalifa Computer Science prerequisite structure (COSC spine)\n"
-                 "left → right = prerequisite → dependent; colour = course level")
-    ax.set_xlabel("Course level (×100)"); ax.set_yticks([])
-    ax.grid(False)
+                 "left → right = prerequisite → dependent; colour = course level",
+                 fontsize=10)
     _save(fig, "F5_prereq_graph")
 
 
 # --------------------------------------------------------------- F6 fairness
 def fig6_fairness():
     fair = _load(RES / "fairness.json")
-    fig, axes = plt.subplots(1, 2, figsize=(11, 4.6), gridspec_kw={"width_ratios": [1.4, 1]})
+    # constrained_layout reserves space for the suptitle, so it no longer collides
+    # with the two subplot titles.
+    fig, axes = plt.subplots(1, 2, figsize=(COL_W, 3.4),
+                             gridspec_kw={"width_ratios": [1.15, 1]}, layout="constrained")
     # left: per-university NDCG@10 (illustrative subgroup), with viol annotated
     uni = fair["attributes"]["university"]["per_group"]
-    import numpy as np
     names = list(uni); vals = [uni[n]["NDCG@10"] for n in names]
     axes[0].bar(names, vals, color=[CB["blue"], CB["orange"], CB["green"]])
-    axes[0].set_ylim(0, 1.0); axes[0].set_ylabel("CAMP NDCG@10")
-    axes[0].set_title("CAMP NDCG@10 by institution (violation rate 0 in every group)")
+    axes[0].set_ylim(0, 1.05); axes[0].set_ylabel("CAMP NDCG@10")
+    axes[0].set_title("NDCG@10 by institution", fontsize=10)
     for i, n in enumerate(names):
         axes[0].annotate(f"{uni[n]['NDCG@10']:.3f}\nviol {uni[n]['violation_rate']:.0f}",
                          (i, uni[n]["NDCG@10"]), ha="center", va="bottom", fontsize=8)
@@ -227,10 +265,12 @@ def fig6_fairness():
     gaps = [fair["attributes"][a]["demographic_parity"]["ndcg10_gap"] for a in attrs]
     axes[1].barh(attrs, gaps, color=CB["purple"])
     axes[1].set_xlabel("NDCG@10 disparity (max−min)")
-    axes[1].set_title("Demographic-parity gaps")
+    axes[1].set_title("Demographic-parity gaps", fontsize=10)
+    axes[1].set_xlim(0, max(gaps) * 1.28)  # room for the value labels
     for i, g in enumerate(gaps):
         axes[1].annotate(f"{g:.3f}", (g, i), va="center", fontsize=8)
-    fig.suptitle("Fairness: zero prerequisite violations in every subgroup", fontsize=12, weight="bold")
+    fig.suptitle("Fairness: zero prerequisite violations in every subgroup",
+                 fontsize=11, weight="bold")
     _save(fig, "F6_fairness")
 
 
@@ -240,13 +280,17 @@ def fig7_xai():
     feats = xai["feature_importance_overall"]
     items = sorted(feats.items(), key=lambda kv: kv[1])
     names = [k for k, _ in items]; vals = [v for _, v in items]
-    fig, axes = plt.subplots(1, 2, figsize=(12, 4.6), gridspec_kw={"width_ratios": [1.3, 1]})
+    # Stacked panels (chart on top, worked example below): both get the full column
+    # width, so the bar chart and the "why-not" text are each legible and balanced.
+    fig, axes = plt.subplots(2, 1, figsize=(COL_W, 6.4),
+                             gridspec_kw={"height_ratios": [1.0, 0.85]}, layout="constrained")
     axes[0].barh(names, vals, color=CB["sky"])
     axes[0].set_xlabel("Permutation importance")
-    axes[0].set_title("CAMP state-feature importance")
+    axes[0].set_title("CAMP state-feature importance", fontsize=10)
+    axes[0].set_xlim(0, max(vals) * 1.15)  # room for the value labels
     for i, v in enumerate(vals):
-        axes[0].annotate(f"{v:.3f}", (v, i), va="center", fontsize=8)
-    # right: a worked "why-not" from the Khalifa case study
+        axes[0].annotate(f"{v:.3f}", (v, i), va="center", ha="left", fontsize=8)
+    # lower panel: a worked "why-not" from the Khalifa case study
     cs = next(c for c in xai["case_studies"] if c["university"] == "khalifa")
     axes[1].axis("off")
     lines = [f"Worked example — {cs['university']} ({cs['profile'].get('major_track')}), term {cs['term_index']}",
@@ -256,9 +300,10 @@ def fig7_xai():
     for m in cs["masked_out_examples"]:
         need = ", ".join(x.replace("KHAL_", "") for x in (m.get("needs_one_of") or []))
         lines.append(f"  {m['course'].replace('KHAL_','')} — needs {need}")
-    axes[1].text(0.0, 0.95, "\n".join(lines), va="top", ha="left", fontsize=9, family="monospace")
+    axes[1].text(0.02, 0.98, "\n".join(lines), va="top", ha="left", fontsize=10,
+                 family="monospace", transform=axes[1].transAxes)
     fig.suptitle("Explainability: feature attribution + constraint “why-not”",
-                 fontsize=12, weight="bold")
+                 fontsize=11, weight="bold")
     _save(fig, "F7_xai")
 
 
