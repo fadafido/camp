@@ -115,7 +115,7 @@ def main() -> None:
         rows.append([v, _f3(d["NDCG@10"]), _f3(d["prereq_violation_rate_topk"]),
                      _f3(d["graduation_compliance"]), _f3(d["pathway_feasibility"])])
     # Encoder-capacity test — a separate matched-budget (100k) comparison, NOT to
-    # be read against the 200k finalised CAMP-full (0.591) above. Deeper+wider
+    # be read against the 200k finalised CAMP-full (see footnote) above. Deeper+wider
     # 128-d 3-layer GraphSAGE vs the standard 64-d 2-layer encoder.
     af = enc["arms"]["camp_full_64d_100k"]["metrics"]
     as_ = enc["arms"]["camp_strong_128d_100k"]["metrics"]
@@ -131,7 +131,7 @@ def main() -> None:
     (OUT / "T3_ablation.md").write_text(
         (OUT / "T3_ablation.md").read_text()
         + f"\n† Encoder-capacity test at a **matched 100k-timestep budget** "
-          f"(seed 42), NOT the 200k finalised CAMP-full (NDCG@10 0.591) at the top of "
+          f"(seed 42), NOT the 200k finalised CAMP-full (NDCG@10 {abl['CAMP-full']['NDCG@10']:.3f}) at the top of "
           f"the table. A deeper+wider 128-d 3-layer GraphSAGE gives NDCG@10 "
           f"{as_['NDCG@10']:.3f} vs the standard 64-d 2-layer "
           f"{af['NDCG@10']:.3f} (Δ {enc['ndcg10_delta_strong_minus_full']:.3f}); "
@@ -147,7 +147,7 @@ def main() -> None:
                      round(s["paired_t_stat"], 3), f"{s['paired_t_p']:.2e}", f"{s['wilcoxon_p']:.2e}"])
     cs = stat["camp_stability_over_seeds"]["NDCG@10"]
     rows.append([f"CAMP 5-seed stability (100k; n_seeds={len(stat['seeds'])})",
-                 f"{cs['mean']:.3f} ± {cs['std']:.3f}", "— (distinct from 0.591 final)", "—", "—", "—"])
+                 f"{cs['mean']:.3f} ± {cs['std']:.3f}", f"— (distinct from {abl['CAMP-full']['NDCG@10']:.3f} final)", "—", "—", "—"])
     an = stat["anova_six_models"]
     rows.append(["One-way ANOVA (6 models)", "—", "—", f"F={an['F']}", f"{an['p']:.2e}", "—"])
     write_table("T4_statistical_significance",

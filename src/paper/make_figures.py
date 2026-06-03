@@ -147,7 +147,7 @@ def fig4_ablation():
     b2 = ax.bar(x + wbar / 2, viol, wbar, label="Prereq-violation rate", color=CB["red"])
     ax.set_xticks(x); ax.set_xticklabels([v.replace("CAMP-", "") for v in order], rotation=15)
     ax.set_ylabel("Value"); ax.set_ylim(0, 0.75)
-    ax.set_title("Ablation: removing the mask flips violations 0 → 0.414")
+    ax.set_title(f"Ablation: removing the mask flips violations 0 → {viol[1]:.3f}")
     # Annotate every NDCG bar with its value (matches F3's style).
     for r in b1:
         ax.annotate(f"{r.get_height():.3f}", (r.get_x() + r.get_width() / 2, r.get_height()),
