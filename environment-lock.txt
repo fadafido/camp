@@ -3,10 +3,10 @@
 # This file records the EXACT installed versions used to produce every committed
 # result (CAMP-full 200k, the seven-model comparison, the matched-200k ablation,
 # the 5-seed stability study, the statistical tests, and all baselines). It is
-# the reproducibility companion to requirements.txt: requirements.txt gives
-# loose ranges and deliberately leaves torch / torch-geometric / sb3-contrib /
-# gymnasium to a separate install, whereas this file pins the precise stack so a
-# reader can reproduce the same numbers bit-for-bit.
+# the reproducibility companion to requirements.txt: requirements.txt is now
+# also fully pinned and mirrors these versions (and notes the CPU-wheel and
+# libomp install caveats), while this file remains the authoritative bit-for-bit
+# lock a reader uses to reproduce the same numbers exactly.
 #
 # Versions were read live from the running interpreter (see JOB 5), not asserted.
 #
