@@ -1,0 +1,8 @@
+Model,Accuracy,Precision (micro),Precision (macro),Recall (micro),Recall (macro),F1 (micro),F1 (macro),ROC-AUC (micro),ROC-AUC (macro)
+Collaborative filtering,0.835,0.101,0.133,0.966,0.851,0.183,0.202,0.950,0.940
+Matrix factorisation,0.968,0.268,0.242,0.387,0.322,0.317,0.242,0.947,0.926
+Random forest,0.985,0.840,0.543,0.271,0.198,0.410,0.256,0.977,0.955
+Gradient-boosted (XGBoost),0.986,0.758,0.530,0.393,0.296,0.517,0.357,0.977,0.957
+Deep NN,0.987,0.767,0.560,0.481,0.361,0.591,0.405,0.984,0.966
+Pure GNN,0.788,0.083,0.134,1.000,1.000,0.153,0.205,0.894,0.892
+CAMP (ours),0.949,0.239,0.257,0.758,0.650,0.363,0.340,0.864,0.807

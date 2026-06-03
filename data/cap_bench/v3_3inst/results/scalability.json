@@ -1,0 +1,88 @@
+{
+  "experiment": "CAMP inference scalability (existing policies; no retraining)",
+  "seed": 42,
+  "environment": {
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "python": "3.13.5",
+    "processor": "arm",
+    "cpu_count_logical": 11,
+    "numpy": "2.3.2",
+    "device": "CPU-only",
+    "note": "wall-clock timings are hardware-dependent measurements, not a locked result; rollout depth is camp._ROLLOUT_DEPTH=12."
+  },
+  "model_load": {
+    "n_policies": 3,
+    "load_seconds": 0.021,
+    "rss_before_mb": 658.7,
+    "rss_after_load_mb": 662.4,
+    "rss_delta_mb": 3.7
+  },
+  "env_build_seconds_khalifa": 0.2245,
+  "by_problem_size": [
+    {
+      "n_samples": 50,
+      "wall_seconds": 0.3276,
+      "ms_per_sample": 6.5516,
+      "peak_python_mb": 101.988,
+      "process_rss_mb": 683.8
+    },
+    {
+      "n_samples": 100,
+      "wall_seconds": 0.4195,
+      "ms_per_sample": 4.1951,
+      "peak_python_mb": 101.988,
+      "process_rss_mb": 770.1
+    },
+    {
+      "n_samples": 250,
+      "wall_seconds": 0.6661,
+      "ms_per_sample": 2.6646,
+      "peak_python_mb": 101.988,
+      "process_rss_mb": 770.7
+    },
+    {
+      "n_samples": 500,
+      "wall_seconds": 1.096,
+      "ms_per_sample": 2.192,
+      "peak_python_mb": 101.988,
+      "process_rss_mb": 770.7
+    },
+    {
+      "n_samples": 1000,
+      "wall_seconds": 1.9119,
+      "ms_per_sample": 1.9119,
+      "peak_python_mb": 101.988,
+      "process_rss_mb": 770.7
+    },
+    {
+      "n_samples": 2000,
+      "wall_seconds": 3.5607,
+      "ms_per_sample": 1.7803,
+      "peak_python_mb": 101.988,
+      "process_rss_mb": 773.8
+    }
+  ],
+  "by_vocabulary_size": [
+    {
+      "institution": "khalifa",
+      "vocabulary_size": 59,
+      "n_samples": 300,
+      "wall_seconds": 0.7528,
+      "ms_per_sample": 2.5094
+    },
+    {
+      "institution": "aus",
+      "vocabulary_size": 61,
+      "n_samples": 300,
+      "wall_seconds": 0.7926,
+      "ms_per_sample": 2.642
+    },
+    {
+      "institution": "unc",
+      "vocabulary_size": 74,
+      "n_samples": 300,
+      "wall_seconds": 0.8269,
+      "ms_per_sample": 2.7562
+    }
+  ]
+}

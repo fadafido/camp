@@ -193,7 +193,71 @@ def main() -> None:
                 ["Institution", "Field", "CAMP NDCG@10", "CAMP violation rate",
                  "Deep NN NDCG@10 (contrast)"], rows)
 
-    print("All 6 tables written to", OUT)
+    # ---- T7 expanded recommendation metrics (Recall/Precision/NDCG/MAP/HitRatio
+    #      @ K in {1,3,5,10}, all seven systems; READ from the result JSONs) ----
+    rows = []
+    for m in MODEL_ORDER:
+        rk = rec[m]["ranking_metrics"]
+        label = MODEL_LABEL[m] + (" (ours)" if m == "camp" else "")
+        for k in (1, 3, 5, 10):
+            rows.append([label, k, _f3(rk[f"Recall@{k}"]), _f3(rk[f"Precision@{k}"]),
+                         _f3(rk[f"NDCG@{k}"]), _f3(rk[f"MAP@{k}"]), _f3(rk[f"HitRatio@{k}"])])
+    write_table("T7_recommendation_metrics",
+                ["Model", "K", "Recall@K", "Precision@K", "NDCG@K", "MAP@K", "HitRatio@K"], rows)
+
+    # ---- T7 (b) classification metrics (micro/macro, all seven systems) ----
+    rows = []
+    for m in MODEL_ORDER:
+        cl = rec[m]["classification_metrics"]
+        label = MODEL_LABEL[m] + (" (ours)" if m == "camp" else "")
+        rows.append([label, _f3(cl["accuracy_micro"]),
+                     _f3(cl["precision_micro"]), _f3(cl["precision_macro"]),
+                     _f3(cl["recall_micro"]), _f3(cl["recall_macro"]),
+                     _f3(cl["f1_micro"]), _f3(cl["f1_macro"]),
+                     _f3(cl["roc_auc_micro"]), _f3(cl["roc_auc_macro"])])
+    write_table("T7_classification_metrics",
+                ["Model", "Accuracy", "Precision (micro)", "Precision (macro)",
+                 "Recall (micro)", "Recall (macro)", "F1 (micro)", "F1 (macro)",
+                 "ROC-AUC (micro)", "ROC-AUC (macro)"], rows)
+
+    # ---- T8 hyperparameters (documenting existing settings; read from JSON) ----
+    hp = _load(RES / "hyperparameters.json")
+    SECTION = {
+        "gnn_graphsage": "GNN (GraphSAGE encoder)",
+        "rl_maskable_ppo": "RL (MaskablePPO)",
+        "rl_reward_weights": "RL reward weights",
+        "xgboost_baseline": "XGBoost baseline",
+        "training": "Training",
+        "data_split_students": "Student split",
+    }
+    rows = []
+    for key, title in SECTION.items():
+        for param, val in hp[key].items():
+            rows.append([title, param, _f3(val) if isinstance(val, float) else str(val)])
+    write_table("T8_hyperparameters", ["Component", "Hyperparameter", "Value"], rows)
+
+    # ---- T9 scalability (CAMP inference cost vs problem size; from scalability.json) ----
+    sc = _load(RES / "scalability.json")
+    rows = []
+    for d in sc["by_problem_size"]:
+        rows.append([d["n_samples"], _f3(d["wall_seconds"]), _f3(d["ms_per_sample"]),
+                     _f3(d["peak_python_mb"]), _f3(d["process_rss_mb"])])
+    write_table("T9_scalability",
+                ["Test samples (Khalifa)", "Wall-clock (s)", "ms / sample",
+                 "Peak Python memory (MB)", "Process RSS (MB)"], rows)
+    vocab_note = "; ".join(
+        f"{d['institution']} (vocab {d['vocabulary_size']}): {d['ms_per_sample']:.2f} ms/sample"
+        for d in sc["by_vocabulary_size"])
+    (OUT / "T9_scalability.md").write_text(
+        (OUT / "T9_scalability.md").read_text()
+        + f"\n_Cost vs candidate-course vocabulary / graph size (N="
+          f"{sc['by_vocabulary_size'][0]['n_samples']} samples): {vocab_note}. "
+          f"Model load {sc['model_load']['load_seconds']:.2f}s for "
+          f"{sc['model_load']['n_policies']} policies (RSS +{sc['model_load']['rss_delta_mb']:.0f} MB); "
+          f"peak Python memory is flat in N. CPU-only; wall-clock is hardware-dependent. "
+          f"[src] scalability.json._\n")
+
+    print("All 10 tables written to", OUT)
 
 
 if __name__ == "__main__":

@@ -307,6 +307,156 @@ def fig7_xai():
     _save(fig, "F7_xai")
 
 
+# ----------------------------------------------- F8 RL environment loop (schematic)
+def fig8_rl_env_flow():
+    # Schematic of the constraint-masked RL loop; reward sub-weights are read from
+    # the env module constants so the figure matches the code exactly.
+    from src.models import rl_env as R
+    fig, ax = plt.subplots(figsize=(COL_W, 3.7), layout="constrained")
+    ax.set_xlim(0, 16); ax.set_ylim(0, 8.2); ax.axis("off")
+    boxes = [
+        ("State  sₜ\n• GraphSAGE embedding\n• completed multi-hot\n• term, GPA, credits\n"
+         "• unmet-rule counts", CB["sky"]),
+        ("MaskablePPO policy\n+ constraint mask\n(eligible courses only)\n→ action aₜ\n"
+         "(select one course)", CB["green"]),
+        (f"Reward  rₜ\n+ requirement (W={R.W_REQ:g})\n+ rule done (W={R.W_RULE_DONE:g})\n"
+         f"+ centrality (W={R.W_CENT:g})\n+ healthy GPA (W={R.W_GPA:g})\n"
+         f"− overload (W={R.W_OVERLOAD:g})\n+ grad × speed (W={R.W_GRAD:g})", CB["orange"]),
+        ("Environment step\ngrades sampled,\nterm t → t+1", CB["blue"]),
+    ]
+    n = len(boxes); w = 3.6; h = 4.2; left = 0.3; y0 = 2.7
+    gap = (16 - 2 * left - n * w) / (n - 1)
+    xs = [left + i * (w + gap) for i in range(n)]
+    for x, (label, c) in zip(xs, boxes):
+        ax.add_patch(FancyBboxPatch((x, y0), w, h, boxstyle="round,pad=0.04",
+                                    fc=c, ec="black", alpha=0.9))
+        ax.text(x + w / 2, y0 + h / 2, label, ha="center", va="center",
+                fontsize=7, color="white", weight="bold")
+    for i in range(n - 1):
+        ax.add_patch(FancyArrowPatch((xs[i] + w, y0 + h / 2), (xs[i + 1], y0 + h / 2),
+                                     arrowstyle="-|>", mutation_scale=12, color="black"))
+    # Feedback arrow: next state sₜ₊₁ back to the State box (the per-term loop).
+    ax.add_patch(FancyArrowPatch((xs[-1] + w / 2, y0), (xs[0] + w / 2, y0),
+                                 connectionstyle="arc3,rad=0.32", arrowstyle="-|>",
+                                 mutation_scale=14, color=CB["grey"], lw=1.4))
+    ax.text(8, 0.55, "next state sₜ₊₁ — repeat each term until graduation or the "
+            f"term cap (TERM_CAP={R.TERM_CAP})", ha="center", fontsize=8,
+            style="italic", color=CB["grey"])
+    ax.text(8, 7.7, "CAMP RL environment loop (constraint-masked MaskablePPO)",
+            ha="center", fontsize=11, weight="bold")
+    _save(fig, "F8_rl_env_flow")
+
+
+# ------------------------------------------ F9 heterogeneous graph (schematic)
+def fig9_graph_construction():
+    from src.models import graph as G
+    fig, ax = plt.subplots(figsize=(COL_W, 4.3), layout="constrained")
+    ax.set_xlim(0, 16); ax.set_ylim(0, 11); ax.axis("off")
+    # Two node-type clusters.
+    ax.add_patch(FancyBboxPatch((0.5, 5.6), 6.6, 4.2, boxstyle="round,pad=0.1",
+                                fc="#EAF3FA", ec=CB["blue"], lw=1.5))
+    ax.add_patch(FancyBboxPatch((8.9, 5.6), 6.6, 4.2, boxstyle="round,pad=0.1",
+                                fc="#FBF0E3", ec=CB["orange"], lw=1.5))
+    ax.text(3.8, 9.45, "course nodes (194)", ha="center", fontsize=9.5, weight="bold", color=CB["blue"])
+    ax.text(12.2, 9.45, "student nodes (train only;\nleakage-guarded)", ha="center",
+            fontsize=9.5, weight="bold", color=CB["orange"])
+    # A few representative node markers.
+    cxs = [(1.6, 8.4), (3.0, 7.2), (4.6, 8.5), (5.9, 7.0), (2.4, 6.3), (4.9, 6.2)]
+    for (x, y) in cxs:
+        ax.add_patch(plt.Circle((x, y), 0.34, fc=CB["blue"], ec="black", zorder=3))
+    sxs = [(10.2, 8.3), (11.8, 7.2), (13.4, 8.4), (12.6, 6.3), (10.6, 6.5)]
+    for (x, y) in sxs:
+        ax.add_patch(plt.Circle((x, y), 0.34, fc=CB["orange"], ec="black", zorder=3))
+    # prereq_of edges (course -> course, within the course cluster).
+    for a, b in [(0, 1), (1, 4), (2, 3), (0, 2), (3, 5)]:
+        ax.add_patch(FancyArrowPatch(cxs[a], cxs[b], arrowstyle="-|>",
+                                     mutation_scale=10, color=CB["blue"], lw=1.0, zorder=2))
+    # similar_to edges (course <-> course, undirected co-enrolment).
+    for a, b in [(0, 2), (1, 5)]:
+        ax.add_patch(FancyArrowPatch(cxs[a], cxs[b], arrowstyle="-", lw=1.0,
+                                     color=CB["green"], linestyle=(0, (4, 3)), zorder=1))
+    # took / taken_by edges (student <-> course, between clusters).
+    for s_i, c_i in [(0, 2), (1, 3), (2, 2), (3, 5), (4, 4)]:
+        ax.add_patch(FancyArrowPatch(sxs[s_i], cxs[c_i], arrowstyle="-|>",
+                                     mutation_scale=9, color=CB["grey"], lw=0.9, zorder=1))
+    # Legend / edge-type key.
+    ax.text(0.5, 4.7, "Edge types (heterogeneous):", fontsize=9, weight="bold")
+    key = [
+        (CB["blue"], "-|>", "(course) –prereq_of→ (course)        from the augmented prerequisite DAG"),
+        (CB["grey"], "-|>", "(student) –took→ (course)  +  reverse (course) –taken_by→ (student)"),
+        (CB["green"], "-", f"(course) –similar_to– (course)        co-enrolment Jaccard ≥ {G.SIMILARITY_JACCARD_THRESHOLD:g}"),
+    ]
+    for i, (col, style, txt) in enumerate(key):
+        y = 4.0 - i * 0.85
+        ax.add_patch(FancyArrowPatch((0.7, y), (2.2, y), arrowstyle=style, mutation_scale=10,
+                                     color=col, lw=1.4,
+                                     linestyle=(0, (4, 3)) if style == "-" else "solid"))
+        ax.text(2.5, y, txt, va="center", fontsize=8)
+    ax.text(8, 10.6, "Heterogeneous graph construction (GraphSAGE input)",
+            ha="center", fontsize=11, weight="bold")
+    _save(fig, "F9_graph_construction")
+
+
+# ----------------------------------------------------- F10 scalability
+def fig10_scalability():
+    import numpy as np
+    sc = _load(RES / "scalability.json")
+    ps = sc["by_problem_size"]; vs = sc["by_vocabulary_size"]
+    ns = [d["n_samples"] for d in ps]
+    wall = [d["wall_seconds"] for d in ps]
+    mspp = [d["ms_per_sample"] for d in ps]
+    fig, axes = plt.subplots(1, 2, figsize=(COL_W, 3.3), layout="constrained")
+    # Left: total wall-clock (linear in N) + per-sample cost (amortising).
+    ax0 = axes[0]
+    ax0.plot(ns, wall, "o-", color=CB["blue"], label="wall-clock (s)")
+    ax0.set_xlabel("Number of test samples (Khalifa)")
+    ax0.set_ylabel("Inference wall-clock (s)", color=CB["blue"])
+    ax0.tick_params(axis="y", labelcolor=CB["blue"])
+    ax0.set_title("Inference time vs problem size", fontsize=10)
+    ax0b = ax0.twinx()
+    ax0b.plot(ns, mspp, "s--", color=CB["orange"], label="ms / sample")
+    ax0b.set_ylabel("ms / sample", color=CB["orange"])
+    ax0b.tick_params(axis="y", labelcolor=CB["orange"])
+    pk = ps[-1]["peak_python_mb"]
+    ax0.annotate(f"peak Python memory ≈ {pk:.0f} MB\n(flat in N)", (0.04, 0.92),
+                 xycoords="axes fraction", fontsize=8, va="top")
+    # Right: per-sample cost vs candidate-course vocabulary / graph size.
+    labels = [f"{d['institution']}\n({d['vocabulary_size']})" for d in vs]
+    vals = [d["ms_per_sample"] for d in vs]
+    axes[1].bar(labels, vals, color=[CB["blue"], CB["orange"], CB["green"]])
+    axes[1].set_ylabel("ms / sample")
+    axes[1].set_xlabel("Institution (vocabulary size)")
+    axes[1].set_title("Cost vs vocabulary / graph size", fontsize=10)
+    axes[1].set_ylim(0, max(vals) * 1.25)
+    for i, v in enumerate(vals):
+        axes[1].annotate(f"{v:.2f}", (i, v), ha="center", va="bottom", fontsize=8)
+    fig.suptitle("CAMP inference scalability (CPU; existing policies)",
+                 fontsize=11, weight="bold")
+    _save(fig, "F10_scalability")
+
+
+# ----------------------------------------------------- F11 SHAP (XGBoost baseline)
+def fig11_shap():
+    sh = _load(RES / "shap_xgboost.json")
+    top = sh["top_features"][:10][::-1]  # ascending for barh
+    names = [t["feature"] for t in top]
+    vals = [t["mean_abs_shap"] for t in top]
+    fig, ax = plt.subplots(figsize=(COL_W, 4.2), layout="constrained")
+    ax.barh(names, vals, color=CB["purple"])
+    ax.set_xlabel("mean |SHAP| (log-odds margin units)")
+    ax.set_xlim(0, max(vals) * 1.16)
+    ax.set_title("XGBoost baseline — global SHAP feature importance (TreeSHAP)",
+                 fontsize=10)
+    for i, v in enumerate(vals):
+        ax.annotate(f"{v:.3f}", (v, i), va="center", ha="left", fontsize=8)
+    # Place the caveat in the clear right-hand whitespace (below the two longest
+    # bars) so it never overlaps a bar.
+    ax.text(0.97, 0.42, "Tree-baseline complement.\nCAMP uses permutation\nimportance"
+            " (SHAP is ill-defined\nunder action masking).", transform=ax.transAxes,
+            ha="right", va="center", fontsize=8, style="italic", color=CB["grey"])
+    _save(fig, "F11_shap")
+
+
 def main() -> None:
     fig1_architecture()
     fig2_rl_training_curves()
@@ -315,7 +465,11 @@ def main() -> None:
     fig5_prereq_graph()
     fig6_fairness()
     fig7_xai()
-    print("All 7 figures written to", OUT)
+    fig8_rl_env_flow()
+    fig9_graph_construction()
+    fig10_scalability()
+    fig11_shap()
+    print("All 11 figures written to", OUT)
 
 
 if __name__ == "__main__":

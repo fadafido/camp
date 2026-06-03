@@ -1,0 +1,199 @@
+{
+  "source": "derived from results/fairness.json committed per-group rates (no model re-run; existing values unchanged)",
+  "n_test_samples": 6454,
+  "selection_rate_metric": "HitRatio@10",
+  "tpr_relevant_metric": "Recall@10",
+  "note": "Complements the existing demographic_parity.ndcg10_gap and equal_opportunity (HitRatio@10 among graduated) keys in fairness.json, which are unchanged. These are the selection-rate DP difference and the TPR-on-relevant EO difference, defined per attribute.",
+  "attributes": {
+    "gpa_band": {
+      "groups": [
+        "high",
+        "low",
+        "med"
+      ],
+      "demographic_parity_difference": {
+        "definition": "max-min of the per-group selection rate (selection rate = HitRatio@10: share of students receiving >=1 relevant course in the top-10).",
+        "selection_rate_per_group": {
+          "high": 0.945706,
+          "low": 0.951603,
+          "med": 0.947678
+        },
+        "max_group": "low",
+        "min_group": "high",
+        "difference": 0.005897
+      },
+      "equal_opportunity_difference": {
+        "definition": "max-min of the per-group true-positive rate on relevant items (TPR = Recall@10: mean fraction of a student's actually-taken next-term courses recovered in the top-10).",
+        "tpr_relevant_per_group": {
+          "high": 0.713389,
+          "low": 0.717809,
+          "med": 0.70914
+        },
+        "max_group": "low",
+        "min_group": "med",
+        "difference": 0.008669
+      },
+      "max_violation_rate_across_groups": 0.0
+    },
+    "gender": {
+      "groups": [
+        "F",
+        "M"
+      ],
+      "demographic_parity_difference": {
+        "definition": "max-min of the per-group selection rate (selection rate = HitRatio@10: share of students receiving >=1 relevant course in the top-10).",
+        "selection_rate_per_group": {
+          "F": 0.941612,
+          "M": 0.955827
+        },
+        "max_group": "M",
+        "min_group": "F",
+        "difference": 0.014215
+      },
+      "equal_opportunity_difference": {
+        "definition": "max-min of the per-group true-positive rate on relevant items (TPR = Recall@10: mean fraction of a student's actually-taken next-term courses recovered in the top-10).",
+        "tpr_relevant_per_group": {
+          "F": 0.701761,
+          "M": 0.725235
+        },
+        "max_group": "M",
+        "min_group": "F",
+        "difference": 0.023474
+      },
+      "max_violation_rate_across_groups": 0.0
+    },
+    "major_track": {
+      "groups": [
+        "ai",
+        "business_analytics",
+        "cybersecurity",
+        "general",
+        "information_systems",
+        "policy",
+        "quantitative"
+      ],
+      "demographic_parity_difference": {
+        "definition": "max-min of the per-group selection rate (selection rate = HitRatio@10: share of students receiving >=1 relevant course in the top-10).",
+        "selection_rate_per_group": {
+          "ai": 0.977865,
+          "business_analytics": 0.982786,
+          "cybersecurity": 0.96657,
+          "general": 0.957587,
+          "information_systems": 0.970667,
+          "policy": 0.867647,
+          "quantitative": 0.901218
+        },
+        "max_group": "business_analytics",
+        "min_group": "policy",
+        "difference": 0.115139
+      },
+      "equal_opportunity_difference": {
+        "definition": "max-min of the per-group true-positive rate on relevant items (TPR = Recall@10: mean fraction of a student's actually-taken next-term courses recovered in the top-10).",
+        "tpr_relevant_per_group": {
+          "ai": 0.791471,
+          "business_analytics": 0.780203,
+          "cybersecurity": 0.776308,
+          "general": 0.715198,
+          "information_systems": 0.763533,
+          "policy": 0.581417,
+          "quantitative": 0.585318
+        },
+        "max_group": "ai",
+        "min_group": "policy",
+        "difference": 0.210054
+      },
+      "max_violation_rate_across_groups": 0.0
+    },
+    "cold_start": {
+      "groups": [
+        "False",
+        "True"
+      ],
+      "demographic_parity_difference": {
+        "definition": "max-min of the per-group selection rate (selection rate = HitRatio@10: share of students receiving >=1 relevant course in the top-10).",
+        "selection_rate_per_group": {
+          "False": 0.947904,
+          "True": 0.967742
+        },
+        "max_group": "True",
+        "min_group": "False",
+        "difference": 0.019838
+      },
+      "equal_opportunity_difference": {
+        "definition": "max-min of the per-group true-positive rate on relevant items (TPR = Recall@10: mean fraction of a student's actually-taken next-term courses recovered in the top-10).",
+        "tpr_relevant_per_group": {
+          "False": 0.711619,
+          "True": 0.799731
+        },
+        "max_group": "True",
+        "min_group": "False",
+        "difference": 0.088112
+      },
+      "max_violation_rate_across_groups": 0.0
+    },
+    "start_state_type": {
+      "groups": [
+        "mid_degree",
+        "new",
+        "returning",
+        "transfer"
+      ],
+      "demographic_parity_difference": {
+        "definition": "max-min of the per-group selection rate (selection rate = HitRatio@10: share of students receiving >=1 relevant course in the top-10).",
+        "selection_rate_per_group": {
+          "mid_degree": 0.955224,
+          "new": 0.956443,
+          "returning": 0.954861,
+          "transfer": 0.905232
+        },
+        "max_group": "new",
+        "min_group": "transfer",
+        "difference": 0.051211
+      },
+      "equal_opportunity_difference": {
+        "definition": "max-min of the per-group true-positive rate on relevant items (TPR = Recall@10: mean fraction of a student's actually-taken next-term courses recovered in the top-10).",
+        "tpr_relevant_per_group": {
+          "mid_degree": 0.73332,
+          "new": 0.729815,
+          "returning": 0.740104,
+          "transfer": 0.611945
+        },
+        "max_group": "returning",
+        "min_group": "transfer",
+        "difference": 0.128159
+      },
+      "max_violation_rate_across_groups": 0.0
+    },
+    "university": {
+      "groups": [
+        "aus",
+        "khalifa",
+        "unc"
+      ],
+      "demographic_parity_difference": {
+        "definition": "max-min of the per-group selection rate (selection rate = HitRatio@10: share of students receiving >=1 relevant course in the top-10).",
+        "selection_rate_per_group": {
+          "aus": 0.977834,
+          "khalifa": 0.970508,
+          "unc": 0.900221
+        },
+        "max_group": "aus",
+        "min_group": "unc",
+        "difference": 0.077613
+      },
+      "equal_opportunity_difference": {
+        "definition": "max-min of the per-group true-positive rate on relevant items (TPR = Recall@10: mean fraction of a student's actually-taken next-term courses recovered in the top-10).",
+        "tpr_relevant_per_group": {
+          "aus": 0.776574,
+          "khalifa": 0.78111,
+          "unc": 0.589485
+        },
+        "max_group": "khalifa",
+        "min_group": "unc",
+        "difference": 0.191625
+      },
+      "max_violation_rate_across_groups": 0.0
+    }
+  },
+  "violation_rate_zero_in_every_subgroup": true
+}

@@ -1,0 +1,175 @@
+{
+  "experiment": "SHAP (TreeSHAP) feature importance for the gradient-boosted (XGBoost) baseline \u2014 explainability complement on the tree baseline",
+  "applies_to": "gradient-boosted (XGBoost) baseline ONLY",
+  "not_applicable_to": "CAMP (masked MaskablePPO policy): SHAP is not well-defined under action masking; CAMP uses permutation importance (explainability.json, unchanged).",
+  "method": "exact TreeSHAP via XGBoost native predict(pred_contribs=True); global importance = mean over 194 one-vs-rest course models of the mean over test samples of |SHAP| per feature (log-odds margin units).",
+  "library": "XGBoost",
+  "library_version": "2.1.4",
+  "seed": 42,
+  "n_test_samples": 6454,
+  "n_features": 45,
+  "n_course_models": 194,
+  "reconstruction_guard": {
+    "reconstructed_NDCG@10": 0.716066,
+    "committed_NDCG@10": 0.716066,
+    "reconstructed_violation_rate": 0.118647,
+    "committed_violation_rate": 0.118647,
+    "matches_committed": true
+  },
+  "feature_importance_meanabs_shap": {
+    "subject:ACC": 0.180782,
+    "subject:BLW": 0.018722,
+    "subject:BUS": 0.030233,
+    "subject:CCEN": 0.138872,
+    "subject:CHEM": 0.088722,
+    "subject:CMP": 0.175361,
+    "subject:COE": 0.152635,
+    "subject:COMP": 0.22383,
+    "subject:COSC": 1.00816,
+    "subject:ECO": 0.109081,
+    "subject:ECON": 1.254801,
+    "subject:EGM": 0.047978,
+    "subject:ENG": 0.028094,
+    "subject:FIN": 0.102408,
+    "subject:IEN": 0.028478,
+    "subject:ISA": 0.318915,
+    "subject:MATH": 0.40456,
+    "subject:MGT": 0.155146,
+    "subject:MKT": 0.121796,
+    "subject:PHYS": 0.048247,
+    "subject:QBA": 0.16133,
+    "subject:SCM": 0.05514,
+    "subject:STA": 0.208054,
+    "subject:STOR": 0.020282,
+    "subject:UPL": 0.016345,
+    "mean_grade": 0.354797,
+    "term_index": 0.605849,
+    "n_passed": 0.61284,
+    "gpa_band:low": 0.043907,
+    "gpa_band:med": 0.049835,
+    "gpa_band:high": 0.033413,
+    "gender:F": 0.068708,
+    "gender:M": 0.0,
+    "major:ai": 0.025147,
+    "major:business_analytics": 0.020177,
+    "major:cybersecurity": 0.024076,
+    "major:general": 0.077938,
+    "major:information_systems": 0.022439,
+    "major:policy": 0.042598,
+    "major:quantitative": 0.039827,
+    "university:aus": 0.284923,
+    "university:khalifa": 0.190095,
+    "university:unc": 0.155662,
+    "cohort": 0.144028,
+    "cold_start": 0.003657
+  },
+  "feature_importance_normalised": {
+    "subject:ACC": 0.02289,
+    "subject:BLW": 0.002371,
+    "subject:BUS": 0.003828,
+    "subject:CCEN": 0.017583,
+    "subject:CHEM": 0.011234,
+    "subject:CMP": 0.022204,
+    "subject:COE": 0.019326,
+    "subject:COMP": 0.028341,
+    "subject:COSC": 0.127649,
+    "subject:ECO": 0.013811,
+    "subject:ECON": 0.158878,
+    "subject:EGM": 0.006075,
+    "subject:ENG": 0.003557,
+    "subject:FIN": 0.012966,
+    "subject:IEN": 0.003606,
+    "subject:ISA": 0.04038,
+    "subject:MATH": 0.051224,
+    "subject:MGT": 0.019644,
+    "subject:MKT": 0.015421,
+    "subject:PHYS": 0.006109,
+    "subject:QBA": 0.020427,
+    "subject:SCM": 0.006982,
+    "subject:STA": 0.026343,
+    "subject:STOR": 0.002568,
+    "subject:UPL": 0.00207,
+    "mean_grade": 0.044923,
+    "term_index": 0.07671,
+    "n_passed": 0.077595,
+    "gpa_band:low": 0.005559,
+    "gpa_band:med": 0.00631,
+    "gpa_band:high": 0.004231,
+    "gender:F": 0.008699,
+    "gender:M": 0.0,
+    "major:ai": 0.003184,
+    "major:business_analytics": 0.002555,
+    "major:cybersecurity": 0.003048,
+    "major:general": 0.009868,
+    "major:information_systems": 0.002841,
+    "major:policy": 0.005394,
+    "major:quantitative": 0.005043,
+    "university:aus": 0.036076,
+    "university:khalifa": 0.024069,
+    "university:unc": 0.019709,
+    "cohort": 0.018236,
+    "cold_start": 0.000463
+  },
+  "top_features": [
+    {
+      "feature": "subject:ECON",
+      "mean_abs_shap": 1.254801,
+      "normalised": 0.158878
+    },
+    {
+      "feature": "subject:COSC",
+      "mean_abs_shap": 1.00816,
+      "normalised": 0.127649
+    },
+    {
+      "feature": "n_passed",
+      "mean_abs_shap": 0.61284,
+      "normalised": 0.077595
+    },
+    {
+      "feature": "term_index",
+      "mean_abs_shap": 0.605849,
+      "normalised": 0.07671
+    },
+    {
+      "feature": "subject:MATH",
+      "mean_abs_shap": 0.40456,
+      "normalised": 0.051224
+    },
+    {
+      "feature": "mean_grade",
+      "mean_abs_shap": 0.354797,
+      "normalised": 0.044923
+    },
+    {
+      "feature": "subject:ISA",
+      "mean_abs_shap": 0.318915,
+      "normalised": 0.04038
+    },
+    {
+      "feature": "university:aus",
+      "mean_abs_shap": 0.284923,
+      "normalised": 0.036076
+    },
+    {
+      "feature": "subject:COMP",
+      "mean_abs_shap": 0.22383,
+      "normalised": 0.028341
+    },
+    {
+      "feature": "subject:STA",
+      "mean_abs_shap": 0.208054,
+      "normalised": 0.026343
+    },
+    {
+      "feature": "university:khalifa",
+      "mean_abs_shap": 0.190095,
+      "normalised": 0.024069
+    },
+    {
+      "feature": "subject:ACC",
+      "mean_abs_shap": 0.180782,
+      "normalised": 0.02289
+    }
+  ]
+}

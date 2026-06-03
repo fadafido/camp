@@ -1,0 +1,48 @@
+| Component | Hyperparameter | Value |
+|---|---|---|
+| GNN (GraphSAGE encoder) | n_layers | 2 |
+| GNN (GraphSAGE encoder) | hidden_dim | 64 |
+| GNN (GraphSAGE encoder) | embedding_dim | 64 |
+| GNN (GraphSAGE encoder) | dropout | 0.300 |
+| GNN (GraphSAGE encoder) | aggregation | sum |
+| GNN (GraphSAGE encoder) | optimizer | Adam |
+| GNN (GraphSAGE encoder) | learning_rate | 0.010 |
+| GNN (GraphSAGE encoder) | objective | link_prediction (student-took-course) |
+| GNN (GraphSAGE encoder) | val_link_prediction_auc | 0.977 |
+| GNN (GraphSAGE encoder) | epochs_trained | 72 |
+| GNN (GraphSAGE encoder) | seed | 42 |
+| RL (MaskablePPO) | algorithm | MaskablePPO (sb3-contrib) |
+| RL (MaskablePPO) | policy | MlpPolicy |
+| RL (MaskablePPO) | learning_rate | 0.001 |
+| RL (MaskablePPO) | n_steps | 2048 |
+| RL (MaskablePPO) | batch_size | 64 |
+| RL (MaskablePPO) | gamma | 0.990 |
+| RL (MaskablePPO) | ent_coef | 0.010 |
+| RL (MaskablePPO) | total_timesteps | 200000 |
+| RL (MaskablePPO) | w_plan | 1.000 |
+| RL (MaskablePPO) | w_imit | 12.000 |
+| RL (MaskablePPO) | warm_start | True |
+| RL (MaskablePPO) | seed | 42 |
+| RL reward weights | W_REQ_requirement | 1.000 |
+| RL reward weights | W_CENT_centrality | 0.500 |
+| RL reward weights | W_RULE_DONE_rule_group | 2.000 |
+| RL reward weights | W_GPA_healthy_gpa | 0.300 |
+| RL reward weights | W_OVERLOAD_penalty | 0.500 |
+| RL reward weights | W_GRAD_graduation | 10.000 |
+| RL reward weights | W_UNMET_terminal_penalty | 0.500 |
+| RL reward weights | W_IMIT_MATCH | 1.000 |
+| RL reward weights | W_IMIT_MISS | 0.500 |
+| RL reward weights | term_cap | 14 |
+| RL reward weights | healthy_term_credits | 15 |
+| XGBoost baseline | n_estimators | 300 |
+| XGBoost baseline | max_depth | 6 |
+| XGBoost baseline | learning_rate | 0.100 |
+| XGBoost baseline | tree_method | hist |
+| XGBoost baseline | objective | binary:logistic |
+| XGBoost baseline | random_state | 42 |
+| Training | seed | 42 |
+| Training | device | CPU-only |
+| Training | n_test_samples | 6454 |
+| Student split | train | 3150 |
+| Student split | val | 675 |
+| Student split | test | 675 |

@@ -1,0 +1,61 @@
+{
+  "source": "code constants + committed artefacts (no re-tuning, no model run)",
+  "gnn_graphsage": {
+    "n_layers": 2,
+    "hidden_dim": 64,
+    "embedding_dim": 64,
+    "dropout": 0.3,
+    "aggregation": "sum",
+    "optimizer": "Adam",
+    "learning_rate": 0.01,
+    "objective": "link_prediction (student-took-course)",
+    "val_link_prediction_auc": 0.97664,
+    "epochs_trained": 72,
+    "seed": 42
+  },
+  "rl_maskable_ppo": {
+    "algorithm": "MaskablePPO (sb3-contrib)",
+    "policy": "MlpPolicy",
+    "learning_rate": 0.001,
+    "n_steps": 2048,
+    "batch_size": 64,
+    "gamma": 0.99,
+    "ent_coef": 0.01,
+    "total_timesteps": 200000,
+    "w_plan": 1.0,
+    "w_imit": 12.0,
+    "warm_start": true,
+    "seed": 42
+  },
+  "rl_reward_weights": {
+    "W_REQ_requirement": 1.0,
+    "W_CENT_centrality": 0.5,
+    "W_RULE_DONE_rule_group": 2.0,
+    "W_GPA_healthy_gpa": 0.3,
+    "W_OVERLOAD_penalty": 0.5,
+    "W_GRAD_graduation": 10.0,
+    "W_UNMET_terminal_penalty": 0.5,
+    "W_IMIT_MATCH": 1.0,
+    "W_IMIT_MISS": 0.5,
+    "term_cap": 14,
+    "healthy_term_credits": 15
+  },
+  "xgboost_baseline": {
+    "n_estimators": 300,
+    "max_depth": 6,
+    "learning_rate": 0.1,
+    "tree_method": "hist",
+    "objective": "binary:logistic",
+    "random_state": 42
+  },
+  "training": {
+    "seed": 42,
+    "device": "CPU-only",
+    "n_test_samples": 6454
+  },
+  "data_split_students": {
+    "train": 3150,
+    "val": 675,
+    "test": 675
+  }
+}
