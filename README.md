@@ -140,20 +140,29 @@ Model and experiment code lives in `src/models/`:
 Each writes a JSON under `data/cap_bench/v3_3inst/results/` — e.g.
 `baselines_summary.json`, `gradient_boosted.json`, `camp_results.json`,
 `camp_strong_encoder.json`, `ablation.json`, `statistical_tests.json`,
-`fairness.json`, `explainability.json`. **`FACTS.md`** is the single source of
-verified numbers, every value traceable to the result JSON named in brackets.
+`fairness.json`, `explainability.json`, plus `scalability.json` (inference
+scalability), `fairness_extended.json` (demographic-parity / equal-opportunity
+fairness), `shap_xgboost.json` (TreeSHAP for the gradient-boosted baseline) and
+`hyperparameters.json` (full hyperparameter record). **`FACTS.md`** is the single
+source of verified numbers, every value traceable to the result JSON named in
+brackets.
 
 ### Result artefacts — figures and tables
 
 `src/paper/` renders the result artefacts directly from the result JSONs
 (no metric values are hard-coded in the generators):
 
-- `make_figures.py` → `paper/figures/F1–F7` (300 dpi): architecture, RL training
+- `make_figures.py` → `paper/figures/F1–F11` (300 dpi): architecture, RL training
   curves, model comparison, ablation, prerequisite-graph structure, fairness,
-  explainability.
-- `make_tables.py` → `paper/tables/T1–T6` (`.csv` + `.md`): dataset overview,
+  explainability (F1–F7), plus the RL-environment loop (`F8_rl_env_flow`),
+  heterogeneous-graph construction (`F9_graph_construction`), inference
+  scalability (`F10_scalability`) and XGBoost TreeSHAP (`F11_shap`).
+- `make_tables.py` → `paper/tables/T1–T9` (`.csv` + `.md`): dataset overview,
   model comparison, ablation, statistical significance, fairness, and
-  per-institution breakdown.
+  per-institution breakdown (T1–T6), plus recommendation-ranking metrics
+  (`T7_recommendation_metrics`), multilabel classification metrics
+  (`T7_classification_metrics`), hyperparameter settings (`T8_hyperparameters`)
+  and the inference-scalability profile (`T9_scalability`).
 
 ---
 
