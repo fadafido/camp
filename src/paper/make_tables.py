@@ -32,7 +32,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 FIELD = {"khalifa": "Computer Science", "aus": "Information Systems", "unc": "Economics"}
 PROG = {"khalifa": "BSc Computer Science",
         "aus": "BSBA Information Systems & Business Analytics",
-        "unc": "BA/BS Economics"}
+        "unc": "BS Economics"}
 MODEL_LABEL = {
     "collaborative_filtering": "Collaborative filtering", "matrix_factorisation": "Matrix factorisation",
     "random_forest": "Random forest", "gradient_boosted": "Gradient-boosted (XGBoost)",
