@@ -1,4 +1,16 @@
-"""Generate the six paper tables (T1-T6) from the v3_3inst result JSONs.
+"""Generate the ten numbered paper tables (T1-T10) plus the unnumbered
+Section 8.2 constrained comparison, from the v3_3inst result JSONs.
+
+``main()`` writes all ten numbered tables. The unnumbered Section 8.2 constrained
+comparison (masked vs unmasked XGBoost) has no standalone file: it is the
+paragraph appended to ``T2_model_comparison.md``, computed from
+``gradient_boosted.json`` (``gradient_boosted`` vs ``gradient_boosted_masked``).
+On-disk filenames pre-date the paper's final table numbering, so the stems do not
+all match the paper number (e.g. paper T3/T4/T5/T6 are this module's
+``T6_per_institution`` / ``T3_ablation`` / ``T4_statistical_significance`` /
+``T5_fairness``, and paper T8/T10 are ``T7_classification_metrics`` /
+``T8_hyperparameters``) — see the "Paper ↔ repository artefact mapping" section
+of the top-level ``README.md``.
 
 Every value is read from the result JSONs — nothing is hard-coded. Writes each
 table as both ``.csv`` and a publication-ready ``.md`` (British English headers)

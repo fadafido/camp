@@ -1,8 +1,14 @@
-"""Generate the seven paper figures (F1-F7) at 300 dpi from the v3_3inst results.
+"""Generate the eleven paper figures (F1-F11) at 300 dpi from the v3_3inst results.
 
-Data-driven figures (F2, F3, F4, F6, F7) read their numbers from the result
-JSONs / training-curve CSVs — no metric values are hard-coded in the plotting
-code. F1 (architecture) and F5 (prerequisite-graph structure) are schematic /
+``main()`` writes every figure the paper uses (F1-F11). Filenames here pre-date
+the paper's final figure numbering, so the on-disk stems do not all match the
+paper number — see the "Paper ↔ repository artefact mapping" section of the
+top-level ``README.md`` (e.g. paper F2/F4/F5 are this module's
+``F5_prereq_graph`` / ``F2_rl_training_curves`` / ``F4_ablation``).
+
+Data-driven figures read their numbers from the result JSONs / training-curve
+CSVs — no metric values are hard-coded in the plotting code — while the
+architecture, RL-environment-loop and graph-construction figures are schematic /
 structure-drawn. British English labels; a colour-blind-safe palette; no
 proprietary product names. Run: ``.venv/bin/python -m src.paper.make_figures``.
 """

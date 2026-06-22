@@ -166,6 +166,58 @@ brackets.
 
 ---
 
+## Paper ↔ repository artefact mapping
+
+The **paper's final numbering is authoritative**. Several repository artefact
+filenames pre-date that final renumbering and are therefore **stale relative to
+the paper**. The files are deliberately **not** renamed — renaming would break
+the generators that write them and any reference to them — so this section
+documents the mapping instead. The paper presents **10 numbered tables plus one
+unnumbered constrained comparison in Section 8.2**, and **11 figures (F1–F11)**.
+
+### Tables (`paper/tables/`, each written as `.csv` + `.md`)
+
+| Paper | Table | Repository file (stem) | Filename matches paper? |
+|---|---|---|---|
+| T1 | Dataset overview | `T1_dataset_overview` | yes |
+| T2 | Model comparison | `T2_model_comparison` | yes |
+| T3 | Per-institution | `T6_per_institution` | no — repo `T6` |
+| T4 | Ablation | `T3_ablation` | no — repo `T3` |
+| T5 | Statistical significance | `T4_statistical_significance` | no — repo `T4` |
+| T6 | Subgroup audit / fairness | `T5_fairness` | no — repo `T5` |
+| T7 | Recommendation metrics | `T7_recommendation_metrics` | yes |
+| T8 | Classification metrics | `T7_classification_metrics` | no — repo shares the `T7_` prefix |
+| T9 | Scalability | `T9_scalability` | yes |
+| T10 | Hyperparameters | `T8_hyperparameters` | no — repo `T8` |
+| — (§8.2) | Constrained comparison (masked vs unmasked XGBoost) | footnote on `T2_model_comparison.md` | n/a — not a standalone file |
+
+The Section 8.2 constrained comparison has **no standalone artefact file**: it is
+the masked-vs-unmasked XGBoost paragraph that `src/paper/make_tables.py` appends
+to `T2_model_comparison.md`, computed from `gradient_boosted.json`
+(`gradient_boosted` vs `gradient_boosted_masked`).
+
+### Figures (`paper/figures/`, 300 dpi `.png`)
+
+| Paper | Figure | Repository file | Filename matches paper? |
+|---|---|---|---|
+| F1 | Architecture | `F1_architecture.png` | yes |
+| F2 | Prerequisite graph | `F5_prereq_graph.png` | no — repo `F5` |
+| F3 | Model comparison | `F3_model_comparison_bars.png` | yes |
+| F4 | Training convergence | `F2_rl_training_curves.png` | no — repo `F2` |
+| F5 | Ablation | `F4_ablation.png` | no — repo `F4` |
+| F6 | Fairness | `F6_fairness.png` | yes |
+| F7 | XAI / feature importance | `F7_xai.png` | yes |
+| F8 | RL environment loop | `F8_rl_env_flow.png` | yes |
+| F9 | Graph construction | `F9_graph_construction.png` | yes |
+| F10 | Scalability | `F10_scalability.png` | yes |
+| F11 | SHAP | `F11_shap.png` | yes |
+
+The only figure divergence is a three-way permutation among the early figures:
+paper **F2 / F4 / F5** are repository `F5_prereq_graph` / `F2_rl_training_curves`
+/ `F4_ablation` respectively. Every other figure already matches by number.
+
+---
+
 ## 6. Reproduce end to end
 
 > **Exact stack:** `requirements.txt` is fully pinned to the exact versions every
